@@ -1,29 +1,86 @@
 [
   {
-    "key": "user:1",
+    "key": "teamMember:1",
     "value": {
+      "role": "Role",
       "id": "1",
-      "name": "User #1",
-      "status": "active"
+      "name": "team-member #1",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
+      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
     },
-    "label1": "active:1"
+    "created": "2022-08-12T06:48:06.000Z",
+    "modified": "2022-08-12T09:27:02.000Z"
   },
   {
-    "key": "user:2",
+    "key": "teamMember:2",
     "value": {
+      "role": "Role",
       "id": "2",
-      "name": "User #2",
-      "status": "inactive"
+      "name": "team-member #2",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
+      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
     },
-    "label1": "inactive:2"
+    "created": "2022-08-12T06:48:06.000Z",
+    "modified": "2022-08-12T09:27:10.000Z"
   },
   {
-    "key": "user:3",
+    "key": "teamMember:3",
     "value": {
+      "role": "Role",
       "id": "3",
-      "name": "User #3",
-      "status": "active"
+      "name": "team-member #3",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
+      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
     },
-    "label1": "active:3"
+    "created": "2022-08-12T06:48:06.000Z",
+    "modified": "2022-08-12T09:27:14.000Z"
+  },
+  {
+    "key": "teamMember:4",
+    "value": {
+      "role": "Role",
+      "id": "4",
+      "name": "team-member #4",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
+      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
+    },
+    "created": "2022-08-12T06:48:06.000Z",
+    "modified": "2022-08-12T09:27:19.000Z"
+  },
+  {
+    "key": "teamMember:5",
+    "value": {
+      "role": "Role",
+      "id": "5",
+      "name": "team-member #5",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
+      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
+    },
+    "created": "2022-08-12T06:48:06.000Z",
+    "modified": "2022-08-12T09:27:25.000Z"
+  },
+  {
+    "key": "teamMember:6",
+    "value": {
+      "role": "Role",
+      "id": "6",
+      "name": "team-member #6",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
+      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
+    },
+    "created": "2022-08-12T06:48:06.000Z",
+    "modified": "2022-08-12T09:27:28.000Z"
+  },
+  {
+    "key": "teamMember:7",
+    "value": {
+      "role": "Role",
+      "id": "7",
+      "name": "team-member #7",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
+      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
+    },
+    "created": "2022-08-12T06:48:06.000Z",
+    "modified": "2022-08-12T09:27:31.000Z"
   }
 ]
