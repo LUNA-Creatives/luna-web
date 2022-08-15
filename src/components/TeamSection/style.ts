@@ -5,6 +5,9 @@ export default makeStyles((theme: Theme) =>
     container: {
       display: 'flex',
       flexWrap: 'wrap',
+
+      backgroundColor: 'black',
+      justifyContent: 'center',
     },
   })
 );
