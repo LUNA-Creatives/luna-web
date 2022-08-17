@@ -1,5 +1,4 @@
 export interface ICard {
-  key: string;
   name: string;
   role: string;
   profileImage?: string;

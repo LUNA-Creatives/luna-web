@@ -32,7 +32,7 @@ export const HomePage = () => {
       {!visible && (
         <>
           <InfoSection />
-          <TeamSection data={team} />
+          <TeamSection data={team} headline={'Vårt team'} />
         </>
       )}
     </>
