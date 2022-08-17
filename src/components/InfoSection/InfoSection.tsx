@@ -5,8 +5,9 @@ import lottie from 'lottie-web/build/player/lottie_svg';
 
 import useStyles from './style';
 import flowyAnimation from '../../utils/animations/flowyAnimation.json';
+import { IInfoSection } from './types';
 
-export const InfoSection = () => {
+export const InfoSection = ({ headline }: IInfoSection) => {
   const classes = useStyles();
 
   const flowyAnimationId = 'flowyAnimation';
@@ -32,7 +33,7 @@ export const InfoSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Framtidens techpartner. Utvecklar appar och hemsidor.
+          {headline}
         </Typography>
         <Box className={classes.animation} id={flowyAnimationId} />
       </Container>

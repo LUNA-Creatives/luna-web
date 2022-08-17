@@ -13,7 +13,11 @@ const App = () => {
   return (
     <ThemeConfig>
       <HeaderSection />
-      {!visible && <InfoSection />}
+      {!visible && (
+        <InfoSection
+          headline={'Framtidens techpartner. Utvecklar appar och hemsidor.'}
+        />
+      )}
     </ThemeConfig>
   );
 };
