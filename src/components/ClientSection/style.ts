@@ -10,6 +10,8 @@ export default makeStyles((theme: Theme) =>
       flexWrap: 'wrap',
       justifyContent: 'space-around',
       height: '70%',
+      borderBottom: '0.001px solid darkgrey',
+      borderTop: '0.001px solid darkgrey',
 
       [theme.breakpoints.up('md')]: {
         height: '50%',
