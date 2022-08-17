@@ -6,15 +6,13 @@ export default makeStyles((theme: Theme) =>
       backgroundColor: 'black',
       display: 'flex',
       alignItems: 'center',
-      flexDirection: 'column',
+      flexDirection: 'row',
+      flexWrap: 'wrap',
       justifyContent: 'space-around',
-      height: '100%',
-      paddingBottom: 50,
+      height: '70%',
 
       [theme.breakpoints.up('md')]: {
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        height: 300,
+        height: '50%',
       },
     },
     box: {
@@ -23,7 +21,7 @@ export default makeStyles((theme: Theme) =>
       justifyContent: 'center',
       alignItems: 'center',
       position: 'relative',
-      [theme.breakpoints.between('sm', 'md')]: {
+      [theme.breakpoints.down('md')]: {
         width: '50vw',
       },
     },
