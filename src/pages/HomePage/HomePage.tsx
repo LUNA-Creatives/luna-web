@@ -4,9 +4,11 @@ import axios from 'axios';
 import { HeaderSection } from '../../components/HeaderSection';
 import { InfoSection } from '../../components/InfoSection';
 import { TeamSection } from '../../components/TeamSection';
+import { ClientSection } from '../../components/ClientSection';
+import { constants } from '../../utils/data/constants';
 
 export const HomePage = () => {
-  const [visible, isVisible] = useState(true);
+  const [showHeader, setShowHeader] = useState(true);
   const [team, setTeam] = useState([]);
 
   const fetchAndSetUsers = async () => {
@@ -20,7 +22,7 @@ export const HomePage = () => {
 
   useEffect(() => {
     setTimeout(function () {
-      isVisible(false);
+      setShowHeader(false);
     }, 7000);
 
     fetchAndSetUsers();
@@ -29,10 +31,11 @@ export const HomePage = () => {
   return (
     <>
       <HeaderSection />
-      {!visible && (
+      {!showHeader && (
         <>
-          <InfoSection />
-          <TeamSection data={team} />
+          <InfoSection headline={constants.infoSection.headline} />
+          <ClientSection />
+          <TeamSection data={team} headline={constants.teamSection.headline} />
         </>
       )}
     </>
