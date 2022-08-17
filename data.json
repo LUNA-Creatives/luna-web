@@ -2,85 +2,97 @@
   {
     "key": "teamMember:1",
     "value": {
-      "role": "Role",
+      "role": "VD och grundare",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/erik.jpg",
       "id": "1",
-      "name": "team-member #1",
-      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
-      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
+      "name": "Erik Nguyen",
+      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/gifs/gif-erik.gif"
     },
-    "created": "2022-08-12T06:48:06.000Z",
-    "modified": "2022-08-12T09:27:02.000Z"
+    "created": "2022-08-15T05:34:03.000Z",
+    "modified": "2022-08-15T12:44:13.000Z"
   },
   {
     "key": "teamMember:2",
     "value": {
-      "role": "Role",
+      "role": "Designer och grundare",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/anders.jpg",
       "id": "2",
-      "name": "team-member #2",
-      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
-      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
+      "name": "Anders Berlander",
+      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/gifs/gif-anders.gif"
     },
-    "created": "2022-08-12T06:48:06.000Z",
-    "modified": "2022-08-12T09:27:10.000Z"
+    "created": "2022-08-15T05:34:03.000Z",
+    "modified": "2022-08-15T07:47:22.000Z"
   },
   {
     "key": "teamMember:3",
     "value": {
-      "role": "Role",
+      "role": "Utvecklare",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/maria.jpg",
       "id": "3",
-      "name": "team-member #3",
-      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
+      "name": "Maria Helena Norén",
       "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
     },
-    "created": "2022-08-12T06:48:06.000Z",
-    "modified": "2022-08-12T09:27:14.000Z"
+    "created": "2022-08-15T05:34:03.000Z",
+    "modified": "2022-08-15T05:34:03.000Z"
   },
   {
     "key": "teamMember:4",
     "value": {
-      "role": "Role",
-      "id": "4",
-      "name": "team-member #4",
-      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
-      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
+      "role": "Utvecklare",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/josef.jpg",
+      "id": "1",
+      "name": "Josef Wakman",
+      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/gifs/gif-josef-new.gif"
     },
-    "created": "2022-08-12T06:48:06.000Z",
-    "modified": "2022-08-12T09:27:19.000Z"
+    "created": "2022-08-15T05:34:03.000Z",
+    "modified": "2022-08-16T12:00:55.000Z"
   },
   {
     "key": "teamMember:5",
     "value": {
-      "role": "Role",
+      "role": "Utvecklare",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/fanny.jpeg",
       "id": "5",
-      "name": "team-member #5",
-      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
-      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
+      "name": "Fanny Mårtensson",
+      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/catGif.gif"
     },
-    "created": "2022-08-12T06:48:06.000Z",
-    "modified": "2022-08-12T09:27:25.000Z"
+    "created": "2022-08-15T05:34:03.000Z",
+    "modified": "2022-08-15T05:34:03.000Z"
   },
   {
     "key": "teamMember:6",
     "value": {
-      "role": "Role",
+      "role": "Utvecklare",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/oliver.jpg",
       "id": "6",
-      "name": "team-member #6",
-      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
-      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
+      "name": "Oliver Nygren",
+      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/gifs/gif-oliver.gif"
     },
-    "created": "2022-08-12T06:48:06.000Z",
-    "modified": "2022-08-12T09:27:28.000Z"
+    "created": "2022-08-15T05:34:03.000Z",
+    "modified": "2022-08-15T07:33:14.000Z"
   },
   {
     "key": "teamMember:7",
     "value": {
-      "role": "Role",
+      "role": "Kommunikatör",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/sherlie.jpg",
       "id": "7",
-      "name": "team-member #7",
-      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/DSCF2345.jpeg",
+      "name": "Sherlie Huynh",
       "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/giphy.gif"
     },
-    "created": "2022-08-12T06:48:06.000Z",
-    "modified": "2022-08-12T09:27:31.000Z"
+    "created": "2022-08-15T05:34:03.000Z",
+    "modified": "2022-08-15T05:34:03.000Z"
+  },
+  {
+    "key": "teamMember:8",
+    "value": {
+      "role": "Affärsutvecklare",
+      "profileImage": "https://pleasant-api-uqe40.cloud.serverless.com/public/raza.jpg",
+      "id": "6",
+      "name": "Raza Golali",
+      "gif": "https://pleasant-api-uqe40.cloud.serverless.com/public/gifs/gif-raza.gif"
+    },
+    "created": "2022-08-15T05:34:03.000Z",
+    "modified": "2022-08-16T12:00:25.000Z"
   }
 ]
