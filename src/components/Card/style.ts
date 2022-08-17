@@ -1,24 +1,29 @@
 import { createStyles, makeStyles, Theme } from '@material-ui/core';
+import {
+  desktopBreakpoint,
+  ipadBreakpoint,
+} from '../../utils/screenSizeBreakpoints';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
     container: {
       display: 'grid',
       textAlign: 'center',
-      width: '100vw',
+      width: '100%',
       minHeight: '100%',
-      padding: 10,
-      marginBottom: '2vh',
-      [theme.breakpoints.up('md')]: {
-        width: '30vw',
+
+      marginBottom: '2rem',
+
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        width: '33%',
       },
-      [theme.breakpoints.only('sm')]: {
+      [theme.breakpoints.between(desktopBreakpoint, ipadBreakpoint)]: {
         width: '45vw',
       },
     },
-    card: {},
     textBox: {
       color: theme.palette.primary.light,
+      paddingBottom: 25,
     },
     imageBox: {
       position: 'relative',
@@ -31,8 +36,8 @@ export default makeStyles((theme: Theme) =>
       boxShadow: '1px 1px 50px 2px #0d0d0f',
       width: '100%',
       height: '100%',
-      zZndex: 55,
       borderRadius: 5,
+      objectFit: 'cover',
     },
     imageWrapper: {
       position: 'absolute',
@@ -41,7 +46,6 @@ export default makeStyles((theme: Theme) =>
       width: '100%',
 
       borderRadius: 5,
-
       objectFit: 'cover',
     },
   })
