@@ -19,7 +19,7 @@ export const Card = ({ name, role, profileImage, gif }: ICard) => {
     }
   }, [inView, controls]);
 
-  const squareVariants = {
+  const variants = {
     visible: { opacity: 1, transition: { duration: 1 } },
     hidden: { opacity: 0 },
   };
@@ -30,7 +30,7 @@ export const Card = ({ name, role, profileImage, gif }: ICard) => {
       <Box className={classes.imageBox}>
         <motion.img
           ref={ref}
-          variants={squareVariants}
+          variants={variants}
           animate={controls}
           initial="hidden"
           alt="logo"
