@@ -9,8 +9,8 @@ export const TeamSection = ({ data, headline }: any) => {
 
   return (
     <Grid className={classes.root}>
-      <Container className={classes.container}>
-        <Typography variant="h1" className={classes.headline}>
+      <Container>
+        <Typography variant="h2" className={classes.headline}>
           {headline}
         </Typography>
 

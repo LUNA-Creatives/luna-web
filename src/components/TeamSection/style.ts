@@ -3,6 +3,7 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core';
 export default makeStyles((theme: Theme) =>
   createStyles({
     root: { backgroundColor: 'black' },
+
     container: {
       padding: 10,
       paddingTop: '15vh',
@@ -18,8 +19,9 @@ export default makeStyles((theme: Theme) =>
     },
     headline: {
       color: 'white',
-      paddingBottom: '15%',
-      textAlign: 'center',
+
+      paddingBottom: 50,
+
       [theme.breakpoints.up('lg')]: {
         textAlign: 'left',
         paddingBottom: '10%',

@@ -1,5 +1,5 @@
 import { useMediaQuery } from '@material-ui/core';
-import { Container, Box, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
@@ -40,16 +40,16 @@ export const Card = ({ name, role, profileImage, gif }: ICard) => {
     </>
   );
   return isDesktop ? (
-    <Container
+    <Box
       className={classes.container}
       onMouseOver={() => setIsShown(true)}
       onMouseLeave={() => setIsShown(false)}
     >
       {ProfileCard}
-    </Container>
+    </Box>
   ) : (
     <motion.div onPanStart={() => setIsShown(true)}>
-      <Container className={classes.container}>{ProfileCard}</Container>
+      <Box className={classes.container}>{ProfileCard}</Box>
     </motion.div>
   );
 };
