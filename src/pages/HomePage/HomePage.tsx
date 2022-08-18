@@ -6,6 +6,7 @@ import { InfoSection } from '../../components/InfoSection';
 import { TeamSection } from '../../components/TeamSection';
 import { ClientSection } from '../../components/ClientSection';
 import { constants } from '../../utils/data/constants';
+import { Footer } from '../../components/Footer';
 
 export const HomePage = () => {
   const [showHeader, setShowHeader] = useState(true);
@@ -36,6 +37,12 @@ export const HomePage = () => {
           <InfoSection headline={constants.infoSection.headline} />
           <ClientSection />
           <TeamSection data={team} headline={constants.teamSection.headline} />
+          <Footer
+            emailAddress={constants.footerSection.emailAddress}
+            heading={constants.footerSection.heading}
+            location={constants.footerSection.location}
+            phoneNumber={constants.footerSection.phoneNumber}
+          />
         </>
       )}
     </>
