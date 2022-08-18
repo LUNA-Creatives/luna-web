@@ -4,4 +4,10 @@ export const constants = {
   },
   showcaseSection: { headline: 'Våra uppdrag' },
   teamSection: { headline: 'Vårt team' },
+  footerSection: {
+    emailAddress: 'info@lunacreatives.se',
+    phoneNumber: '+46708897655',
+    location: 'Norra Gubberogatan 30',
+    heading: 'Kontakta oss',
+  },
 };
