@@ -1,3 +1,6 @@
 export interface IInfoSection {
-  headline: string;
+  infoSection: {
+    headline: string;
+    text: string;
+  };
 }

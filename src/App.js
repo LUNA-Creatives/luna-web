@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+
 import { HeaderSection } from './components/HeaderSection';
 import { InfoSection } from './components/InfoSection';
 import { ThemeConfig } from './theme';
+import { constants } from './utils/data/constants';
 
 const App = () => {
   const [visible, isVisible] = useState(true);
@@ -13,11 +15,7 @@ const App = () => {
   return (
     <ThemeConfig>
       <HeaderSection />
-      {!visible && (
-        <InfoSection
-          headline={'Framtidens techpartner. Utvecklar appar och hemsidor.'}
-        />
-      )}
+      {!visible && <InfoSection infoSection={constants.infoSection} />}
     </ThemeConfig>
   );
 };

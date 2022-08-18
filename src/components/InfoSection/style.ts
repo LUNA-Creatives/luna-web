@@ -26,10 +26,5 @@ export default makeStyles((theme: Theme) =>
       '-webkit-background-clip': 'text',
       '-webkit-text-fill-color': 'transparent',
     },
-    animation: {
-      [theme.breakpoints.up('xl')]: {
-        width: '30%',
-      },
-    },
   })
 );
