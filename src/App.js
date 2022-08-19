@@ -1,10 +1,10 @@
-import { HeaderSection } from './components/HeaderSection';
+import { Header } from './components/Sections/Header';
 import { ThemeConfig } from './theme';
 
 const App = () => {
   return (
     <ThemeConfig>
-      <HeaderSection />
+      <Header />
     </ThemeConfig>
   );
 };
