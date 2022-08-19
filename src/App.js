@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 
-import { HeaderSection } from './components/HeaderSection';
 import { InfoSection } from './components/InfoSection';
+import { Header } from './components/Sections/Header';
+
 import { ThemeConfig } from './theme';
 import { constants } from './utils/data/constants';
 
@@ -14,7 +15,7 @@ const App = () => {
   }, []);
   return (
     <ThemeConfig>
-      <HeaderSection />
+      <Header />
       {!visible && <InfoSection infoSection={constants.infoSection} />}
     </ThemeConfig>
   );
