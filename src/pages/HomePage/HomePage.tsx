@@ -4,6 +4,7 @@ import axios from 'axios';
 import { HeaderSection } from '../../components/HeaderSection';
 import { InfoSection } from '../../components/InfoSection';
 import { TeamSection } from '../../components/TeamSection';
+import { constants } from '../../utils/data/constants';
 
 export const HomePage = () => {
   const [visible, isVisible] = useState(true);
@@ -31,7 +32,7 @@ export const HomePage = () => {
       <HeaderSection />
       {!visible && (
         <>
-          <InfoSection />
+          <InfoSection infoSection={constants.infoSection} />
           <TeamSection data={team} headline={'Vårt team'} />
         </>
       )}
