@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
-import { Animation } from '../Animation';
-import { Navbar } from '../Navbar';
+import { Animation } from './Animation';
+import { Navbar } from './Navbar';
 
-export const HeaderSection = () => {
+export const Header = () => {
   const [visible, isVisible] = useState(true);
   useEffect(() => {
     setTimeout(function () {

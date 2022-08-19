@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import lottie from 'lottie-web/build/player/lottie_svg';
 
 import useStyles from './style';
-import animation from '../../utils/animations/flowyAnimation.json';
+import animation from '../../../../assets/animations/flowyAnimation.json';
 
 export const Animation = () => {
   const classes = useStyles();
