@@ -37,7 +37,7 @@ export const HomePage = () => {
         <>
           <Navbar logo={logo} />
           <Header data={data.header} />
-          <Team data={team} headline={'Vårt team'} />
+          <Team data={team} headline={data.team.headline} />
         </>
       )}
     </>
