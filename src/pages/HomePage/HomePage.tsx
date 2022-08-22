@@ -4,12 +4,13 @@ import axios from 'axios';
 import { AnimationHero } from '../../components/AnimationHero';
 import { Navbar } from '../../components/Navbar';
 import { Header } from '../../components/Sections/Header';
-import { Team } from '../../components/Team';
+import { Team } from '../../components/Sections/Team';
 import logo from '../../assets/logos/luna-icon-inverted-color.svg';
 import data from '../../assets/data/data.json';
-
+import { ClientLogos } from '../../components/Sections/ClientLogos';
+import { logos } from '../../assets/data/logos';
 export const HomePage = () => {
-  const [visible, isVisible] = useState(true);
+  const [showAnimation, setShowAnimation] = useState(true);
   const [team, setTeam] = useState([]);
 
   const fetchAndSetUsers = async () => {
@@ -23,7 +24,7 @@ export const HomePage = () => {
 
   useEffect(() => {
     setTimeout(function () {
-      isVisible(false);
+      setShowAnimation(false);
     }, 7000);
 
     fetchAndSetUsers();
@@ -31,12 +32,13 @@ export const HomePage = () => {
 
   return (
     <>
-      {visible ? (
+      {showAnimation ? (
         <AnimationHero />
       ) : (
         <>
           <Navbar logo={logo} />
           <Header data={data.header} />
+          <ClientLogos logos={logos} />
           <Team data={team} headline={data.team.headline} />
         </>
       )}

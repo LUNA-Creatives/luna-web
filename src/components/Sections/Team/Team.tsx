@@ -1,7 +1,7 @@
 import { Grid, Typography, Box, Container } from '@material-ui/core';
 
-import { Card } from '../Card';
-import { ICard } from '../Card/types';
+import { Card } from './Card';
+import { ICard } from './Card/types';
 import useStyles from './style';
 import { ITeam } from './types';
 
