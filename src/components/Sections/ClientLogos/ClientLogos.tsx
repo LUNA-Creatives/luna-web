@@ -29,7 +29,7 @@ export const ClientLogos = ({ logos }: ILogos) => {
     }, 5000);
     return () => clearInterval(interval);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [newLogos, showEvenIndex]);
+  }, [showEvenIndex]);
 
   return (
     <Grid className={classes.root}>
