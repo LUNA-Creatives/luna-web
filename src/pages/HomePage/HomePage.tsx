@@ -1,15 +1,18 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import { HeaderSection } from '../../components/HeaderSection';
-import { InfoSection } from '../../components/InfoSection';
-import { TeamSection } from '../../components/TeamSection';
-import { ClientSection } from '../../components/ClientSection';
-import { constants } from '../../utils/data/constants';
+import { AnimationHero } from '../../components/AnimationHero';
+import { Navbar } from '../../components/Navbar';
+import { Header } from '../../components/Sections/Header';
+import { Team } from '../../components/Sections/Team';
+import logo from '../../assets/logos/luna-icon-inverted-color.svg';
+import data from '../../assets/data/data.json';
+import { ClientLogos } from '../../components/Sections/ClientLogos';
+import { logos } from '../../assets/data/logos';
 import { Footer } from '../../components/Footer';
 
 export const HomePage = () => {
-  const [showHeader, setShowHeader] = useState(true);
+  const [showAnimation, setShowAnimation] = useState(true);
   const [team, setTeam] = useState([]);
 
   const fetchAndSetUsers = async () => {
@@ -23,7 +26,7 @@ export const HomePage = () => {
 
   useEffect(() => {
     setTimeout(function () {
-      setShowHeader(false);
+      setShowAnimation(false);
     }, 7000);
 
     fetchAndSetUsers();
@@ -31,17 +34,19 @@ export const HomePage = () => {
 
   return (
     <>
-      <HeaderSection />
-      {!showHeader && (
+      {showAnimation ? (
+        <AnimationHero />
+      ) : (
         <>
-          <InfoSection headline={constants.infoSection.headline} />
-          <ClientSection />
-          <TeamSection data={team} headline={constants.teamSection.headline} />
+          <Navbar logo={logo} />
+          <Header data={data.header} />
+          <ClientLogos logos={logos} />
+          <Team data={team} headline={data.team.headline} />
           <Footer
-            emailAddress={constants.footerSection.emailAddress}
-            heading={constants.footerSection.heading}
-            location={constants.footerSection.location}
-            phoneNumber={constants.footerSection.phoneNumber}
+            emailAddress={data.footer.emailAddress}
+            heading={data.footer.heading}
+            location={data.footer.location}
+            phoneNumber={data.footer.phoneNumber}
           />
         </>
       )}

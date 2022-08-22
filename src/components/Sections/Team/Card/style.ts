@@ -2,7 +2,7 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core';
 import {
   desktopBreakpoint,
   ipadBreakpoint,
-} from '../../utils/screenSizeBreakpoints';
+} from '../../../../utils/screenSizeBreakpoints';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
@@ -15,7 +15,7 @@ export default makeStyles((theme: Theme) =>
       marginBottom: '2rem',
 
       [theme.breakpoints.up(ipadBreakpoint)]: {
-        width: '33%',
+        width: '30%',
       },
       [theme.breakpoints.between(desktopBreakpoint, ipadBreakpoint)]: {
         width: '45vw',

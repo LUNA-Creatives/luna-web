@@ -2,9 +2,9 @@ import { Container } from '@material-ui/core';
 import { motion } from 'framer-motion';
 
 import useStyles from './style';
-import { LUNA_ICON_INVERTED_COLOR_SVG } from '../../utils/images';
+import { INavbar } from './types';
 
-export const Navbar = () => {
+export const Navbar = ({ logo }: INavbar) => {
   const classes = useStyles();
 
   return (
@@ -25,7 +25,7 @@ export const Navbar = () => {
           repeatType: 'reverse',
         }}
       >
-        <img alt="logo" height={35} src={LUNA_ICON_INVERTED_COLOR_SVG} />
+        <img alt="logo" height={35} src={logo} />
       </motion.div>
     </Container>
   );
