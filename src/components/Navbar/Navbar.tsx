@@ -2,9 +2,9 @@ import { Container } from '@material-ui/core';
 import { motion } from 'framer-motion';
 
 import useStyles from './style';
-import logo from '../../../../assets/logos/luna-icon-inverted-color.svg';
+import { INavbar } from './types';
 
-export const Navbar = () => {
+export const Navbar = ({ logo }: INavbar) => {
   const classes = useStyles();
 
   return (
