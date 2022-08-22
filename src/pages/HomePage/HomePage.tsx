@@ -7,8 +7,8 @@ import { Header } from '../../components/Sections/Header';
 import { Team } from '../../components/Team';
 import logo from '../../assets/logos/luna-icon-inverted-color.svg';
 import data from '../../assets/data/data.json';
-import { ClientSection } from '../../components/ClientSection';
-
+import { ClientLogos } from '../../components/Sections/ClientLogos';
+import { logos } from '../../assets/data/logos';
 export const HomePage = () => {
   const [showAnimation, setShowAnimation] = useState(true);
   const [team, setTeam] = useState([]);
@@ -38,7 +38,7 @@ export const HomePage = () => {
         <>
           <Navbar logo={logo} />
           <Header data={data.header} />
-          <ClientSection />
+          <ClientLogos logos={logos} />
           <Team data={team} headline={data.team.headline} />
         </>
       )}
