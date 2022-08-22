@@ -15,7 +15,7 @@ export default makeStyles((theme: Theme) =>
       marginBottom: '2rem',
 
       [theme.breakpoints.up(ipadBreakpoint)]: {
-        width: '33%',
+        width: '30%',
       },
       [theme.breakpoints.between(desktopBreakpoint, ipadBreakpoint)]: {
         width: '45vw',

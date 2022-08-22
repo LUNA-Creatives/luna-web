@@ -1,14 +1,16 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import { HeaderSection } from '../../components/HeaderSection';
-import { InfoSection } from '../../components/InfoSection';
-import { TeamSection } from '../../components/TeamSection';
+import { AnimationHero } from '../../components/AnimationHero';
+import { Navbar } from '../../components/Navbar';
+import { Header } from '../../components/Sections/Header';
+import { Team } from '../../components/Team';
+import logo from '../../assets/logos/luna-icon-inverted-color.svg';
+import data from '../../assets/data/data.json';
 import { ClientSection } from '../../components/ClientSection';
-import { constants } from '../../utils/data/constants';
 
 export const HomePage = () => {
-  const [showHeader, setShowHeader] = useState(true);
+  const [showAnimation, setShowAnimation] = useState(true);
   const [team, setTeam] = useState([]);
 
   const fetchAndSetUsers = async () => {
@@ -22,7 +24,7 @@ export const HomePage = () => {
 
   useEffect(() => {
     setTimeout(function () {
-      setShowHeader(false);
+      setShowAnimation(false);
     }, 7000);
 
     fetchAndSetUsers();
@@ -30,12 +32,14 @@ export const HomePage = () => {
 
   return (
     <>
-      <HeaderSection />
-      {!showHeader && (
+      {showAnimation ? (
+        <AnimationHero />
+      ) : (
         <>
-          <InfoSection headline={constants.infoSection.headline} />
+          <Navbar logo={logo} />
+          <Header data={data.header} />
           <ClientSection />
-          <TeamSection data={team} headline={constants.teamSection.headline} />
+          <Team data={team} headline={data.team.headline} />
         </>
       )}
     </>

@@ -3,14 +3,15 @@ import { Grid, Typography, Box, Container } from '@material-ui/core';
 import { Card } from '../Card';
 import { ICard } from '../Card/types';
 import useStyles from './style';
+import { ITeam } from './types';
 
-export const TeamSection = ({ data, headline }: any) => {
+export const Team = ({ data, headline }: ITeam) => {
   const classes = useStyles();
 
   return (
     <Grid className={classes.root}>
-      <Container className={classes.container}>
-        <Typography variant="h1" className={classes.headline}>
+      <Container>
+        <Typography variant="h2" className={classes.headline}>
           {headline}
         </Typography>
 

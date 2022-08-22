@@ -1,31 +1,43 @@
 import { useMediaQuery } from '@material-ui/core';
-import { Container, Box, Typography } from '@mui/material';
-import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { Box, Typography } from '@mui/material';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 import { ipadBreakpoint } from '../../utils/screenSizeBreakpoints';
 import useStyles from './style';
 import { ICard } from './types';
 
 export const Card = ({ name, role, profileImage, gif }: ICard) => {
-  const [isShown, setIsShown] = useState(false);
   const classes = useStyles();
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
 
   useEffect(() => {
-    setTimeout(function () {
-      if (isShown) {
-        setIsShown(false);
-      }
-    }, 3000);
-  });
+    if (!inView) {
+      controls.start('hidden');
+    }
+  }, [inView, controls]);
+
+  const variants = {
+    visible: { opacity: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0 },
+  };
 
   const isDesktop = useMediaQuery(`(min-width:${ipadBreakpoint}px)`);
   const ProfileCard = (
     <>
       <Box className={classes.imageBox}>
-        {isShown && (
-          <img alt="logo" className={classes.imageWrapper} src={gif} />
-        )}
+        <motion.img
+          ref={ref}
+          variants={variants}
+          animate={controls}
+          initial="hidden"
+          alt="logo"
+          className={classes.imageWrapper}
+          src={gif}
+        />
+
         <img
           className={classes.image}
           alt="logo"
@@ -40,16 +52,16 @@ export const Card = ({ name, role, profileImage, gif }: ICard) => {
     </>
   );
   return isDesktop ? (
-    <Container
+    <Box
       className={classes.container}
-      onMouseOver={() => setIsShown(true)}
-      onMouseLeave={() => setIsShown(false)}
+      onMouseOver={() => controls.start('visible')}
+      onMouseLeave={() => controls.start('hidden')}
     >
       {ProfileCard}
-    </Container>
+    </Box>
   ) : (
-    <motion.div onPanStart={() => setIsShown(true)}>
-      <Container className={classes.container}>{ProfileCard}</Container>
+    <motion.div onPanStart={() => controls.start('visible')}>
+      <Box className={classes.container}>{ProfileCard}</Box>
     </motion.div>
   );
 };
