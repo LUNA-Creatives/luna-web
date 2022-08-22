@@ -9,7 +9,7 @@ import logo from '../../assets/logos/luna-icon-inverted-color.svg';
 import data from '../../assets/data/data.json';
 import { ClientLogos } from '../../components/Sections/ClientLogos';
 import { logos } from '../../assets/data/logos';
-import { Footer } from '../../components/Footer';
+import { Footer } from '../../components/Sections/Footer';
 
 export const HomePage = () => {
   const [showAnimation, setShowAnimation] = useState(true);
@@ -42,12 +42,7 @@ export const HomePage = () => {
           <Header data={data.header} />
           <ClientLogos logos={logos} />
           <Team data={team} headline={data.team.headline} />
-          <Footer
-            emailAddress={data.footer.emailAddress}
-            heading={data.footer.heading}
-            location={data.footer.location}
-            phoneNumber={data.footer.phoneNumber}
-          />
+          <Footer data={data.footer} />
         </>
       )}
     </>
