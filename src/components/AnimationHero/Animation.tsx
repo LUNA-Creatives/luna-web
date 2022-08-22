@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import lottie from 'lottie-web/build/player/lottie_svg';
 
 import useStyles from './style';
-import animation from '../../../../assets/animations/flowyAnimation.json';
+import animation from '../../assets/animations/flowyAnimation.json';
 
-export const Animation = () => {
+export const AnimationHero = () => {
   const classes = useStyles();
 
   const animationId = 'animation';

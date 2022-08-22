@@ -1,0 +1,1 @@
+export { AnimationHero } from './Animation';

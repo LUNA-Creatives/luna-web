@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 
-import { InfoSection } from './components/InfoSection';
-import { Header } from './components/Sections/Header';
-
 import { ThemeConfig } from './theme';
-import { constants } from './utils/data/constants';
+import { Header } from './components/Sections/Header';
+import { AnimationHero } from './components/AnimationHero';
+import { Navbar } from './components/Navbar';
+import data from './assets/data/data.json';
+import logo from './assets/logos/luna-icon-inverted-color.svg';
 
 const App = () => {
   const [visible, isVisible] = useState(true);
@@ -15,8 +16,14 @@ const App = () => {
   }, []);
   return (
     <ThemeConfig>
-      <Header />
-      {!visible && <InfoSection infoSection={constants.infoSection} />}
+      {visible ? (
+        <AnimationHero />
+      ) : (
+        <>
+          <Navbar logo={logo} />
+          <Header data={data.header}></Header>
+        </>
+      )}
     </ThemeConfig>
   );
 };
