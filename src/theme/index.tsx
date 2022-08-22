@@ -1,17 +1,23 @@
 import { ReactNode } from 'react';
 
-import { createTheme, ThemeProvider, CssBaseline } from '@material-ui/core';
+import {
+  createTheme,
+  ThemeProvider,
+  CssBaseline,
+  responsiveFontSizes,
+} from '@material-ui/core';
 import { StyledEngineProvider } from '@mui/material';
 
 import GlobalStyles from './globalStyles';
 
-const theme = createTheme({
+let theme = createTheme({
   typography: {
     fontFamily: ['hero-new', 'sans-serif'].join(','),
   },
   palette: {
     primary: {
       main: '#ffffff',
+      dark: '#0000',
     },
     secondary: {
       light: '#67F89D',
@@ -20,6 +26,7 @@ const theme = createTheme({
     },
   },
 });
+theme = responsiveFontSizes(theme);
 
 type ThemeConfigProps = {
   children: ReactNode;
