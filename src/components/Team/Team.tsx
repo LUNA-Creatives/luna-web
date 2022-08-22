@@ -4,7 +4,7 @@ import { Card } from '../Card';
 import { ICard } from '../Card/types';
 import useStyles from './style';
 
-export const TeamSection = ({ data, headline }: any) => {
+export const Team = ({ data, headline }: any) => {
   const classes = useStyles();
 
   return (

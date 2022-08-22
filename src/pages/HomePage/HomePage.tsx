@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import { HeaderSection } from '../../components/HeaderSection';
-import { InfoSection } from '../../components/InfoSection';
-import { TeamSection } from '../../components/TeamSection';
-import { constants } from '../../utils/data/constants';
+import { AnimationHero } from '../../components/AnimationHero';
+import { Navbar } from '../../components/Navbar';
+import { Header } from '../../components/Sections/Header';
+import { Team } from '../../components/Team';
+import logo from '../../assets/logos/luna-icon-inverted-color.svg';
+import data from '../../assets/data/data.json';
 
 export const HomePage = () => {
   const [visible, isVisible] = useState(true);
@@ -29,11 +31,13 @@ export const HomePage = () => {
 
   return (
     <>
-      <HeaderSection />
-      {!visible && (
+      {visible ? (
+        <AnimationHero />
+      ) : (
         <>
-          <InfoSection infoSection={constants.infoSection} />
-          <TeamSection data={team} headline={'Vårt team'} />
+          <Navbar logo={logo} />
+          <Header data={data.header} />
+          <Team data={team} headline={'Vårt team'} />
         </>
       )}
     </>

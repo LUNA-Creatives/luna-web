@@ -12,10 +12,8 @@ export default makeStyles((theme: Theme) =>
       display: 'flex',
       alignItems: 'center',
       textAlign: 'center',
-
       flexDirection: 'column',
       justifyContent: 'space-evenly',
-
       [theme.breakpoints.up('md')]: {
         flexDirection: 'row',
         textAlign: 'left',
