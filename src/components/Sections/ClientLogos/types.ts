@@ -4,6 +4,6 @@ export interface ILogos {
 
 export type Logo = {
   id: number;
-  url: string;
+  url?: string;
   alt: string;
 };
