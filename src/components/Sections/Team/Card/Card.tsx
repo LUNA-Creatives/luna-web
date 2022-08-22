@@ -4,7 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-import { ipadBreakpoint } from '../../utils/screenSizeBreakpoints';
+import { ipadBreakpoint } from '../../../../utils/screenSizeBreakpoints';
 import useStyles from './style';
 import { ICard } from './types';
 

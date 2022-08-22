@@ -4,7 +4,7 @@ import axios from 'axios';
 import { AnimationHero } from '../../components/AnimationHero';
 import { Navbar } from '../../components/Navbar';
 import { Header } from '../../components/Sections/Header';
-import { Team } from '../../components/Team';
+import { Team } from '../../components/Sections/Team';
 import logo from '../../assets/logos/luna-icon-inverted-color.svg';
 import data from '../../assets/data/data.json';
 import { ClientLogos } from '../../components/Sections/ClientLogos';

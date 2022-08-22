@@ -2,7 +2,7 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core';
 import {
   desktopBreakpoint,
   ipadBreakpoint,
-} from '../../utils/screenSizeBreakpoints';
+} from '../../../../utils/screenSizeBreakpoints';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
