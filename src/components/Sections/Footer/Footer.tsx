@@ -52,7 +52,7 @@ export const Footer = ({ data }: IFooter) => {
                 </motion.div>
               </Link>
               <Link
-                href={'https://www.instagram.com/lunacreatives.se/?hl=en'}
+                href={data.urls.instagramUrl}
                 className={classes.socialIcon}
               >
                 <motion.div
@@ -88,10 +88,7 @@ export const Footer = ({ data }: IFooter) => {
                   </Typography>
                 </motion.div>
               </Link>
-              <Link
-                href={'https://www.linkedin.com/company/lunacreatives/'}
-                className={classes.socialIcon}
-              >
+              <Link href={data.urls.linkedInUrl} className={classes.socialIcon}>
                 <motion.div
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 1.2 }}

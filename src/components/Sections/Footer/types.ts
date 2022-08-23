@@ -7,5 +7,10 @@ export interface IFooter {
     phoneNumber: string;
     addressLink: string;
     copyRights: string;
+    urls: {
+      addressUrl: string;
+      linkedInUrl: string;
+      instagramUrl: string;
+    };
   };
 }
