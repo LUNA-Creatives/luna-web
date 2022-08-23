@@ -15,7 +15,7 @@ export const AnimationHero = () => {
     lottie.loadAnimation({
       container: document.querySelector(`#${animationId}`) as Element,
       renderer: 'svg',
-      loop: true,
+      loop: false,
       autoplay: true,
       animationData: animation,
     });

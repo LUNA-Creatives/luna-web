@@ -13,12 +13,14 @@ export default makeStyles((theme: Theme) =>
       justifyContent: 'center',
     },
     animationBox: {
+      width: '100vw',
       [theme.breakpoints.up(ipadBreakpoint)]: {
         display: 'flex',
         justifyContent: 'center',
       },
     },
     animation: {
+      width: '100%',
       [theme.breakpoints.up(ipadBreakpoint)]: {
         maxWidth: '50%',
       },
