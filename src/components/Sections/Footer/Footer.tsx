@@ -36,14 +36,20 @@ export const Footer = ({ data }: IFooter) => {
                 href={data.addressLink}
                 variant={'body1'}
               >
-                <Icon
-                  width={30}
-                  className={classes.icon}
-                  icon="ic:outline-place"
-                />
-                <Typography className={classes.text}>
-                  {data.location}
-                </Typography>
+                <motion.div
+                  className={classes.iconBox}
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 1.2 }}
+                >
+                  <Icon
+                    width={30}
+                    className={classes.icon}
+                    icon="ic:outline-place"
+                  />
+                  <Typography className={classes.text}>
+                    {data.location}
+                  </Typography>
+                </motion.div>
               </Link>
               <Link
                 href={'https://www.instagram.com/lunacreatives.se/?hl=en'}
@@ -67,14 +73,20 @@ export const Footer = ({ data }: IFooter) => {
                 href={phoneCall}
                 variant={'body1'}
               >
-                <Icon
-                  className={classes.icon}
-                  icon="ant-design:phone-outlined"
-                  width={30}
-                />
-                <Typography className={classes.text}>
-                  {data.phoneNumber}
-                </Typography>
+                <motion.div
+                  className={classes.iconBox}
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 1.2 }}
+                >
+                  <Icon
+                    className={classes.icon}
+                    icon="ant-design:phone-outlined"
+                    width={30}
+                  />
+                  <Typography className={classes.text}>
+                    {data.phoneNumber}
+                  </Typography>
+                </motion.div>
               </Link>
               <Link
                 href={'https://www.linkedin.com/company/lunacreatives/'}

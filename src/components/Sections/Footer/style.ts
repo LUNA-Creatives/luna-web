@@ -57,10 +57,6 @@ export default makeStyles((theme: Theme) =>
         width: '50v%',
       },
     },
-    align: {
-      display: 'flex',
-      alignItems: 'center',
-    },
     gridContainer: {
       height: '100%',
       display: 'flex',
