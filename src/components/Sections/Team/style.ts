@@ -2,12 +2,9 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
-    root: {
-      backgroundColor: 'black',
-    },
-
+    root: {},
     container: {
-      padding: 10,
+      maxWidth: 1600,
     },
     cardContainer: {
       display: 'flex',
@@ -16,8 +13,6 @@ export default makeStyles((theme: Theme) =>
       width: '100%',
     },
     headline: {
-      color: 'white',
-
       paddingBottom: 50,
 
       [theme.breakpoints.up('lg')]: {
