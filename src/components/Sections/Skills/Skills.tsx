@@ -9,13 +9,17 @@ export const Skills = ({ skills }: ISkills) => {
   return (
     <Grid className={classes.root}>
       <Grid className={classes.container}>
-        <Container>
-          <Typography className={classes.heading} variant="h2">
+        <Container className={classes.box}>
+          <Typography className={classes.heading} variant="h1">
             {skills.heading}
           </Typography>
           <Box className={classes.flexbox}>
             {skills.skills.map((text, index) => (
-              <Typography key={index} variant={'body1'} className={classes.box}>
+              <Typography
+                key={index}
+                variant={'body1'}
+                className={classes.text}
+              >
                 {text}
               </Typography>
             ))}

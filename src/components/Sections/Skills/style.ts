@@ -3,14 +3,15 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core';
 export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      backgroundColor: 'black',
       paddingBottom: 100,
       paddingTop: 100,
     },
     container: {
       paddingBottom: 100,
       paddingTop: 100,
-      color: 'white',
+    },
+    box: {
+      maxWidth: 1600,
     },
     heading: {
       paddingBottom: '5%',
@@ -21,7 +22,7 @@ export default makeStyles((theme: Theme) =>
       flexWrap: 'wrap',
       justifyContent: 'space-between',
     },
-    box: {
+    text: {
       padding: 10,
     },
   })
