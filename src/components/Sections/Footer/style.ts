@@ -4,57 +4,76 @@ import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
 export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      backgroundColor: 'black',
-
       paddingTop: 100,
-      color: 'white',
     },
     container: {
       paddingTop: 100,
       paddingBottom: 100,
-
       borderTop: '0.001px solid darkgrey',
+      borderBottom: '0.001px solid darkgrey',
     },
-    heading: {
-      paddingTop: 50,
-      marginBottom: '10vh',
-      [theme.breakpoints.up(ipadBreakpoint)]: {
-        paddingTop: 100,
-      },
-    },
-    text: {
-      marginRight: 8,
-      fontWeight: 300,
-    },
-    infobox: {
-      display: 'flex',
-      flexDirection: 'column',
-    },
+
     flexbox: {
+      maxWidth: 1600,
+
       display: 'flex',
       flexDirection: 'column',
-      marginBottom: 50,
       placeContent: 'space-between',
+
       [theme.breakpoints.up(ipadBreakpoint)]: {
+        paddingTop: 150,
         display: 'flex',
         flexDirection: 'row',
         flex: 1,
-        maxWidth: '60%',
+      },
+    },
+    textBox: {
+      paddingBottom: 50,
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        width: '50vw',
       },
     },
     box: {
-      display: 'flex',
-      alignItems: 'center',
-      height: '5vh',
-    },
-    textbox: {
-      display: 'flex',
-      flexDirection: 'column',
-      height: '20vh',
-      justifyContent: 'space-around',
+      width: 'auto',
     },
     icon: {
-      marginRight: 8,
+      color: theme.palette.primary.main,
+    },
+    iconBox: {
+      display: 'flex',
+      alignItems: 'center',
+      width: '70%',
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        width: '50v%',
+      },
+      padding: 5,
+    },
+    socialIcon: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '30%',
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        width: '50v%',
+      },
+    },
+    align: {
+      display: 'flex',
+      alignItems: 'center',
+    },
+    gridContainer: {
+      height: '100%',
+      display: 'flex',
+      flexWrap: 'wrap',
+    },
+    text: {
+      color: theme.palette.primary.main,
+      padding: 20,
+      display: 'flex',
+      justifyContent: 'center',
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        justifyContent: 'right',
+      },
     },
   })
 );

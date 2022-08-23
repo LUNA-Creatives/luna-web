@@ -3,74 +3,99 @@ import { Icon } from '@iconify/react';
 
 import useStyles from './style';
 import { IFooter } from './types';
+import { motion } from 'framer-motion';
 
 export const Footer = ({ data }: IFooter) => {
   const classes = useStyles();
-
   const openEmail = `mailto:${data.emailAddress}?`;
-
   const phoneCall = `tel:${data.phoneNumber}`;
-
   return (
     <Grid className={classes.root}>
       <Grid className={classes.container}>
-        <Container>
-          <Typography className={classes.heading} variant={'h1'}>
-            {data.heading}
-          </Typography>
-          <Box className={classes.infobox}>
-            <Box className={classes.flexbox}>
-              <Link variant={'body1'} href={openEmail} className={classes.box}>
-                <Icon
-                  className={classes.icon}
-                  icon="fluent:mail-24-regular"
-                  width={18}
-                  color="white"
-                />
+        <Container className={classes.flexbox}>
+          <Box>
+            <Box className={classes.textBox}>
+              <Typography variant={'h2'}>{data.heading}</Typography>
+            </Box>
+            <Box className={classes.textBox}>
+              <Typography variant={'h5'}>
+                {data.text}
 
-                {data.emailAddress}
-              </Link>
-              <Link href={phoneCall} variant={'body1'} className={classes.box}>
-                <Icon
-                  className={classes.icon}
-                  icon="ant-design:phone-outlined"
-                  width={18}
-                  color="white"
-                />
+                <Icon icon="gridicons:arrow-right" inline={true} />
 
-                {data.phoneNumber}
-              </Link>
+                <Link underline={'always'} variant={'h5'} href={openEmail}>
+                  {data.emailAddress}
+                </Link>
+              </Typography>
+            </Box>
+          </Box>
+          <Box className={classes.box}>
+            <Grid className={classes.gridContainer}>
               <Link
+                className={classes.iconBox}
                 href={data.addressLink}
                 variant={'body1'}
-                className={classes.box}
+              >
+                <Icon
+                  width={30}
+                  className={classes.icon}
+                  icon="ic:outline-place"
+                />
+                <Typography className={classes.text}>
+                  {data.location}
+                </Typography>
+              </Link>
+              <Link
+                href={'https://www.instagram.com/lunacreatives.se/?hl=en'}
+                className={classes.socialIcon}
+              >
+                <motion.div
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 1.2 }}
+                  className={classes.icon}
+                >
+                  <Icon
+                    icon="akar-icons:instagram-fill"
+                    width={30}
+                    className={classes.icon}
+                  />
+                </motion.div>
+              </Link>
+
+              <Link
+                className={classes.iconBox}
+                href={phoneCall}
+                variant={'body1'}
               >
                 <Icon
                   className={classes.icon}
-                  icon="ic:outline-place"
-                  color="white"
+                  icon="ant-design:phone-outlined"
+                  width={30}
                 />
-
-                {data.location}
+                <Typography className={classes.text}>
+                  {data.phoneNumber}
+                </Typography>
               </Link>
-            </Box>
-            <Box className={classes.box}>
-              <Icon
-                icon="akar-icons:linkedin-fill"
-                width={18}
-                color="white"
-                className={classes.icon}
-              />
-              <Icon
-                icon="akar-icons:instagram-fill"
-                width={18}
-                color="white"
-                className={classes.icon}
-              />
-            </Box>
+              <Link
+                href={'https://www.linkedin.com/company/lunacreatives/'}
+                className={classes.socialIcon}
+              >
+                <motion.div
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 1.2 }}
+                  className={classes.icon}
+                >
+                  <Icon icon="akar-icons:linkedin-fill" width={30} />
+                </motion.div>
+              </Link>
+            </Grid>
           </Box>
         </Container>
       </Grid>
+
+      <Typography className={classes.text} variant="body2">
+        {data.copyRights}
+      </Typography>
     </Grid>
   );
 };
