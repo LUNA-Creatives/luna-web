@@ -1,9 +1,9 @@
 import { Grid, Container, Box, Typography } from '@material-ui/core';
 
 import useStyles from './style';
-import { ISkillsSection } from './types';
+import { ISkills } from './types';
 
-export const SkillsSection = ({ skillsSection }: ISkillsSection) => {
+export const Skills = ({ skills }: ISkills) => {
   const classes = useStyles();
 
   return (
@@ -11,10 +11,10 @@ export const SkillsSection = ({ skillsSection }: ISkillsSection) => {
       <Grid className={classes.container}>
         <Container>
           <Typography className={classes.heading} variant="h2">
-            {skillsSection.heading}
+            {skills.heading}
           </Typography>
           <Box className={classes.flexbox}>
-            {skillsSection.skills.map((text, index) => (
+            {skills.skills.map((text, index) => (
               <Typography key={index} variant={'body1'} className={classes.box}>
                 {text}
               </Typography>

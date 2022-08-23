@@ -6,6 +6,21 @@
   "team": {
     "headline": "Vårt team"
   },
+  "skillsn": {
+    "heading": "What we work with",
+    "skills": [
+      "ReactJS",
+      "AWS",
+      "React Native",
+      "NodeJS",
+      "GraphQL",
+      "Serverless",
+      "Serverless Cloud",
+      "Cloudflare",
+      "Expo",
+      "Netlify"
+    ]
+  },
   "footer": {
     "emailAddress": "info@lunacreatives.se",
     "heading": "Vårt kreativa team tar din idé till nästa nivå och inspirerar andra längs vägen.",

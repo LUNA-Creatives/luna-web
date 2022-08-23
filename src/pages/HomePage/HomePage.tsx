@@ -10,7 +10,7 @@ import data from '../../assets/data/data.json';
 import { ClientLogos } from '../../components/Sections/ClientLogos';
 import { logos } from '../../assets/data/logos';
 import { Footer } from '../../components/Sections/Footer';
-import { SkillsSection } from '../../components/SkillsSection';
+import { Skills } from '../../components/Skills';
 
 export const HomePage = () => {
   const [showAnimation, setShowAnimation] = useState(true);
@@ -43,7 +43,7 @@ export const HomePage = () => {
           <Header data={data.header} />
           <ClientLogos logos={logos} />
           <Team data={team} headline={data.team.headline} />
-          <SkillsSection skillsSection={constants.skillsSection} />
+          <Skills skills={data.skills} />
           <Footer data={data.footer} />
         </>
       )}
