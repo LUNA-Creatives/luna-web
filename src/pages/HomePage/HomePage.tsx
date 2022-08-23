@@ -1,16 +1,19 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import { HeaderSection } from '../../components/HeaderSection';
-import { InfoSection } from '../../components/InfoSection';
-import { TeamSection } from '../../components/TeamSection';
-import { ClientSection } from '../../components/ClientSection';
-import { constants } from '../../utils/data/constants';
-import { Footer } from '../../components/Footer';
+import { AnimationHero } from '../../components/AnimationHero';
+import { Navbar } from '../../components/Navbar';
+import { Header } from '../../components/Sections/Header';
+import { Team } from '../../components/Sections/Team';
+import logo from '../../assets/logos/luna-icon-inverted-color.svg';
+import data from '../../assets/data/data.json';
+import { ClientLogos } from '../../components/Sections/ClientLogos';
+import { logos } from '../../assets/data/logos';
+import { Footer } from '../../components/Sections/Footer';
 import { SkillsSection } from '../../components/SkillsSection';
 
 export const HomePage = () => {
-  const [showHeader, setShowHeader] = useState(true);
+  const [showAnimation, setShowAnimation] = useState(true);
   const [team, setTeam] = useState([]);
 
   const fetchAndSetUsers = async () => {
@@ -24,27 +27,24 @@ export const HomePage = () => {
 
   useEffect(() => {
     setTimeout(function () {
-      setShowHeader(false);
-    }, 7000);
+      setShowAnimation(false);
+    }, 5000);
 
     fetchAndSetUsers();
   }, []);
 
   return (
     <>
-      <HeaderSection />
-      {!showHeader && (
+      {showAnimation ? (
+        <AnimationHero />
+      ) : (
         <>
-          <InfoSection headline={constants.infoSection.headline} />
-          <ClientSection />
-          <TeamSection data={team} headline={constants.teamSection.headline} />
+          <Navbar logo={logo} />
+          <Header data={data.header} />
+          <ClientLogos logos={logos} />
+          <Team data={team} headline={data.team.headline} />
           <SkillsSection skillsSection={constants.skillsSection} />
-          <Footer
-            emailAddress={constants.footerSection.emailAddress}
-            heading={constants.footerSection.heading}
-            location={constants.footerSection.location}
-            phoneNumber={constants.footerSection.phoneNumber}
-          />
+          <Footer data={data.footer} />
         </>
       )}
     </>

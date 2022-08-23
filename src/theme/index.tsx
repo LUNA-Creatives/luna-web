@@ -11,13 +11,12 @@ import { StyledEngineProvider } from '@mui/material';
 import GlobalStyles from './globalStyles';
 
 let theme = createTheme({
-  typography: {
-    fontFamily: ['hero-new', 'sans-serif'].join(','),
-  },
   palette: {
     primary: {
-      main: '#ffffff',
-      dark: '#0000',
+      contrastText: '#ffffff',
+      light: '#f4f4f4',
+      main: '#a9a9a9',
+      dark: '#171717',
     },
     secondary: {
       light: '#67F89D',
