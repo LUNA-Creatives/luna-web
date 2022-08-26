@@ -5,9 +5,9 @@ import { ISkills } from './types';
 
 export const Skills = ({ skills }: ISkills) => {
   const classes = useStyles();
-  const techIcons = skills.icons[0].value.icons.techIcons;
-  const designIcons = skills.icons[0].value.icons.designIcons;
-  const helperIcons = skills.icons[0].value.icons.helperIcons;
+  const techIcons = skills.data[0].value.icons.techIcons;
+  const designIcons = skills.data[0].value.icons.designIcons;
+  const helperIcons = skills.data[0].value.icons.helperIcons;
 
   const sliderArray1 = techIcons.concat(techIcons);
   const sliderArray2 = designIcons.concat(designIcons);

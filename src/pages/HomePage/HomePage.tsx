@@ -36,7 +36,7 @@ export const HomePage = () => {
   };
 
   const skills = {
-    icons: icons,
+    data: icons,
     heading: data.skills.heading,
   };
   useEffect(() => {

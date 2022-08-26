@@ -1,6 +1,20 @@
 export interface ISkills {
   skills: {
     heading: string;
-    icons: any[];
+    data: Value[];
   };
 }
+
+export type Value = {
+  value: {
+    icons: {
+      techIcons: Icon[];
+      helperIcons: Icon[];
+      designIcons: Icon[];
+    };
+  };
+};
+
+export type Icon = {
+  url: string;
+};
