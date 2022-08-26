@@ -6,7 +6,10 @@ export default makeStyles((theme: Theme) =>
       paddingTop: 100,
     },
     container: {
-      paddingBottom: 150,
+      paddingBottom: 100,
+      [theme.breakpoints.up('sm')]: {
+        paddingBottom: 150,
+      },
     },
     slider: {
       overflow: 'hidden',
@@ -49,8 +52,8 @@ export default makeStyles((theme: Theme) =>
       paddingBottom: '5%',
     },
     iconBox: {
-      backgroundColor: theme.palette.primary.main,
-      borderRadius: '50%',
+      backgroundColor: '#2C2C2C',
+      borderRadius: 5,
       width: 80,
       padding: 20,
       display: 'flex',
@@ -60,6 +63,8 @@ export default makeStyles((theme: Theme) =>
       },
     },
     icon: {
+      zIndex: 1,
+      filter: `drop-shadow(0 0 0.1rem ${theme.palette.primary.dark})`,
       width: '100%',
     },
     '@keyframes scrollDesktop': {
