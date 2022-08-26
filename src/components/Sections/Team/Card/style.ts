@@ -15,14 +15,14 @@ export default makeStyles((theme: Theme) =>
       marginBottom: '2rem',
 
       [theme.breakpoints.up(ipadBreakpoint)]: {
-        width: '30%',
+        width: '22%',
       },
       [theme.breakpoints.between(desktopBreakpoint, ipadBreakpoint)]: {
         width: '45vw',
       },
     },
     textBox: {
-      color: theme.palette.primary.light,
+      color: theme.palette.primary.main,
       paddingBottom: 25,
     },
     imageBox: {
@@ -33,7 +33,7 @@ export default makeStyles((theme: Theme) =>
       marginBottom: 20,
     },
     image: {
-      boxShadow: '1px 1px 50px 2px #0d0d0f',
+      boxShadow: `1px 1px 50px 2px  black`,
       width: '100%',
       height: '100%',
       borderRadius: 5,

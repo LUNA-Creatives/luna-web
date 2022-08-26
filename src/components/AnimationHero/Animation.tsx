@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import lottie from 'lottie-web/build/player/lottie_svg';
 
 import useStyles from './style';
-import animation from '../../assets/animations/flowyAnimation.json';
+import animation from '../../assets/animations/glitchMoonAnimation.json';
 
 export const AnimationHero = () => {
   const classes = useStyles();
@@ -15,7 +15,7 @@ export const AnimationHero = () => {
     lottie.loadAnimation({
       container: document.querySelector(`#${animationId}`) as Element,
       renderer: 'svg',
-      loop: true,
+      loop: false,
       autoplay: true,
       animationData: animation,
     });
@@ -23,7 +23,16 @@ export const AnimationHero = () => {
 
   return (
     <Container className={classes.container}>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      <motion.div
+        className={classes.animationBox}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{
+          opacity: 0,
+          scale: 0,
+          transition: { duration: 3.5 },
+        }}
+      >
         <Box className={classes.animation} id={animationId} />
       </motion.div>
     </Container>

@@ -10,4 +10,6 @@ export const logos = [
   { id: 4, url: SempreInter, alt: 'SempreInter' },
   { id: 5, alt: 'We Are Women' },
   { id: 6, alt: 'Bravais Arc' },
+  { id: 7, url: SempreInter, alt: 'SempreInter' },
+  { id: 8, url: polestar, alt: 'Polestar' },
 ];

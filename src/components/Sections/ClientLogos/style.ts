@@ -3,7 +3,6 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core';
 export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      backgroundColor: 'black',
       height: '70%',
       paddingBottom: 100,
       [theme.breakpoints.up('md')]: {
@@ -16,7 +15,7 @@ export default makeStyles((theme: Theme) =>
       borderTop: '0.001px solid darkgrey',
     },
     container: {
-      color: 'white',
+      maxWidth: 1600,
       display: 'flex',
       alignItems: 'center',
       flexDirection: 'row',
@@ -24,7 +23,7 @@ export default makeStyles((theme: Theme) =>
       height: '100%',
       width: '100%',
       justifyContent: 'space-around',
-
+      color: theme.palette.primary.contrastText,
       [theme.breakpoints.up('sm')]: {
         justifyContent: 'space-between',
       },

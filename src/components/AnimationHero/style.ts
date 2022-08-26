@@ -1,4 +1,5 @@
 import { createStyles, makeStyles, Theme } from '@material-ui/core';
+import { ipadBreakpoint } from '../../utils/screenSizeBreakpoints';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
@@ -10,11 +11,19 @@ export default makeStyles((theme: Theme) =>
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-
-      backgroundColor: 'black',
+    },
+    animationBox: {
+      width: '100vw',
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        display: 'flex',
+        justifyContent: 'center',
+      },
     },
     animation: {
-      maxWidth: '100%',
+      width: '100%',
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        maxWidth: '50%',
+      },
     },
   })
 );

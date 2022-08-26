@@ -9,6 +9,8 @@ import logo from '../../assets/logos/luna-icon-inverted-color.svg';
 import data from '../../assets/data/data.json';
 import { ClientLogos } from '../../components/Sections/ClientLogos';
 import { logos } from '../../assets/data/logos';
+import { Footer } from '../../components/Sections/Footer';
+
 export const HomePage = () => {
   const [showAnimation, setShowAnimation] = useState(true);
   const [team, setTeam] = useState([]);
@@ -25,7 +27,7 @@ export const HomePage = () => {
   useEffect(() => {
     setTimeout(function () {
       setShowAnimation(false);
-    }, 7000);
+    }, 5000);
 
     fetchAndSetUsers();
   }, []);
@@ -40,6 +42,7 @@ export const HomePage = () => {
           <Header data={data.header} />
           <ClientLogos logos={logos} />
           <Team data={team} headline={data.team.headline} />
+          <Footer data={data.footer} />
         </>
       )}
     </>

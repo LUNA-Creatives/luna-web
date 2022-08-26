@@ -10,8 +10,8 @@ export const Team = ({ data, headline }: ITeam) => {
 
   return (
     <Grid className={classes.root}>
-      <Container>
-        <Typography variant="h2" className={classes.headline}>
+      <Container className={classes.container}>
+        <Typography variant="h1" className={classes.headline}>
           {headline}
         </Typography>
 
