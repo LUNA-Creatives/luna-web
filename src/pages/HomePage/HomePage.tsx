@@ -15,8 +15,9 @@ import { Skills } from '../../components/Sections/Skills';
 export const HomePage = () => {
   const [showAnimation, setShowAnimation] = useState(true);
   const [team, setTeam] = useState([]);
+  const [icons, setIcons] = useState([]);
 
-  const fetchAndSetUsers = async () => {
+  const fetchAndSetTeam = async () => {
     try {
       const { data } = await axios.get('/api/team-member');
       setTeam(data as any);
@@ -25,12 +26,26 @@ export const HomePage = () => {
     }
   };
 
+  const fetchAndSetIcons = async () => {
+    try {
+      const { data } = await axios.get('/api/icons');
+      setIcons(data as any);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  const skills = {
+    icons: icons,
+    heading: data.skills.heading,
+  };
   useEffect(() => {
     setTimeout(function () {
       setShowAnimation(false);
     }, 5000);
 
-    fetchAndSetUsers();
+    fetchAndSetTeam();
+    fetchAndSetIcons();
   }, []);
 
   return (
@@ -41,8 +56,9 @@ export const HomePage = () => {
         <>
           <Navbar logo={logo} />
           <Header data={data.header} />
+
+          <Skills skills={skills} />
           <ClientLogos logos={logos} />
-          <Skills skills={data.skills} />
           <Team data={team} headline={data.team.headline} />
           <Footer data={data.footer} />
         </>
