@@ -11,6 +11,7 @@ import { ClientLogos } from '../../components/Sections/ClientLogos';
 import { logos } from '../../assets/data/logos';
 import { Footer } from '../../components/Sections/Footer';
 import { Skills } from '../../components/Sections/Skills';
+import '../../assets/fonts/fonts.css';
 
 export const HomePage = () => {
   const [showAnimation, setShowAnimation] = useState(true);
