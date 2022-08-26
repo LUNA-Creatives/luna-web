@@ -10,7 +10,12 @@ import { StyledEngineProvider } from '@mui/material';
 
 import GlobalStyles from './globalStyles';
 
+const FONT_PRIMARY = ['futura-pt', 'sans-serif'].join(',');
+
 let theme = createTheme({
+  typography: {
+    fontFamily: FONT_PRIMARY,
+  },
   palette: {
     primary: {
       contrastText: '#ffffff',
