@@ -27,7 +27,7 @@ export const HomePage = () => {
   useEffect(() => {
     setTimeout(function () {
       setShowAnimation(false);
-    }, 5000);
+    }, 6000);
 
     fetchAndSetUsers();
   }, []);
