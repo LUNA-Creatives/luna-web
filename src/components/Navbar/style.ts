@@ -4,7 +4,7 @@ export default makeStyles((theme: Theme) =>
   createStyles({
     container: {
       position: 'fixed',
-      left: 0,
+      right: 0,
       top: 0,
       margin: 15,
 
@@ -13,6 +13,10 @@ export default makeStyles((theme: Theme) =>
 
       width: 0,
       zIndex: 1,
+    },
+    animation: {
+      padding: 0,
+      width: 150,
     },
   })
 );

@@ -1,11 +1,26 @@
-import { Container } from '@material-ui/core';
+import { useEffect } from 'react';
+import { Container, Box } from '@material-ui/core';
 import { motion } from 'framer-motion';
+import lottie from 'lottie-web/build/player/lottie_svg';
 
 import useStyles from './style';
 import { INavbar } from './types';
+import animation from '../../assets/animations/logoLoopingGlitchAnimation.json';
 
 export const Navbar = ({ logo }: INavbar) => {
   const classes = useStyles();
+
+  const animationId = 'animation';
+
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: document.querySelector(`#${animationId}`) as Element,
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      animationData: animation,
+    });
+  }, []);
 
   return (
     <Container
@@ -25,7 +40,7 @@ export const Navbar = ({ logo }: INavbar) => {
           repeatType: 'reverse',
         }}
       >
-        <img alt="logo" height={35} src={logo} />
+        <Box className={classes.animation} id={animationId} />
       </motion.div>
     </Container>
   );
