@@ -65,7 +65,6 @@ export default makeStyles((theme: Theme) =>
       flexWrap: 'wrap',
     },
     text: {
-      // color: theme.palette.primary.main,
       padding: 20,
       display: 'flex',
       justifyContent: 'center',

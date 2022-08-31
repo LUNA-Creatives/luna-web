@@ -25,7 +25,6 @@ export default makeStyles((theme: Theme) =>
       height: '100%',
       width: '100%',
       justifyContent: 'space-around',
-      // color: theme.palette.primary.contrastText,
       [theme.breakpoints.up('sm')]: {
         justifyContent: 'space-between',
       },
