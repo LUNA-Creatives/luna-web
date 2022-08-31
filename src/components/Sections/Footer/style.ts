@@ -4,6 +4,8 @@ import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
 export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
+      backgroundColor: theme.palette.primary.dark,
+      color: theme.palette.primary.main,
       paddingTop: 100,
     },
     container: {
@@ -63,7 +65,7 @@ export default makeStyles((theme: Theme) =>
       flexWrap: 'wrap',
     },
     text: {
-      color: theme.palette.primary.main,
+      // color: theme.palette.primary.main,
       padding: 20,
       display: 'flex',
       justifyContent: 'center',

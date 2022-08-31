@@ -2,7 +2,10 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
-    root: {},
+    root: {
+      backgroundColor: theme.palette.primary.dark,
+      color: theme.palette.primary.main,
+    },
     container: {
       maxWidth: 1600,
     },
