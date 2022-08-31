@@ -1,7 +1,5 @@
 import { withStyles, Theme } from '@material-ui/core';
 
-// ----------------------------------------------------------------------
-
 const GlobalStyles = withStyles((theme: Theme) => ({
   '@global': {
     '*': {
@@ -18,8 +16,6 @@ const GlobalStyles = withStyles((theme: Theme) => ({
     body: {
       width: '100%',
       height: '100%',
-      backgroundColor: theme.palette.primary.dark,
-      color: theme.palette.primary.main,
     },
     '#root': {
       width: '100%',

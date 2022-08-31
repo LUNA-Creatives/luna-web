@@ -12,6 +12,8 @@ import { logos } from '../../assets/data/logos';
 import { Footer } from '../../components/Sections/Footer';
 import { Skills } from '../../components/Sections/Skills';
 import '../../assets/fonts/fonts.css';
+import { StarrySky } from '../../components/StarrySky/StarrySky';
+
 
 export const HomePage = () => {
   const [showAnimation, setShowAnimation] = useState(true);
@@ -56,9 +58,10 @@ export const HomePage = () => {
       ) : (
         <>
           <Navbar logo={logo} />
-          <Header data={data.header} />
-
-          <Skills skills={skills} />
+          <StarrySky>
+            <Header data={data.header} />
+          </StarrySky>
+<Skills skills={skills} />
           <ClientLogos logos={logos} />
           <Team data={team} headline={data.team.headline} />
           <Footer data={data.footer} />
