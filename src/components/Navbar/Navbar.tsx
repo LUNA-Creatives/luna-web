@@ -16,7 +16,7 @@ export const Navbar = ({ logo }: INavbar) => {
     lottie.loadAnimation({
       container: document.querySelector(`#${animationId}`) as Element,
       renderer: 'svg',
-      loop: false,
+      loop: true,
       autoplay: true,
       animationData: animation,
     });
