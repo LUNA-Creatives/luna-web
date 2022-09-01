@@ -14,7 +14,6 @@ import { Skills } from '../../components/Sections/Skills';
 import '../../assets/fonts/fonts.css';
 import { StarrySky } from '../../components/StarrySky/StarrySky';
 
-
 export const HomePage = () => {
   const [showAnimation, setShowAnimation] = useState(true);
   const [team, setTeam] = useState([]);
@@ -61,7 +60,7 @@ export const HomePage = () => {
           <StarrySky>
             <Header data={data.header} />
           </StarrySky>
-<Skills skills={skills} />
+          <Skills skills={skills} />
           <ClientLogos logos={logos} />
           <Team data={team} headline={data.team.headline} />
           <Footer data={data.footer} />
