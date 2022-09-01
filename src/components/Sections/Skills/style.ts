@@ -4,6 +4,8 @@ export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
       paddingTop: 100,
+      backgroundColor: theme.palette.primary.dark,
+      color: theme.palette.primary.main,
     },
     container: {
       paddingBottom: 100,
