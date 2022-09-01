@@ -37,12 +37,10 @@ export const HomePage = () => {
     }
   };
 
-  const skills = {
-    data: icons,
-    heading: data.skills.heading,
-  };
+  const skills = { data: icons, heading: data.skills.heading };
+
   useEffect(() => {
-    setTimeout(function () {
+    setTimeout(() => {
       setShowAnimation(false);
     }, 6000);
 
@@ -60,7 +58,7 @@ export const HomePage = () => {
           <StarrySky>
             <Header data={data.header} />
           </StarrySky>
-          <Skills skills={skills} />
+          <Skills skills={skills()} />
           <ClientLogos logos={logos} />
           <Team data={team} headline={data.team.headline} />
           <Footer data={data.footer} />
