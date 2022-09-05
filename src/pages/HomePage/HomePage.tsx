@@ -11,13 +11,16 @@ import { ClientLogos } from '../../components/Sections/ClientLogos';
 import { logos } from '../../assets/data/logos';
 import { Footer } from '../../components/Sections/Footer';
 import { Vision } from '../../components/Sections/Vision';
+import { Skills } from '../../components/Sections/Skills';
+import '../../assets/fonts/fonts.css';
 import { StarrySky } from '../../components/StarrySky/StarrySky';
 
 export const HomePage = () => {
   const [showAnimation, setShowAnimation] = useState(true);
   const [team, setTeam] = useState([]);
+  const [icons, setIcons] = useState([]);
 
-  const fetchAndSetUsers = async () => {
+  const fetchAndSetTeam = async () => {
     try {
       const { data } = await axios.get('/api/team-member');
       setTeam(data as any);
@@ -26,12 +29,24 @@ export const HomePage = () => {
     }
   };
 
+  const fetchAndSetIcons = async () => {
+    try {
+      const { data } = await axios.get('/api/icons');
+      setIcons(data as any);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  const skills = { data: icons, heading: data.skills.heading };
+
   useEffect(() => {
-    setTimeout(function () {
+    setTimeout(() => {
       setShowAnimation(false);
     }, 6000);
 
-    fetchAndSetUsers();
+    fetchAndSetTeam();
+    fetchAndSetIcons();
   }, []);
 
   return (
@@ -44,6 +59,7 @@ export const HomePage = () => {
           <StarrySky>
             <Header data={data.header} />
           </StarrySky>
+          <Skills skills={skills} />
           <ClientLogos logos={logos} />
           <Vision data={data.vision} />
           <Team data={team} headline={data.team.headline} />
