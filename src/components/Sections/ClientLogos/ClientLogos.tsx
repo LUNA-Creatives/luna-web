@@ -1,13 +1,19 @@
 import { Box, Container, Grid, Typography } from '@mui/material';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, AnimatePresenceProps, motion } from 'framer-motion';
 
 import useStyles from './style';
 // import { logos } from '../../../assets/data/logos';
 import { useState, useEffect } from 'react';
 import { ILogos } from './types';
 
+interface NewAnimatePresenceProps
+  extends Omit<AnimatePresenceProps, 'children'> {
+  children: React.ReactNode;
+}
+
 export const ClientLogos = ({ logos }: ILogos) => {
   const classes = useStyles();
+  const NewAnimatePresence: React.FC<NewAnimatePresenceProps> = AnimatePresence;
 
   const evenIndex = logos.filter((logo, index) => index % 2);
   const oddIndex = logos.filter((logo) => {
@@ -37,7 +43,7 @@ export const ClientLogos = ({ logos }: ILogos) => {
         <Container className={classes.container}>
           {newLogos.map((logo: any, index: number) => (
             <Box component={'div'} className={classes.boxes} key={index}>
-              <AnimatePresence>
+              <NewAnimatePresence>
                 {showEvenIndex && (
                   <Box component={'div'} className={classes.box}>
                     {logo.url ? (
@@ -79,8 +85,8 @@ export const ClientLogos = ({ logos }: ILogos) => {
                     )}
                   </Box>
                 )}
-              </AnimatePresence>
-              <AnimatePresence>
+              </NewAnimatePresence>
+              <NewAnimatePresence>
                 {!showEvenIndex && (
                   <Box component={'div'} className={classes.box}>
                     {logo.url ? (
@@ -122,7 +128,7 @@ export const ClientLogos = ({ logos }: ILogos) => {
                     )}
                   </Box>
                 )}
-              </AnimatePresence>
+              </NewAnimatePresence>
             </Box>
           ))}
         </Container>
