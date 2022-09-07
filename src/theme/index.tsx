@@ -10,21 +10,27 @@ import { StyledEngineProvider } from '@mui/material';
 
 import GlobalStyles from './globalStyles';
 
+const FONT_PRIMARY = ['futura-pt', 'sans-serif'].join(',');
+
 let theme = createTheme({
+  typography: {
+    fontFamily: FONT_PRIMARY,
+  },
   palette: {
     primary: {
       contrastText: '#ffffff',
-      light: '#f4f4f4',
-      main: '#a9a9a9',
+      light: '#6CCFF6',
+      main: '#F0F9FE',
       dark: '#171717',
     },
     secondary: {
-      light: '#67F89D',
-      main: '#6CCFF6',
-      dark: '#798DF7',
+      light: '#B85D69',
+      main: '#EBCDC3',
+      dark: '#6E9075',
     },
   },
 });
+
 theme = responsiveFontSizes(theme);
 
 type ThemeConfigProps = {
