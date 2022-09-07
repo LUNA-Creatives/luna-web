@@ -10,6 +10,7 @@ import data from '../../assets/data/data.json';
 import { ClientLogos } from '../../components/Sections/ClientLogos';
 import { logos } from '../../assets/data/logos';
 import { Footer } from '../../components/Sections/Footer';
+import { Vision } from '../../components/Sections/Vision';
 import { Skills } from '../../components/Sections/Skills';
 import '../../assets/fonts/fonts.css';
 import { StarrySky } from '../../components/StarrySky/StarrySky';
@@ -60,6 +61,7 @@ export const HomePage = () => {
           </StarrySky>
           <Skills skills={skills} />
           <ClientLogos logos={logos} />
+          <Vision data={data.vision} />
           <Team data={team} headline={data.team.headline} />
           <Footer data={data.footer} />
         </>
