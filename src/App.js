@@ -1,4 +1,4 @@
-import { ThemeConfig } from './theme';
+import { ThemeConfig } from './theme/ThemeConfig';
 import { HomePage } from './pages/HomePage';
 
 const App = () => {

@@ -14,6 +14,7 @@ import { Vision } from '../../components/Sections/Vision';
 import { Skills } from '../../components/Sections/Skills';
 import '../../assets/fonts/fonts.css';
 import { StarrySky } from '../../components/StarrySky/StarrySky';
+import { ThreeCanvas } from '../../components/ThreeCanvas';
 
 export const HomePage = () => {
   const [showAnimation, setShowAnimation] = useState(true);
@@ -59,6 +60,7 @@ export const HomePage = () => {
           <StarrySky>
             <Header data={data.header} />
           </StarrySky>
+          <ThreeCanvas />
           <Skills skills={skills} />
           <ClientLogos logos={logos} />
           <Vision data={data.vision} />

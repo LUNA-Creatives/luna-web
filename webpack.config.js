@@ -8,6 +8,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
   },
+  mode: 'development',
   output: {
     filename: '[name].js',
     chunkFilename: '[id].js',

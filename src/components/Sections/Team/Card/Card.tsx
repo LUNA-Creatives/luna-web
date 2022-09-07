@@ -1,5 +1,4 @@
-import { useMediaQuery } from '@material-ui/core';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useMediaQuery } from '@mui/material';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -27,7 +26,7 @@ export const Card = ({ name, role, profileImage, gif }: ICard) => {
   const isDesktop = useMediaQuery(`(min-width:${ipadBreakpoint}px)`);
   const ProfileCard = (
     <>
-      <Box className={classes.imageBox}>
+      <Box component={'div'} className={classes.imageBox}>
         <motion.img
           ref={ref}
           variants={variants}
@@ -45,7 +44,7 @@ export const Card = ({ name, role, profileImage, gif }: ICard) => {
           src={profileImage}
         />
       </Box>
-      <Box className={classes.textBox}>
+      <Box component={'div'} className={classes.textBox}>
         <Typography variant={'h6'}>{name}</Typography>
         <Typography variant={'body1'}>{role}</Typography>
       </Box>
@@ -53,6 +52,7 @@ export const Card = ({ name, role, profileImage, gif }: ICard) => {
   );
   return isDesktop ? (
     <Box
+      component={'div'}
       className={classes.container}
       onMouseOver={() => controls.start('visible')}
       onMouseLeave={() => controls.start('hidden')}
@@ -61,7 +61,9 @@ export const Card = ({ name, role, profileImage, gif }: ICard) => {
     </Box>
   ) : (
     <motion.div onPanStart={() => controls.start('visible')}>
-      <Box className={classes.container}>{ProfileCard}</Box>
+      <Box component={'div'} className={classes.container}>
+        {ProfileCard}
+      </Box>
     </motion.div>
   );
 };
