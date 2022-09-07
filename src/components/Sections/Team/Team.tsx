@@ -1,4 +1,4 @@
-import { Grid, Typography, Box, Container } from '@material-ui/core';
+import { Grid, Typography, Box, Container } from '@mui/material';
 
 import { Card } from './Card';
 import { ICard } from './Card/types';
@@ -15,7 +15,7 @@ export const Team = ({ data, headline }: ITeam) => {
           {headline}
         </Typography>
 
-        <Box className={classes.cardContainer}>
+        <Box component={'div'} className={classes.cardContainer}>
           {data.map((team: { value: ICard }, index: string) => (
             <Card
               key={index}

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Container, Box } from '@material-ui/core';
+import { Container, Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import lottie from 'lottie-web/build/player/lottie_svg';
 
@@ -40,7 +40,7 @@ export const Navbar = ({ logo }: INavbar) => {
           repeatType: 'reverse',
         }}
       >
-        <Box className={classes.animation} id={animationId} />
+        <Box component={'div'} className={classes.animation} id={animationId} />
       </motion.div>
     </Container>
   );

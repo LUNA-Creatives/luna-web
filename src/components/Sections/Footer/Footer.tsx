@@ -1,4 +1,4 @@
-import { Link, Grid, Container, Typography, Box } from '@material-ui/core';
+import { Link, Grid, Container, Typography, Box } from '@mui/material';
 import { Icon } from '@iconify/react';
 
 import useStyles from './style';
@@ -13,11 +13,11 @@ export const Footer = ({ data }: IFooter) => {
     <Grid className={classes.root}>
       <Grid className={classes.container}>
         <Container className={classes.flexbox}>
-          <Box>
-            <Box className={classes.textBox}>
+          <Box component={'div'}>
+            <Box component={'div'} className={classes.textBox}>
               <Typography variant={'h2'}>{data.heading}</Typography>
             </Box>
-            <Box className={classes.textBox}>
+            <Box component={'div'} className={classes.textBox}>
               <Typography variant={'h5'}>
                 {data.text}
 
@@ -29,7 +29,7 @@ export const Footer = ({ data }: IFooter) => {
               </Typography>
             </Box>
           </Box>
-          <Box className={classes.box}>
+          <Box component={'div'} className={classes.box}>
             <Grid className={classes.gridContainer}>
               <Link
                 className={classes.iconBox}

@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from '@material-ui/core';
+import { Box, Container, Grid, Typography } from '@mui/material';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import useStyles from './style';
@@ -36,10 +36,10 @@ export const ClientLogos = ({ logos }: ILogos) => {
       <Grid className={classes.border}>
         <Container className={classes.container}>
           {newLogos.map((logo: any, index: number) => (
-            <Box className={classes.boxes} key={index}>
+            <Box component={'div'} className={classes.boxes} key={index}>
               <AnimatePresence>
                 {showEvenIndex && (
-                  <Box className={classes.box}>
+                  <Box component={'div'} className={classes.box}>
                     {logo.url ? (
                       <motion.img
                         className={classes.logoContainer}
@@ -82,7 +82,7 @@ export const ClientLogos = ({ logos }: ILogos) => {
               </AnimatePresence>
               <AnimatePresence>
                 {!showEvenIndex && (
-                  <Box className={classes.box}>
+                  <Box component={'div'} className={classes.box}>
                     {logo.url ? (
                       <motion.img
                         className={classes.logoContainer}
