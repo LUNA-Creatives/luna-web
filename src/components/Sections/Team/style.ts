@@ -21,7 +21,7 @@ export default makeStyles((theme: Theme) =>
 
       [theme.breakpoints.up('lg')]: {
         textAlign: 'left',
-        paddingBottom: '10%',
+        paddingBottom: '5%',
       },
     },
   })

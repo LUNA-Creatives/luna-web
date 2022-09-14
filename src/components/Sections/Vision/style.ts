@@ -19,6 +19,9 @@ export default makeStyles((theme: Theme) =>
     },
     headline: {
       paddingBottom: 50,
+      [theme.breakpoints.up('lg')]: {
+        paddingBottom: '5%',
+      },
     },
     grid: {
       position: 'relative',
