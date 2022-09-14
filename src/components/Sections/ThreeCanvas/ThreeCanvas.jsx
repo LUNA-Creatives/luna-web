@@ -25,7 +25,7 @@ export const ThreeCanvas = () => {
             <Model url={'iphone/scene.gltf'} position={[5, -1, 10]}  scale={0.01} clock={'-0.3'}/>
             <Model url={'macbook/scene.gltf'} position={[10, 4, -2]}  scale={0.9} clock={'0.2'}/>
             <Model url={'ipad/scene.gltf'} position={[-10, 0, -6]} scale={8.8} clock={'0.3'}/>
-            <Model url={'astronaut.glb'} position={[-7, -5, 8]}   scale={0.01} clock={'0.2'}/>
+            <Model url={'astronaut/scene.gltf'} position={[-7, -5, 8]}   scale={0.01} clock={'0.2'}/>
           <Stars radius={500} depth={50} count={2000} factor={10}/>   
           </Suspense>
           <OrbitControls autoRotate autoRotateSpeed={1} enablePan={false} enableRotate={false} enableZoom={false}/>
