@@ -1,4 +1,6 @@
-import { createStyles, makeStyles, Theme } from '@material-ui/core';
+import { createStyles, makeStyles } from '@mui/styles';
+import { Theme } from '@mui/material/styles';
+
 import { ipadBreakpoint } from '../../utils/screenSizeBreakpoints';
 
 export default makeStyles((theme: Theme) =>
