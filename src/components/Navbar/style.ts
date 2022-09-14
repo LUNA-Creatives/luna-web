@@ -1,4 +1,5 @@
-import { createStyles, makeStyles, Theme } from '@material-ui/core';
+import { createStyles, makeStyles } from '@mui/styles';
+import { Theme } from '@mui/material/styles';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
@@ -12,7 +13,7 @@ export default makeStyles((theme: Theme) =>
       justifyContent: 'center',
 
       width: 0,
-      zIndex: 1,
+      zIndex: 9999,
     },
     animation: {
       padding: 0,

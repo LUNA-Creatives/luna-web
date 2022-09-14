@@ -1,4 +1,4 @@
-import { Container, Box, Typography, Grid } from '@material-ui/core';
+import { Container, Box, Typography, Grid } from '@mui/material';
 
 import useStyles from './style';
 import { ISkills } from './types';
@@ -21,33 +21,33 @@ export const Skills = ({ skills }: ISkills) => {
             {skills.heading}
           </Typography>
         </Container>
-        <Box className={classes.slider}>
-          <Box className={classes.slideTrack}>
+        <Box component={'div'} className={classes.slider}>
+          <Box component={'div'} className={classes.slideTrack}>
             {sliderArray1.map((icon: any, index: number) => (
-              <Box key={index} className={classes.slide}>
-                <Box className={classes.iconBox}>
+              <Box component={'div'} key={index} className={classes.slide}>
+                <Box component={'div'} className={classes.iconBox}>
                   <img className={classes.icon} src={icon.url} alt={icon.alt} />
                 </Box>
               </Box>
             ))}
           </Box>
         </Box>
-        <Box className={classes.slider}>
-          <Box className={classes.slideTrackUneven}>
+        <Box component={'div'} className={classes.slider}>
+          <Box component={'div'} className={classes.slideTrackUneven}>
             {sliderArray2.map((icon: any, index: number) => (
-              <Box key={index} className={classes.slide}>
-                <Box className={classes.iconBox}>
+              <Box component={'div'} key={index} className={classes.slide}>
+                <Box component={'div'} className={classes.iconBox}>
                   <img className={classes.icon} src={icon.url} alt={icon.alt} />
                 </Box>
               </Box>
             ))}
           </Box>
         </Box>
-        <Box className={classes.slider}>
-          <Box className={classes.slideTrack}>
+        <Box component={'div'} className={classes.slider}>
+          <Box component={'div'} className={classes.slideTrack}>
             {sliderArray3.map((icon: any, index: number) => (
-              <Box key={index} className={classes.slide}>
-                <Box className={classes.iconBox}>
+              <Box component={'div'} key={index} className={classes.slide}>
+                <Box component={'div'} className={classes.iconBox}>
                   <img className={classes.icon} src={icon.url} alt={icon.alt} />
                 </Box>
               </Box>

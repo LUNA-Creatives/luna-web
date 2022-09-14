@@ -1,4 +1,5 @@
-import { createStyles, makeStyles, Theme } from '@material-ui/core';
+import { createStyles, makeStyles } from '@mui/styles';
+import { Theme } from '@mui/material/styles';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
@@ -20,7 +21,7 @@ export default makeStyles((theme: Theme) =>
 
       [theme.breakpoints.up('lg')]: {
         textAlign: 'left',
-        paddingBottom: '10%',
+        paddingBottom: '5%',
       },
     },
   })

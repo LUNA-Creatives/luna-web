@@ -1,13 +1,19 @@
-import { Box, Container, Grid, Typography } from '@material-ui/core';
-import { AnimatePresence, motion } from 'framer-motion';
+import { Box, Container, Grid, Typography } from '@mui/material';
+import { AnimatePresence, AnimatePresenceProps, motion } from 'framer-motion';
 
 import useStyles from './style';
 // import { logos } from '../../../assets/data/logos';
 import { useState, useEffect } from 'react';
 import { ILogos } from './types';
 
+interface NewAnimatePresenceProps
+  extends Omit<AnimatePresenceProps, 'children'> {
+  children: React.ReactNode;
+}
+
 export const ClientLogos = ({ logos }: ILogos) => {
   const classes = useStyles();
+  const NewAnimatePresence: React.FC<NewAnimatePresenceProps> = AnimatePresence;
 
   const evenIndex = logos.filter((logo, index) => index % 2);
   const oddIndex = logos.filter((logo) => {
@@ -36,10 +42,10 @@ export const ClientLogos = ({ logos }: ILogos) => {
       <Grid className={classes.border}>
         <Container className={classes.container}>
           {newLogos.map((logo: any, index: number) => (
-            <Box className={classes.boxes} key={index}>
-              <AnimatePresence>
+            <Box component={'div'} className={classes.boxes} key={index}>
+              <NewAnimatePresence>
                 {showEvenIndex && (
-                  <Box className={classes.box}>
+                  <Box component={'div'} className={classes.box}>
                     {logo.url ? (
                       <motion.img
                         className={classes.logoContainer}
@@ -79,10 +85,10 @@ export const ClientLogos = ({ logos }: ILogos) => {
                     )}
                   </Box>
                 )}
-              </AnimatePresence>
-              <AnimatePresence>
+              </NewAnimatePresence>
+              <NewAnimatePresence>
                 {!showEvenIndex && (
-                  <Box className={classes.box}>
+                  <Box component={'div'} className={classes.box}>
                     {logo.url ? (
                       <motion.img
                         className={classes.logoContainer}
@@ -122,7 +128,7 @@ export const ClientLogos = ({ logos }: ILogos) => {
                     )}
                   </Box>
                 )}
-              </AnimatePresence>
+              </NewAnimatePresence>
             </Box>
           ))}
         </Container>

@@ -16,12 +16,12 @@ export const Vision = ({ data }: IVision) => {
           {data.headline}
         </Typography>
         <Grid container item xs={12}>
-          <Grid xs={12} className={classes.flexContainer}>
-            <Box className={classes.textBox}>
+          <Grid item xs={12} className={classes.flexContainer}>
+            <Box component={'div'} className={classes.textBox}>
               <Typography variant={'h3'}>{data.vision.headline}</Typography>
               <Typography variant={'h6'}> {data.vision.body}</Typography>
             </Box>
-            <Box width={'60%'} sx={{ width: '100%' }}>
+            <Box component={'div'} width={'60%'} sx={{ width: '100%' }}>
               <img
                 className={classes.image}
                 src={discussion}
@@ -30,8 +30,8 @@ export const Vision = ({ data }: IVision) => {
               />
             </Box>
           </Grid>
-          <Grid xs={12} className={classes.flexContainer}>
-            <Box width={'90%'} sx={{ width: '100%' }}>
+          <Grid item xs={12} className={classes.flexContainer}>
+            <Box component={'div'} width={'90%'} sx={{ width: '100%' }}>
               <img
                 className={classes.image}
                 src={lunaTeam}
@@ -39,7 +39,7 @@ export const Vision = ({ data }: IVision) => {
                 loading="lazy"
               />
             </Box>
-            <Box className={classes.textBox}>
+            <Box component={'div'} className={classes.textBox}>
               <Typography variant={'h3'}>
                 {data.mission.punchline.first}
               </Typography>
@@ -51,12 +51,12 @@ export const Vision = ({ data }: IVision) => {
               </Typography>
             </Box>
           </Grid>
-          <Grid xs={12} className={classes.flexContainer}>
-            <Box className={classes.textBox}>
+          <Grid item xs={12} className={classes.flexContainer}>
+            <Box component={'div'} className={classes.textBox}>
               <Typography variant={'h3'}>{data.mission.headline}</Typography>
               <Typography variant={'h6'}> {data.mission.body}</Typography>
             </Box>
-            <Box sx={{ width: '100%' }} width={'60%'}>
+            <Box component={'div'} sx={{ width: '100%' }} width={'60%'}>
               <img
                 className={classes.image}
                 src={happy}

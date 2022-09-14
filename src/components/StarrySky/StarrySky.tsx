@@ -1,4 +1,4 @@
-import { Grid } from '@material-ui/core';
+import { Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useCallback, useEffect, useState } from 'react';
 import { useResizeDetector } from 'react-resize-detector';

@@ -1,14 +1,15 @@
-import { createStyles, makeStyles, Theme } from '@material-ui/core';
+import { createStyles, makeStyles } from '@mui/styles';
+import { Theme } from '@mui/material/styles';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
       backgroundColor: theme.palette.primary.dark,
       color: theme.palette.primary.main,
-      height: '70%',
+      height: 500,
       paddingBottom: 100,
       [theme.breakpoints.up('md')]: {
-        height: '50%',
+        height: 400,
       },
     },
     border: {

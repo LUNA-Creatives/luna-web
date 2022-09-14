@@ -3,12 +3,9 @@ import { ReactNode } from 'react';
 import {
   createTheme,
   ThemeProvider,
-  CssBaseline,
   responsiveFontSizes,
-} from '@material-ui/core';
-import { StyledEngineProvider } from '@mui/material';
-
-import GlobalStyles from './globalStyles';
+} from '@mui/material/styles';
+import { CssBaseline, StyledEngineProvider } from '@mui/material';
 
 const FONT_PRIMARY = ['futura-pt', 'sans-serif'].join(',');
 
@@ -42,7 +39,6 @@ export const ThemeConfig = ({ children }: ThemeConfigProps) => {
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <GlobalStyles />
         {children}
       </ThemeProvider>
     </StyledEngineProvider>

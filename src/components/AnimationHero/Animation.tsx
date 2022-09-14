@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Box, Container } from '@material-ui/core';
+import { Box, Container } from '@mui/material';
 import { motion } from 'framer-motion';
 import lottie from 'lottie-web/build/player/lottie_svg';
 
@@ -33,7 +33,7 @@ export const AnimationHero = () => {
           transition: { duration: 3.5 },
         }}
       >
-        <Box className={classes.animation} id={animationId} />
+        <Box component={'div'} className={classes.animation} id={animationId} />
       </motion.div>
     </Container>
   );

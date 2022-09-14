@@ -1,4 +1,4 @@
-import { Grid, Container, Typography } from '@material-ui/core';
+import { Grid, Container, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 
 import useStyles from './style';
