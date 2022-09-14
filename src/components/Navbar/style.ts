@@ -13,7 +13,7 @@ export default makeStyles((theme: Theme) =>
       justifyContent: 'center',
 
       width: 0,
-      zIndex: 1,
+      zIndex: 9999,
     },
     animation: {
       padding: 0,
