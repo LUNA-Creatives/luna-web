@@ -11,8 +11,6 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "@types/express": "^4.17.13",
-    "@types/lodash": "^4.14.184",
     "@types/node": "^17.0.21",
     "@types/three": "0.141.0",
     "axios": "^0.23.0",
@@ -22,8 +20,7 @@
     "react-scripts": "5.0.1",
     "three": "0.140.2",
     "typescript": "^4.7.4",
-    "web-vitals": "^1.0.1",
-    "webpack": "^5.74.0"
+    "web-vitals": "^1.0.1"
   },
   "serverless": {
     "app": "luna-web",
@@ -56,17 +53,11 @@
     ]
   },
   "dependencies": {
-    "@apollo/client": "^3.6.9",
-    "@material-ui/core": "^4.12.4",
     "@mui/material": "^5.10.0",
     "@mui/styles": "^5.9.3",
     "@types/express": "^4.17.13",
     "@types/jest": "^28.1.6",
-    "apollo-server-express": "^3.7.0",
-    "express": "^4.18.1",
     "framer-motion": "^4.1.17",
-    "graphql": "^16.5.0",
-    "lodash": "^4.17.21",
     "lottie-web": "^5.9.6",
     "react-intersection-observer": "^9.4.0",
     "react-resize-detector": "^7.1.2"
