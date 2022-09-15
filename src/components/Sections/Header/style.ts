@@ -3,11 +3,8 @@ import { Theme } from '@mui/material/styles';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
-    root: {
-      backgroundColor: theme.palette.primary.dark,
-    },
+    root: {},
     container: {
-      paddingTop: 30,
       height: '90vh',
       maxWidth: 1600,
       display: 'flex',
@@ -16,9 +13,8 @@ export default makeStyles((theme: Theme) =>
       flexDirection: 'row',
     },
     headline: {
-      background: `-webkit-linear-gradient(45deg,  ${theme.palette.secondary.dark}, ${theme.palette.secondary.main} 50%, ${theme.palette.secondary.light} 99%)`,
-      '-webkit-background-clip': 'text',
-      '-webkit-text-fill-color': 'transparent',
+      fontWeight: 600,
+      color: theme.palette.primary.light,
     },
   })
 );

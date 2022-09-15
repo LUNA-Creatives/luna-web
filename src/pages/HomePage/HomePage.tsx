@@ -58,9 +58,9 @@ export const HomePage = () => {
         <>
           <Navbar logo={logo} />
           {/* <StarrySky>
-            <Header data={data.header} />
+           <Header data={data.header} />
           </StarrySky> */}
-          <ThreeCanvas />
+          <ThreeCanvas data={data.header} />
           <Skills skills={skills} />
           <ClientLogos logos={logos} />
           <Vision data={data.vision} />

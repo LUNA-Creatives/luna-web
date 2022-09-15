@@ -2,7 +2,6 @@ import { Grid, Container, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 
 import useStyles from './style';
-
 import { IHeader } from './types';
 
 export const Header = ({ data }: IHeader) => {

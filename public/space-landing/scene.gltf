@@ -108,10 +108,10 @@
   ],
   "images": [
     {
-      "uri": "textures/scene_baseColor.png"
+      "uri": "textures/scene_baseColor2.png"
     },
     {
-      "uri": "textures/scene_emissive.png"
+      "uri": "textures/scene_emissive2.png"
     }
   ],
   "materials": [
