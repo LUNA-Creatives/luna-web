@@ -15,8 +15,6 @@ jobs:
     # needs: build
     runs-on: ubuntu-latest
     environment: production
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
     steps:
       - run: npm run npm:build
       - run: npm run npm:dev
