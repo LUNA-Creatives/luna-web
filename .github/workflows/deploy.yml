@@ -22,5 +22,5 @@ jobs:
           node-version: v14
       - uses: actions/checkout@v2.1.0
       - run: npm install --legacy-peer-deps
-      - run: npm run npm:build
-      - run: npm run npm:deploy
+      - run: npm run cloud:build
+      - run: npm run deploy
