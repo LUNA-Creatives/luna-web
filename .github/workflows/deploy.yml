@@ -16,7 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      - run: npm install --legacy-peer-deps
       - run: cloud run build
       - run: cloud dev
       - run: cloud deploy dev
