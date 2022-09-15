@@ -23,5 +23,4 @@ jobs:
       - uses: actions/checkout@v2.1.0
       - run: npm install --legacy-peer-deps
       - run: npm run npm:build
-      - run: npm run npm:dev
       - run: npm run npm:deploy
