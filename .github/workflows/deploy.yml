@@ -8,7 +8,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      SERVERLESS_ACCESS_KEY: ${{ parameters.SERVERLESS_ACCESS_KEY }}
+      SERVERLESS_ACCESS_KEY: ${{ secret.SERVERLESS_ACCESS_KEY }}
     environment: production
     steps:
       - uses: actions/checkout@v2
