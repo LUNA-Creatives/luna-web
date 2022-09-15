@@ -11,8 +11,8 @@ jobs:
       SERVERLESS_ACCESS_KEY: ${{ secrets.GITHUB_TOKEN }}
     environment: production
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: v14
       - run: npm install --legacy-peer-deps
