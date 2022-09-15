@@ -16,6 +16,11 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: v14
+      - uses: actions/checkout@v2.1.0
       - run: npm run npm:build
       - run: npm run npm:dev
       - run: npm run npm:deploy
