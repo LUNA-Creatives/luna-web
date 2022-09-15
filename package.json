@@ -32,7 +32,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cloud:dev": "react-scripts start",
-    "cloud:build": "BUILD_PATH='./static' react-scripts build"
+    "cloud:build": "BUILD_PATH='./static' react-scripts build",
+    "deploy": "cloud deploy dev",
+    "npm:build": "cloud run build",
+    "npm:dev": "cloud dev",
+    "npm:deploy": "cloud run deploy"
   },
   "eslintConfig": {
     "extends": [
