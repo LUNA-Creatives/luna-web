@@ -1,0 +1,22 @@
+name: Deploy (luna web)
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  # build:
+  #   runs-on: macos-latest
+  #   environment: production
+  #   steps:
+  #     - run: npm install --legacy-peer-deps
+  #     - run: cloud run build
+  deploy:
+    # needs: build
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - run: npm install --legacy-peer-deps
+      - run: cloud run build
+      - run: cloud dev
+      - run: cloud deploy dev
