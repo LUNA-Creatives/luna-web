@@ -24,7 +24,7 @@ export default makeStyles((theme: Theme) =>
       display: 'flex',
       width: 'calc(150px * 14)',
       [theme.breakpoints.up('sm')]: {
-        width: 'calc(250px * 14)',
+        width: 'calc(14vw * 14)',
         animation: '$scrollDesktop 80s linear infinite',
       },
     },
@@ -34,8 +34,8 @@ export default makeStyles((theme: Theme) =>
       width: 'calc(150px * 14)',
       marginLeft: 75,
       [theme.breakpoints.up('sm')]: {
-        marginLeft: 125,
-        width: 'calc(250px * 14)',
+        marginLeft: '7vw',
+        width: 'calc(14vw * 14)',
         animation: '$scrollDesktop 80s linear infinite',
       },
     },
@@ -46,6 +46,7 @@ export default makeStyles((theme: Theme) =>
 
       [theme.breakpoints.up('sm')]: {
         margin: 50,
+        width: '14vw',
       },
     },
     box: {
