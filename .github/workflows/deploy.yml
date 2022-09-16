@@ -20,7 +20,6 @@ jobs:
       - run: npm install --legacy-peer-deps
       - run: npm run cloud:build
       - run: npm run deploy
-      serverless/github-action@v3.1
   deploy-prod:
     name: deploy-prod
     runs-on: ubuntu-latest
