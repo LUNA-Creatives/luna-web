@@ -26,7 +26,7 @@ jobs:
     steps:
       - uses: trstringer/manual-approval@v1
         with:
-          secret: ${{ secrets.SERVERLESS_ACCESS_KEY }}
-          approvers: trstringer,acdunnigan
+          secret: ${{ github.TOKEN }}
+          approvers: fannymartensson
       - name: Deploy to production
         run: npm install --legacy-peer-deps
