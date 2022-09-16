@@ -9,7 +9,7 @@ jobs:
     name:
     runs-on: ubuntu-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.SERVERLESS_ACCESS_KEY }}
+      SERVERLESS_ACCESS_KEY: ${{ secrets.GITHUB_TOKEN }}
     environment: production
     steps:
       - uses: actions/checkout@v3
