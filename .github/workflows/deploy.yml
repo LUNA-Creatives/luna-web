@@ -22,8 +22,6 @@ jobs:
   deploy-prod:
     name: deploy-prod
     runs-on: ubuntu-latest
-    env:
-      SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
     needs: deploy-dev
     steps:
       - uses: trstringer/manual-approval@v1
@@ -31,6 +29,4 @@ jobs:
           secret: ${{ secrets.SERVERLESS_ACCESS_KEY }}
           approvers: trstringer,acdunnigan
       - name: Deploy to production
-      - run: npm install --legacy-peer-deps
-      - run: npm run cloud:build
-      - run: npm run deploy
+        run: npm install --legacy-peer-deps
