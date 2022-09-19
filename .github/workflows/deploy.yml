@@ -6,7 +6,7 @@ on:
       - master
 jobs:
   deploy-dev:
-    name: Deploy dev
+    name: Deploy to dev
     runs-on: ubuntu-latest
     environment: development
     env:
@@ -19,10 +19,12 @@ jobs:
       - run: npm install --legacy-peer-deps
       - run: npx @serverless/cloud deploy dev
 
-  deploy-test:
-    name: Deploy test
+  deploy-production:
+    name: Deploy to test
     runs-on: ubuntu-latest
     environment: production
+    env:
+      SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
     needs: deploy-dev
     steps:
       - uses: actions/checkout@v2
