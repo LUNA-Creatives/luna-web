@@ -1,4 +1,4 @@
-name: Deploy (luna web)
+name: Deploy
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 16
       - run: npm install --legacy-peer-deps
-      - run: npx @serverless/cloud deploy dev
+      - run: npm run deploy-dev
 
   deploy-production:
     name: Deploy to test
@@ -32,4 +32,4 @@ jobs:
         with:
           node-version: 16
       - run: npm install --legacy-peer-deps
-      - run: npx @serverless/cloud deploy test
+      - run: npm run deploy-test
