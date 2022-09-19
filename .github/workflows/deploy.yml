@@ -36,5 +36,5 @@ jobs:
           secret: ${{ github.TOKEN }}
           approvers: luna-team
       - name: Deploy to test
-        run: npm install --legacy-peer-deps
-        run: npx @serverless/cloud deploy test
+      - run: npm install --legacy-peer-deps
+      - run: npx @serverless/cloud deploy test
