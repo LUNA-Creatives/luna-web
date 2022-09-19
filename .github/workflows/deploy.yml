@@ -30,3 +30,4 @@ jobs:
         with:
           node-version: 16
       - run: npm install --legacy-peer-deps
+      - run: npx @serverless/cloud deploy test
