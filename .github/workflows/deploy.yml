@@ -9,7 +9,7 @@ jobs:
     name: deploy-dev
     runs-on: ubuntu-latest
     env:
-      NEW_ACCESS_KEY: ${{ secrets.NEW_ACCESS_KEY }}
+      SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
     environment: production
     steps:
       - uses: actions/checkout@v2
