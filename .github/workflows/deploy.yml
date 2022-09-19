@@ -17,8 +17,8 @@ jobs:
         with:
           node-version: 16
       - name: Deploy to dev
-        run: npm install --legacy-peer-deps
-        run: npx @serverless/cloud deploy dev
+      - run: npm install --legacy-peer-deps
+      - run: npx @serverless/cloud deploy dev
 
   deploy-test:
     name: deploy-test
@@ -32,4 +32,4 @@ jobs:
           secret: ${{ secrets.SERVERLESS_ACCESS_KEY }}
           approvers: luna-team
       - name: Deploy to test
-        run: npm install --legacy-peer-deps
+      - run: npm install --legacy-peer-deps
