@@ -20,7 +20,7 @@ jobs:
       - run: npm run deploy-dev
 
   deploy-production:
-    name: Deploy to test
+    name: Deploy to prod
     runs-on: ubuntu-latest
     environment: production
     env:
@@ -32,4 +32,4 @@ jobs:
         with:
           node-version: 16
       - run: npm install --legacy-peer-deps
-      - run: npm run deploy-test
+      - run: npm run deploy-prod
