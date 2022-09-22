@@ -70,9 +70,9 @@ export const Navbar = ({ data }: INavbar) => {
               [classes.disabled]: showOverlay,
             })}
           >
-            <span className={`${classes.line} ${classes.left}`} />
-            <span className={classes.line} />
-            <span className={`${classes.line} ${classes.right}`} />
+            <div className={classes.line} />
+            <div className={classes.line} />
+            <div className={classes.line} />
           </Box>
           <Box
             onClick={() => setShowOverlay(false)}
@@ -81,8 +81,8 @@ export const Navbar = ({ data }: INavbar) => {
               [classes.easeInOut]: !showOverlay,
             })}
           >
-            <span className={`${classes.line} ${classes.rotateRight}`} />
-            <span className={`${classes.line} ${classes.rotateLeft}`} />
+            <span className={`${classes.right} ${classes.rotate}`} />
+            <span className={`${classes.left} ${classes.rotate}`} />
           </Box>
         </Container>
       </Grid>

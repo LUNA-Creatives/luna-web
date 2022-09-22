@@ -46,7 +46,6 @@ export default makeStyles((theme: Theme) =>
     menuIcon: {
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'center',
       zIndex: 9999,
       height: 30,
       width: 30,
@@ -55,40 +54,29 @@ export default makeStyles((theme: Theme) =>
       top: 15,
       cursor: 'pointer',
       margin: 10,
+      justifyContent: 'space-around',
     },
     line: {
       height: 2,
       width: 30,
       display: 'block',
-      marginBottom: 4,
       backgroundColor: theme.palette.primary.main,
-    },
-    left: {
-      width: 15,
-      backgroundColor: theme.palette.primary.main,
-      '&:hover': {
-        width: 30,
-        transition: 'width 0.2s ease-in',
-      },
-    },
-    right: {
-      width: 15,
-      backgroundColor: theme.palette.primary.main,
-      '&:hover': {
-        width: 30,
-        transition: 'width 0.2s ease-in',
-      },
     },
     closeIcon: {
-      zIndex: 9999,
+      justifyContent: 'center',
     },
-    rotateRight: {
+    rotate: {
+      height: 2,
+      width: 35,
+      display: 'block',
+      marginBottom: 4,
       backgroundColor: theme.palette.primary.dark,
-      transform: 'translate(0px, 6px) rotate(-45deg)',
     },
-    rotateLeft: {
-      backgroundColor: theme.palette.primary.dark,
-      transform: 'translate(0px, 0px) rotate(45deg)',
+    right: {
+      transform: 'translate(0px, 6px) rotate(45deg)',
+    },
+    left: {
+      transform: 'translate(0px, 0px) rotate(-45deg)',
     },
     disabled: {
       display: 'none',

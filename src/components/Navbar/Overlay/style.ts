@@ -31,6 +31,9 @@ export default makeStyles((theme: Theme) =>
     heading: {
       paddingBottom: 10,
       paddingTop: 10,
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        paddingBottom: 20,
+      },
     },
     linkBox: {
       width: 'fit-content',
