@@ -46,16 +46,15 @@ export const Navbar = ({ data }: INavbar) => {
 
   return (
     <>
+      <Box
+        component={'div'}
+        className={clsx(classes.overlay, {
+          [classes.active]: showOverlay,
+        })}
+      >
+        <Overlay data={data} />
+      </Box>
       <Grid className={classes.root}>
-        <Box
-          component={'div'}
-          className={clsx(classes.overlay, {
-            [classes.active]: showOverlay,
-          })}
-        >
-          <Overlay data={data} />
-        </Box>
-
         <Container className={classes.container}>
           <Box
             component={'div'}

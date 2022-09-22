@@ -9,13 +9,16 @@ export default makeStyles((theme: Theme) =>
       minWidth: '100vw',
       display: 'flex',
       justifyContent: 'center',
+      height: '100%',
     },
     container: {
       position: 'fixed',
-      top: 0,
-      right: 0,
       display: 'flex',
-      maxWidth: 1600,
+      maxWidth: 2000,
+      [theme.breakpoints.down(ipadBreakpoint)]: {
+        top: 0,
+        left: 0,
+      },
       zIndex: 9000,
     },
     overlay: {
