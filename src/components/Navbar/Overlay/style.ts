@@ -5,10 +5,10 @@ import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
-    overlay: {
+    container: {
       display: 'flex',
       alignItems: 'center',
-      zIndex: 8500,
+
       position: 'fixed',
       minWidth: '100vw',
       top: 0,
@@ -40,6 +40,7 @@ export default makeStyles((theme: Theme) =>
       height: 2,
       display: 'block',
       width: 15,
+      transition: 'width 0.2s ease-out',
       backgroundColor: theme.palette.primary.dark,
     },
     link: {
@@ -48,6 +49,7 @@ export default makeStyles((theme: Theme) =>
     },
     extended: {
       width: '100%',
+      transition: 'width 0.2s ease-in',
     },
   })
 );

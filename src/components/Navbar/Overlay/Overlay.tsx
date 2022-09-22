@@ -10,7 +10,7 @@ export const Overlay = ({ data }: IOverlay) => {
   const [extend, setExtend] = useState(0);
 
   return (
-    <Container className={classes.overlay}>
+    <Container className={classes.container}>
       <Container>
         <Box component={'div'} className={classes.textContainer}>
           <Box component={'div'}>
