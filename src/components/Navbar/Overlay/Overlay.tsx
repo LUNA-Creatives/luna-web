@@ -12,65 +12,67 @@ export const Overlay = ({ data }: IOverlay) => {
   return (
     <Container className={classes.overlay}>
       <Container>
-        <Box component={'div'} className={classes.textBox}>
+        <Box component={'div'} className={classes.textContainer}>
           <Box component={'div'}>
-            <Typography variant={'h3'}>
-              {data.navBar.navigation.meny.headline.toUpperCase()}
-            </Typography>
-            <Box component={'div'} className={classes.linkBox}>
-              <Link
-                onMouseEnter={() => setExtend(1)}
-                onMouseLeave={() => setExtend(0)}
-                href={data.navBar.navigation.meny.home.link}
-                className={classes.link}
-              >
-                <Typography variant={'h4'}>
-                  {data.navBar.navigation.meny.home.text}
-                </Typography>
-                <span
-                  className={clsx(classes.underline, {
-                    [classes.extended]: extend === 1,
-                  })}
-                ></span>
-              </Link>
-            </Box>
-            <Box component={'div'} className={classes.linkBox}>
-              <Link
-                onMouseEnter={() => setExtend(2)}
-                onMouseLeave={() => setExtend(0)}
-                href={data.navBar.navigation.meny.about.link}
-                className={classes.link}
-              >
-                <Typography variant={'h4'}>
-                  {data.navBar.navigation.meny.about.text}
-                </Typography>
-                <span
-                  className={clsx(classes.underline, {
-                    [classes.extended]: extend === 2,
-                  })}
-                ></span>
-              </Link>
-            </Box>
-            <Box component={'div'} className={classes.linkBox}>
-              <Link
-                onMouseEnter={() => setExtend(3)}
-                onMouseLeave={() => setExtend(0)}
-                href={data.navBar.navigation.meny.team.link}
-                className={classes.link}
-              >
-                <Typography variant={'h4'}>
-                  {data.navBar.navigation.meny.team.text}
-                </Typography>
-                <span
-                  className={clsx(classes.underline, {
-                    [classes.extended]: extend === 3,
-                  })}
-                ></span>
-              </Link>
+            <Box component={'div'} className={classes.textBox}>
+              <Typography variant={'h3'} className={classes.heading}>
+                {data.navBar.navigation.meny.headline.toUpperCase()}
+              </Typography>
+              <Box component={'div'} className={classes.linkBox}>
+                <Link
+                  onMouseEnter={() => setExtend(1)}
+                  onMouseLeave={() => setExtend(0)}
+                  href={data.navBar.navigation.meny.home.link}
+                  className={classes.link}
+                >
+                  <Typography variant={'h4'}>
+                    {data.navBar.navigation.meny.home.text}
+                  </Typography>
+                  <span
+                    className={clsx(classes.underline, {
+                      [classes.extended]: extend === 1,
+                    })}
+                  ></span>
+                </Link>
+              </Box>
+              <Box component={'div'} className={classes.linkBox}>
+                <Link
+                  onMouseEnter={() => setExtend(2)}
+                  onMouseLeave={() => setExtend(0)}
+                  href={data.navBar.navigation.meny.about.link}
+                  className={classes.link}
+                >
+                  <Typography variant={'h4'}>
+                    {data.navBar.navigation.meny.about.text}
+                  </Typography>
+                  <span
+                    className={clsx(classes.underline, {
+                      [classes.extended]: extend === 2,
+                    })}
+                  ></span>
+                </Link>
+              </Box>
+              <Box component={'div'} className={classes.linkBox}>
+                <Link
+                  onMouseEnter={() => setExtend(3)}
+                  onMouseLeave={() => setExtend(0)}
+                  href={data.navBar.navigation.meny.team.link}
+                  className={classes.link}
+                >
+                  <Typography variant={'h4'}>
+                    {data.navBar.navigation.meny.team.text}
+                  </Typography>
+                  <span
+                    className={clsx(classes.underline, {
+                      [classes.extended]: extend === 3,
+                    })}
+                  ></span>
+                </Link>
+              </Box>
             </Box>
           </Box>
-          <Box component={'div'}>
-            <Typography variant={'h3'}>
+          <Box component={'div'} className={classes.textBox}>
+            <Typography variant={'h3'} className={classes.heading}>
               {data.navBar.navigation.contact.headline.toUpperCase()}
             </Typography>
             <Box component={'div'} className={classes.linkBox}>
@@ -90,8 +92,8 @@ export const Overlay = ({ data }: IOverlay) => {
               </Link>
             </Box>
           </Box>
-          <Box component={'div'}>
-            <Typography variant={'h3'}>
+          <Box component={'div'} className={classes.textBox}>
+            <Typography variant={'h3'} className={classes.heading}>
               {data.navBar.navigation.socials.headline.toUpperCase()}
             </Typography>
             <Box component={'div'} className={classes.linkBox}>
@@ -110,6 +112,8 @@ export const Overlay = ({ data }: IOverlay) => {
                   })}
                 ></span>
               </Link>
+            </Box>
+            <Box component={'div'} className={classes.linkBox}>
               <Link
                 onMouseEnter={() => setExtend(6)}
                 onMouseLeave={() => setExtend(0)}
@@ -125,6 +129,8 @@ export const Overlay = ({ data }: IOverlay) => {
                   })}
                 ></span>
               </Link>
+            </Box>
+            <Box component={'div'} className={classes.linkBox}>
               <Link
                 onMouseEnter={() => setExtend(7)}
                 onMouseLeave={() => setExtend(0)}

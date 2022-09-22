@@ -15,10 +15,12 @@ export default makeStyles((theme: Theme) =>
       height: '100vh',
       backgroundColor: theme.palette.primary.main,
       opacity: 1,
-      transition: 'opacity 1s ease',
     },
-    textContainer: {},
     textBox: {
+      paddingTop: 10,
+      paddingBottom: 10,
+    },
+    textContainer: {
       height: '100%',
       width: '100%',
       [theme.breakpoints.up(ipadBreakpoint)]: {
@@ -26,8 +28,13 @@ export default makeStyles((theme: Theme) =>
         placeContent: 'space-between',
       },
     },
+    heading: {
+      paddingBottom: 10,
+      paddingTop: 10,
+    },
     linkBox: {
       width: 'fit-content',
+      paddingBottom: 10,
     },
     underline: {
       height: 2,
