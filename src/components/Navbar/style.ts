@@ -13,19 +13,18 @@ export default makeStyles((theme: Theme) =>
     container: {
       position: 'fixed',
       top: 0,
+      right: 0,
       display: 'flex',
       maxWidth: 1600,
       zIndex: 9000,
     },
     overlay: {
-      display: 'flex',
-      alignItems: 'center',
       zIndex: 8500,
       position: 'fixed',
-      minWidth: '100vw',
+      width: '100%',
       top: 0,
-      height: '100vh',
-      backgroundColor: theme.palette.primary.main,
+      left: 0,
+      height: '100%',
       opacity: 0,
       transition: 'opacity 1s ease',
     },
@@ -64,10 +63,18 @@ export default makeStyles((theme: Theme) =>
     left: {
       width: 15,
       backgroundColor: theme.palette.primary.main,
+      '&:hover': {
+        width: 30,
+        transition: 'width 0.2s ease-in',
+      },
     },
     right: {
       width: 15,
       backgroundColor: theme.palette.primary.main,
+      '&:hover': {
+        width: 30,
+        transition: 'width 0.2s ease-in',
+      },
     },
     closeIcon: {
       zIndex: 9999,

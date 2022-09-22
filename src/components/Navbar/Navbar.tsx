@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Grid, Container, Box } from '@mui/material';
 import lottie from 'lottie-web/build/player/lottie_svg';
 import clsx from 'clsx';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 import useStyles from './style';
 import { INavbar } from './types';
@@ -16,6 +17,11 @@ export const Navbar = ({ data }: INavbar) => {
   const animationId = 'animation';
 
   useEffect(() => {
+    if (showOverlay) {
+      disableBodyScroll(document.body);
+    } else if (!showOverlay) {
+      enableBodyScroll(document.body);
+    }
     const instance = lottie.loadAnimation({
       container: document.querySelector(`#${animationId}`) as Element,
       renderer: 'svg',
@@ -23,7 +29,6 @@ export const Navbar = ({ data }: INavbar) => {
       autoplay: true,
       animationData: animation,
     });
-
     const handleScroll = () => {
       const hide = window.scrollY > 50;
       if (hide) {
