@@ -51,7 +51,7 @@ export default makeStyles((theme: Theme) =>
       width: 30,
       position: 'absolute',
       right: 15,
-      top: 15,
+      top: 6,
       cursor: 'pointer',
       margin: 10,
       justifyContent: 'space-around',
