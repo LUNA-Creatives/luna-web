@@ -37,17 +37,25 @@ export const Navbar = ({ data }: INavbar) => {
       instance.destroy();
       document.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [showOverlay]);
 
   return (
     <>
       <Grid className={classes.root}>
-        {showOverlay && <Overlay data={data} />}
+        <Box
+          component={'div'}
+          className={clsx(classes.overlay, {
+            [classes.active]: showOverlay,
+          })}
+        >
+          <Overlay data={data} />
+        </Box>
+
         <Container className={classes.container}>
           <Box
             component={'div'}
             className={clsx(classes.animation, {
-              [classes.disabled]: showOverlay || !showLogo,
+              [classes.easeInOut]: showOverlay || !showLogo,
             })}
             id={animationId}
           />
@@ -66,7 +74,7 @@ export const Navbar = ({ data }: INavbar) => {
             onClick={() => setShowOverlay(false)}
             component={'div'}
             className={clsx(classes.menuIcon, classes.closeIcon, {
-              [classes.disabled]: !showOverlay,
+              [classes.easeInOut]: !showOverlay,
             })}
           >
             <span className={`${classes.line} ${classes.rotateRight}`} />

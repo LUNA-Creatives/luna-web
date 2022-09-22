@@ -26,7 +26,7 @@ export default makeStyles((theme: Theme) =>
       top: 0,
       height: '100vh',
       backgroundColor: theme.palette.primary.main,
-      opacity: 1,
+      opacity: 0,
       transition: 'opacity 1s ease',
     },
     animation: {
@@ -35,6 +35,8 @@ export default makeStyles((theme: Theme) =>
       marginLeft: '-60px',
       zIndex: 9000,
       margin: 5,
+      opacity: 1,
+      transition: 'opacity 1s ease',
       [theme.breakpoints.up(ipadBreakpoint)]: {
         marginLeft: '-70px',
       },
@@ -80,7 +82,13 @@ export default makeStyles((theme: Theme) =>
     },
     disabled: {
       display: 'none',
-      transition: '.2s ease',
+    },
+    active: {
+      opacity: 1,
+    },
+    easeInOut: {
+      opacity: 0,
+      zIndex: 100,
     },
   })
 );
