@@ -42,7 +42,7 @@ export const Navbar = ({ data }: INavbar) => {
       instance.destroy();
       document.removeEventListener('scroll', handleScroll);
     };
-  }, [showOverlay]);
+  });
 
   return (
     <>
@@ -52,7 +52,7 @@ export const Navbar = ({ data }: INavbar) => {
           [classes.active]: showOverlay,
         })}
       >
-        {showOverlay && <Overlay data={data} />}
+        {showOverlay && <Overlay data={data.navbar} />}
       </Box>
 
       <Grid className={classes.root}>

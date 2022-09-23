@@ -7,14 +7,19 @@ export default makeStyles((theme: Theme) =>
   createStyles({
     container: {
       display: 'flex',
-      alignItems: 'center',
-
       position: 'fixed',
       minWidth: '100vw',
       top: 0,
-      height: '100vh',
+      height: '100%',
       backgroundColor: theme.palette.primary.main,
       opacity: 1,
+      alignItems: 'center',
+    },
+    flexContainer: {
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        display: 'flex',
+        placeContent: 'space-between',
+      },
     },
     textBox: {
       paddingTop: 10,
