@@ -30,7 +30,7 @@ export default makeStyles((theme: Theme) =>
       left: 0,
       height: 0,
       opacity: 0,
-      transition: 'opacity 1s ease',
+      transition: 'opacity 0.5s ease-in-out',
     },
     animation: {
       width: 150,
@@ -39,7 +39,7 @@ export default makeStyles((theme: Theme) =>
       zIndex: 9000,
       margin: 5,
       opacity: 1,
-      transition: 'opacity 1s ease',
+      transition: 'opacity 0.5s ease',
       [theme.breakpoints.up(ipadBreakpoint)]: {
         marginLeft: '-70px',
       },
