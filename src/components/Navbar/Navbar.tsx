@@ -52,8 +52,9 @@ export const Navbar = ({ data }: INavbar) => {
           [classes.active]: showOverlay,
         })}
       >
-        <Overlay data={data} />
+        {showOverlay && <Overlay data={data} />}
       </Box>
+
       <Grid className={classes.root}>
         <Container className={classes.container}>
           <Box

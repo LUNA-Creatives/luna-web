@@ -25,10 +25,10 @@ export default makeStyles((theme: Theme) =>
     overlay: {
       zIndex: 8500,
       position: 'fixed',
-      width: '100%',
+      width: 0,
       top: 0,
       left: 0,
-      height: '100%',
+      height: 0,
       opacity: 0,
       transition: 'opacity 1s ease',
     },
@@ -84,6 +84,8 @@ export default makeStyles((theme: Theme) =>
     },
     active: {
       opacity: 1,
+      height: '100%',
+      width: '100%',
     },
     easeInOut: {
       opacity: 0,
