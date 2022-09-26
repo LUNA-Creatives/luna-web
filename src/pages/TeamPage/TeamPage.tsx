@@ -7,15 +7,17 @@ import data from '../../assets/data/data.json';
 import { Footer } from '../../components/Sections/Footer';
 import { Navbar } from '../../components/Navbar';
 import useStyles from '../styling/style';
+import ITeamPage from '../../types/pages/TeamPage';
 
 export const TeamPage = () => {
   const classes = useStyles();
-  const [team, setTeam] = useState([]);
+  const [team, setTeam] = useState<ITeamPage[]>([]);
 
   const fetchAndSetTeam = async () => {
     try {
-      const { data } = await axios.get('/api/team-member');
-      setTeam(data as any);
+      const { data } = await axios.get<ITeamPage[]>('/api/team-member');
+
+      setTeam(data);
     } catch (e) {
       console.log(e);
     }
