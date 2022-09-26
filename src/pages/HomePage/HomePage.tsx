@@ -26,8 +26,6 @@ export const HomePage = () => {
       const { data } = await axios.get<SlsDbItem[]>('/api/team-member');
       const teamData: TeamMember[] = dbItemToItem(data);
       setTeam(teamData);
-      console.log('teamdata', teamData);
-      console.log('data', data);
     } catch (e) {
       console.log(e);
     }
