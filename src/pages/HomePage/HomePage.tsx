@@ -12,16 +12,22 @@ import { Vision } from '../../components/Sections/Vision';
 import { Skills } from '../../components/Sections/Skills';
 import '../../assets/fonts/fonts.css';
 import { ThreeCanvas } from '../../components/Sections/ThreeCanvas';
+import { TeamMember } from '../TeamPage/types';
+import { SlsDbItem } from '../../types';
+import { dbItemToItem } from '../../utils/dbItemToItem';
 
 export const HomePage = () => {
   const [showAnimation, setShowAnimation] = useState(true);
-  const [team, setTeam] = useState([]);
+  const [team, setTeam] = useState<TeamMember[]>([]);
   const [icons, setIcons] = useState([]);
 
   const fetchAndSetTeam = async () => {
     try {
-      const { data } = await axios.get('/api/team-member');
-      setTeam(data as any);
+      const { data } = await axios.get<SlsDbItem[]>('/api/team-member');
+      const teamData: TeamMember[] = dbItemToItem(data);
+      setTeam(teamData);
+      console.log('teamdata', teamData);
+      console.log('data', data);
     } catch (e) {
       console.log(e);
     }
