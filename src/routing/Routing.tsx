@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 
-import { HomePage } from '../pages/HomePage';
-import { TeamPage } from '../pages/TeamPage';
-import { AboutPage } from '../pages/AboutPage';
+import { HomePage, TeamPage, AboutPage } from '../pages';
 
 export const Routing = () => {
   return (
