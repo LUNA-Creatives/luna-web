@@ -7,17 +7,19 @@ import data from '../../assets/data/data.json';
 import { Footer } from '../../components/Sections/Footer';
 import { Navbar } from '../../components/Navbar';
 import useStyles from '../styling/style';
-import ITeamPage from '../../types/pages/TeamPage';
+import { SlsDbItem } from '../../types/types';
+import { TeamMember } from './types';
+import { dbItemToItem } from '../../utils/dbItemToItem';
 
 export const TeamPage = () => {
   const classes = useStyles();
-  const [team, setTeam] = useState<ITeamPage[]>([]);
+  const [team, setTeam] = useState<TeamMember[]>([]);
 
   const fetchAndSetTeam = async () => {
     try {
-      const { data } = await axios.get<ITeamPage[]>('/api/team-member');
-
-      setTeam(data);
+      const { data } = await axios.get<SlsDbItem[]>('/api/team-member');
+      const teamData: TeamMember[] = dbItemToItem(data);
+      setTeam(teamData);
     } catch (e) {
       console.log(e);
     }
