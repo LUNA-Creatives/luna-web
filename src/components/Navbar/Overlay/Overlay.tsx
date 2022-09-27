@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Container, Box, Typography, Link } from '@mui/material';
+import { Container, Box, Typography } from '@mui/material';
 import clsx from 'clsx';
-
+import { Link } from 'react-router-dom';
 import useStyles from './style';
 import { IOverlay, Item, Link as LinkType } from './types';
 
@@ -24,7 +24,7 @@ export const Overlay = ({ data }: IOverlay) => {
                     key={index}
                     onMouseEnter={() => setExtend(item.id)}
                     onMouseLeave={() => setExtend(-1)}
-                    href={item.link}
+                    to={item.link}
                     className={classes.link}
                   >
                     <Typography variant={'h4'}>{item.text}</Typography>
