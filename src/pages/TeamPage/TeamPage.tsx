@@ -6,7 +6,7 @@ import { Team } from '../../components/Sections/Team';
 import data from '../../assets/data/data.json';
 import { Footer } from '../../components/Sections/Footer';
 import { Navbar } from '../../components/Navbar';
-import useStyles from '../Styling/style';
+import useStyles from '../styling/style';
 import { SlsDbItem } from '../../types/types';
 import { TeamMember } from './types';
 import { dbItemToItem } from '../../utils/dbItemToItem';
