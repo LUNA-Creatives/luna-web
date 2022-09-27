@@ -3,11 +3,13 @@ import { Container, Box, Typography, Grid } from '@mui/material';
 import useStyles from './style';
 import { ISkills } from './types';
 
-export const Skills = ({ skills }: ISkills) => {
+export const Skills = ({
+  techIcons,
+  designIcons,
+  helperIcons,
+  heading,
+}: ISkills) => {
   const classes = useStyles();
-  const techIcons = skills.data[0].value.icons.techIcons;
-  const designIcons = skills.data[0].value.icons.designIcons;
-  const helperIcons = skills.data[0].value.icons.helperIcons;
 
   const sliderArray1 = techIcons.concat(techIcons);
   const sliderArray2 = designIcons.concat(designIcons);
@@ -18,7 +20,7 @@ export const Skills = ({ skills }: ISkills) => {
       <Grid className={classes.container}>
         <Container className={classes.box}>
           <Typography className={classes.heading} variant="h1">
-            {skills.heading}
+            {heading}
           </Typography>
         </Container>
         <Box component={'div'} className={classes.slider}>

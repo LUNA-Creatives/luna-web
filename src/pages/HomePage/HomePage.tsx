@@ -15,11 +15,12 @@ import { ThreeCanvas } from '../../components/Sections/ThreeCanvas';
 import { TeamMember } from '../TeamPage/types';
 import { SlsDbItem } from '../../types';
 import { dbItemToItem } from '../../utils/dbItemToItem';
+import { Skill } from './types';
 
 export const HomePage = () => {
   const [showAnimation, setShowAnimation] = useState(true);
   const [team, setTeam] = useState<TeamMember[]>([]);
-  const [icons, setIcons] = useState([]);
+  const [icons, setIcons] = useState<Skill[]>([]);
 
   const fetchAndSetTeam = async () => {
     try {
@@ -33,14 +34,13 @@ export const HomePage = () => {
 
   const fetchAndSetIcons = async () => {
     try {
-      const { data } = await axios.get('/api/icons');
-      setIcons(data as any);
+      const { data } = await axios.get<SlsDbItem[]>('/api/icons');
+      const iconsData: Skill[] = dbItemToItem(data);
+      setIcons(iconsData);
     } catch (e) {
       console.log(e);
     }
   };
-
-  const skills = { data: icons, heading: data.skills.heading };
 
   useEffect(() => {
     setTimeout(() => {
@@ -59,7 +59,12 @@ export const HomePage = () => {
         <>
           <Navbar data={data} />
           <ThreeCanvas data={data.header} />
-          <Skills skills={skills} />
+          <Skills
+            heading={data.skills.heading}
+            techIcons={icons[0].techIcons}
+            helperIcons={icons[0].helperIcons}
+            designIcons={icons[0].designIcons}
+          />
           <ClientLogos logos={logos} />
           <Vision data={data.vision} />
           <Team data={team} headline={data.team.headline} />
