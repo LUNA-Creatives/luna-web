@@ -13,6 +13,10 @@ export const Navbar = ({ data }: INavbar) => {
   const [showOverlay, setShowOverlay] = useState(false);
   const [showLogo, setShowLogo] = useState(true);
 
+  const updateState = (newState: boolean) => {
+    setShowOverlay(newState);
+  };
+
   const classes = useStyles();
   const animationId = 'animation';
 
@@ -52,7 +56,9 @@ export const Navbar = ({ data }: INavbar) => {
           [classes.active]: showOverlay,
         })}
       >
-        {showOverlay && <Overlay data={data.navbar} />}
+        {showOverlay && (
+          <Overlay updateState={updateState} data={data.navbar} />
+        )}
       </Box>
 
       <Grid className={classes.root}>
