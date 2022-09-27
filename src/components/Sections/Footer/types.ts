@@ -8,7 +8,6 @@ export interface IFooter {
     addressLink: string;
     copyRights: string;
     urls: {
-      addressUrl: string;
       linkedInUrl: string;
       instagramUrl: string;
     };

@@ -3,9 +3,7 @@ import axios from 'axios';
 
 import { AnimationHero } from '../../components/AnimationHero';
 import { Navbar } from '../../components/Navbar';
-// import { Header } from '../../components/Sections/Header';
 import { Team } from '../../components/Sections/Team';
-import logo from '../../assets/logos/luna-icon-inverted-color.svg';
 import data from '../../assets/data/data.json';
 import { ClientLogos } from '../../components/Sections/ClientLogos';
 import { logos } from '../../assets/data/logos';
@@ -13,18 +11,22 @@ import { Footer } from '../../components/Sections/Footer';
 import { Vision } from '../../components/Sections/Vision';
 import { Skills } from '../../components/Sections/Skills';
 import '../../assets/fonts/fonts.css';
-// import { StarrySky } from '../../components/StarrySky/StarrySky';
 import { ThreeCanvas } from '../../components/Sections/ThreeCanvas';
+import { TeamMember } from '../TeamPage/types';
+import { SlsDbItem } from '../../types';
+import { dbItemToItem } from '../../utils/dbItemToItem';
+import { Skill } from './types';
 
 export const HomePage = () => {
   const [showAnimation, setShowAnimation] = useState(true);
-  const [team, setTeam] = useState([]);
-  const [icons, setIcons] = useState([]);
+  const [team, setTeam] = useState<TeamMember[]>([]);
+  const [icons, setIcons] = useState<Skill[]>([]);
 
   const fetchAndSetTeam = async () => {
     try {
-      const { data } = await axios.get('/api/team-member');
-      setTeam(data as any);
+      const { data } = await axios.get<SlsDbItem[]>('/api/team-member');
+      const teamData: TeamMember[] = dbItemToItem(data);
+      setTeam(teamData);
     } catch (e) {
       console.log(e);
     }
@@ -32,14 +34,13 @@ export const HomePage = () => {
 
   const fetchAndSetIcons = async () => {
     try {
-      const { data } = await axios.get('/api/icons');
-      setIcons(data as any);
+      const { data } = await axios.get<SlsDbItem[]>('/api/icons');
+      const iconsData: Skill[] = dbItemToItem(data);
+      setIcons(iconsData);
     } catch (e) {
       console.log(e);
     }
   };
-
-  const skills = { data: icons, heading: data.skills.heading };
 
   useEffect(() => {
     setTimeout(() => {
@@ -56,12 +57,14 @@ export const HomePage = () => {
         <AnimationHero />
       ) : (
         <>
-          <Navbar logo={logo} />
-          {/* <StarrySky>
-           <Header data={data.header} />
-          </StarrySky> */}
+          <Navbar data={data} />
           <ThreeCanvas data={data.header} />
-          <Skills skills={skills} />
+          <Skills
+            heading={data.skills.heading}
+            techIcons={icons[0].techIcons}
+            helperIcons={icons[0].helperIcons}
+            designIcons={icons[0].designIcons}
+          />
           <ClientLogos logos={logos} />
           <Vision data={data.vision} />
           <Team data={team} headline={data.team.headline} />

@@ -1,10 +1,10 @@
 import { ThemeConfig } from './theme/ThemeConfig';
-import { HomePage } from './pages/HomePage';
+import { Routing } from './routing';
 
 const App = () => {
   return (
     <ThemeConfig>
-      <HomePage />
+      <Routing />
     </ThemeConfig>
   );
 };

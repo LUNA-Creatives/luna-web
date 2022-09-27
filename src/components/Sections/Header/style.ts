@@ -3,17 +3,16 @@ import { Theme } from '@mui/material/styles';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
-    root: {},
+    root: { maxWidth: '100%' },
     container: {
-      height: '90vh',
-      maxWidth: 1600,
+      height: '100vh',
       display: 'flex',
       alignItems: 'center',
       textAlign: 'left',
       flexDirection: 'row',
     },
     headline: {
-      fontWeight: 600,
+      fontWeight: 500,
       color: theme.palette.primary.light,
     },
   })

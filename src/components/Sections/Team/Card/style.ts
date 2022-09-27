@@ -12,7 +12,7 @@ export default makeStyles((theme: Theme) =>
       textAlign: 'center',
       width: '100%',
       minHeight: '100%',
-
+      cursor: 'pointer',
       marginBottom: '2rem',
 
       [theme.breakpoints.up(ipadBreakpoint)]: {

@@ -16,13 +16,13 @@ export const Team = ({ data, headline }: ITeam) => {
         </Typography>
 
         <Box component={'div'} className={classes.cardContainer}>
-          {data.map((team: { value: ICard }, index: string) => (
+          {data.map((team: ICard, index: string) => (
             <Card
               key={index}
-              name={team.value.name}
-              role={team.value.role}
-              profileImage={team.value.profileImage}
-              gif={team.value.gif}
+              name={team.name}
+              role={team.role}
+              profileImage={team.profileImage}
+              gif={team.gif}
             />
           ))}
         </Box>

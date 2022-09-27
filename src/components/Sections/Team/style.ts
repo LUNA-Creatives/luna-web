@@ -9,6 +9,7 @@ export default makeStyles((theme: Theme) =>
     },
     container: {
       maxWidth: 1600,
+      paddingTop: 50,
     },
     cardContainer: {
       display: 'flex',
