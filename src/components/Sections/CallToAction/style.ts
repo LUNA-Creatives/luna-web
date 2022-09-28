@@ -44,7 +44,7 @@ export default makeStyles((theme: Theme) =>
       borderRadius: 2,
       backgroundColor: theme.palette.primary.dark,
       border: `1px solid${theme.palette.primary.dark}`,
-      padding: '15px 34px 15px 34px',
+      padding: '10px 34px 10px 34px',
       textDecoration: 'none',
       cursor: 'pointer',
       '&:hover': {
