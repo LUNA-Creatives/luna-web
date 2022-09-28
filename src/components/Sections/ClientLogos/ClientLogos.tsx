@@ -80,7 +80,7 @@ export const ClientLogos = ({ logos }: ILogos) => {
                         }}
                         key={index}
                       >
-                        <Typography variant="h6">{logo.alt}</Typography>
+                        <Typography variant="subtitle1">{logo.alt}</Typography>
                       </motion.div>
                     )}
                   </Box>
@@ -123,7 +123,7 @@ export const ClientLogos = ({ logos }: ILogos) => {
                         }}
                         key={index}
                       >
-                        <Typography variant="h6">{logo.alt}</Typography>
+                        <Typography variant="subtitle1">{logo.alt}</Typography>
                       </motion.div>
                     )}
                   </Box>

@@ -8,10 +8,53 @@ import {
 import { CssBaseline, StyledEngineProvider } from '@mui/material';
 
 const FONT_PRIMARY = ['futura-pt', 'sans-serif'].join(',');
+const FONT_SECONDARY = ['playfair-display', 'serif'].join(',');
 
 let theme = createTheme({
   typography: {
     fontFamily: FONT_PRIMARY,
+    h1: {
+      fontWeight: 500,
+      fontSize: 64,
+      '@media (max-width:1024px)': {
+        fontSize: 32,
+      },
+    },
+    h5: {
+      fontSize: 24,
+      '@media (max-width:1024px)': {
+        fontSize: 18,
+      },
+    },
+    body1: {
+      fontFamily: FONT_SECONDARY,
+      lineHeight: 2.1,
+      fontSize: 24,
+      '@media (max-width:1024px)': {
+        fontSize: 16,
+      },
+    },
+    body2: {
+      fontFamily: FONT_SECONDARY,
+      fontSize: 18,
+      '@media (max-width:1024px)': {
+        fontSize: 14,
+      },
+    },
+    subtitle1: {
+      letterSpacing: ' 0.19em',
+      fontFamily: FONT_PRIMARY,
+      lineHeight: 2.1,
+      fontSize: 18,
+      '@media (max-width:1024px)': {
+        fontSize: 12,
+      },
+    },
+    subtitle2: {
+      fontFamily: FONT_PRIMARY,
+      lineHeight: 2.1,
+      fontSize: 12,
+    },
   },
   palette: {
     primary: {
@@ -21,9 +64,8 @@ let theme = createTheme({
       dark: '#171717',
     },
     secondary: {
-      light: '#B85D69',
-      main: '#EBCDC3',
-      dark: '#6E9075',
+      light: '#F0F9FE',
+      main: '#6CCFF6',
     },
   },
 });

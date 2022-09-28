@@ -6,7 +6,7 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 import useStyles from './style';
 import { INavbar } from './types';
-import animation from '../../assets/animations/logoLoopingGlitchAnimation.json';
+import animation from '../../../assets/animations/logoLoopingGlitchAnimation.json';
 import { Overlay } from './Overlay';
 
 export const Navbar = ({ data }: INavbar) => {

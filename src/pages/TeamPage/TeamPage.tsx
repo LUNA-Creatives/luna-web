@@ -2,10 +2,8 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Grid } from '@mui/material';
 
-import { Team } from '../../components/Sections/Team';
+import { Team, Footer, Navbar } from '../../components/Sections';
 import data from '../../assets/data/data.json';
-import { Footer } from '../../components/Sections/Footer';
-import { Navbar } from '../../components/Navbar';
 import useStyles from '../style';
 import { SlsDbItem } from '../../types/types';
 import { TeamMember } from './types';
