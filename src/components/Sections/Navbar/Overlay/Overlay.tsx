@@ -25,7 +25,9 @@ export const Overlay = ({ data, closeOverlay }: IOverlay) => {
                     onMouseEnter={() => setExtend(item.id)}
                     onMouseLeave={() => setExtend(-1)}
                     to={item.link}
-                    onClick={() => closeOverlay(false)}
+                    onClick={() =>
+                      closeOverlay(false) & (window.scrollTo(0, 0) as any)
+                    }
                     className={classes.link}
                   >
                     <Typography variant={'h4'}>{item.text}</Typography>
