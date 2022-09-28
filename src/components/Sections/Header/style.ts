@@ -37,20 +37,20 @@ export default makeStyles((theme: Theme) =>
     textBox: {
       color: theme.palette.primary.main,
       [theme.breakpoints.up(ipadBreakpoint)]: {
-        maxWidth: '70%',
+        maxWidth: '60%',
         alignSelf: 'center',
       },
     },
     headline: {
       paddingTop: 14,
       paddingBottom: 14,
-
-      [theme.breakpoints.down(ipadBreakpoint)]: {
-        minWidth: '100%',
-      },
+      minWidth: '100%',
     },
     text: {
-      minWidth: '100%',
+      maxWidth: '100%',
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        maxWidth: '80%',
+      },
     },
     button: {
       marginTop: 30,
