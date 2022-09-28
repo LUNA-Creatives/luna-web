@@ -69,5 +69,8 @@ export default makeStyles((theme: Theme) =>
         maxWidth: '40vw',
       },
     },
+    icon: {
+      marginRight: 10,
+    },
   })
 );

@@ -73,7 +73,11 @@ export const Header = ({ data }: IHeader) => {
       </Container>
       {isDesktop && (
         <Container className={classes.secondaryContainer}>
-          <Icon icon="gridicons:arrow-down" inline={true} />
+          <Icon
+            className={classes.icon}
+            icon="gridicons:arrow-down"
+            inline={true}
+          />
           <Typography variant="h6">{data.subText}</Typography>
         </Container>
       )}
