@@ -1,11 +1,20 @@
-import { Grid, Container, Typography, Box, Button } from '@mui/material';
+import {
+  Grid,
+  Container,
+  Typography,
+  Box,
+  Button,
+  useMediaQuery,
+} from '@mui/material';
 
 import { ICallToAction } from './types';
 import useStyles from './style';
 import { Section } from './types';
+import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
 
 export const CallToAction = ({ data }: ICallToAction) => {
   const classes = useStyles();
+  const isDesktop = useMediaQuery(`(min-width:${ipadBreakpoint}px)`);
 
   return (
     <Grid className={classes.root}>
@@ -21,6 +30,9 @@ export const CallToAction = ({ data }: ICallToAction) => {
               <Button className={classes.button} color="primary">
                 {section.button}
               </Button>
+              {isDesktop && index === 0 && (
+                <Box component={'div'} className={classes.underline} />
+              )}
             </Box>
           ))}
         </Box>

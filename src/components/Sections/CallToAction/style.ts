@@ -52,5 +52,10 @@ export default makeStyles((theme: Theme) =>
         color: theme.palette.primary.dark,
       },
     },
+    underline: {
+      marginTop: '7%',
+      height: '100%',
+      borderBottom: `1px solid${theme.palette.primary.dark}`,
+    },
   })
 );
