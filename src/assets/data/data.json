@@ -53,12 +53,14 @@
       {
         "subHeadline": "Läs mer om oss",
         "text": "Tillsammans skapar vi digitala lösningar som hjälper er att fungera smartare, sälja bättre och kommunicera mer effektivt.",
-        "button": "Läs mer"
+        "button": "Läs mer",
+        "url": "about-us"
       },
       {
         "subHeadline": "Läs mer om vårt team",
         "text": "Vi tror att lyckade digitala projekt kombinerar verklighetens utmaningar och den digitala teknikens möjligheter.",
-        "button": "Läs mer"
+        "button": "Läs mer",
+        "url": "our-team"
       }
     ]
   },

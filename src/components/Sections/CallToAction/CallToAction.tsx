@@ -27,7 +27,11 @@ export const CallToAction = ({ data }: ICallToAction) => {
             <Box className={classes.sectionBox} component={'div'} key={index}>
               <Typography variant="h3">{section.subHeadline}</Typography>
               <Typography variant="body1">{section.text}</Typography>
-              <Button className={classes.button} color="primary">
+              <Button
+                href={section.url}
+                className={classes.button}
+                color="primary"
+              >
                 {section.button}
               </Button>
               {isDesktop && index === 0 && (

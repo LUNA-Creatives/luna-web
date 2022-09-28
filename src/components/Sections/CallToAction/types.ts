@@ -9,4 +9,5 @@ export type Section = {
   subHeadline: string;
   text: string;
   button: string;
+  url: string;
 };
