@@ -1,21 +1,23 @@
 import { createStyles, makeStyles } from '@mui/styles';
 import { Theme } from '@mui/material/styles';
+import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
       backgroundColor: theme.palette.primary.dark,
       color: theme.palette.primary.main,
-      height: 500,
-      paddingBottom: 100,
+      height: 400,
       [theme.breakpoints.up('md')]: {
-        height: 400,
+        height: 200,
       },
     },
     border: {
-      height: '100%',
-      borderBottom: '0.001px solid darkgrey',
-      borderTop: '0.001px solid darkgrey',
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        width: '100%',
+        maxWidth: 1600,
+        borderTop: '0.001px solid darkgrey',
+      },
     },
     container: {
       maxWidth: 1600,

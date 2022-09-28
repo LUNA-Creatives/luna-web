@@ -20,6 +20,20 @@ let theme = createTheme({
         fontSize: 32,
       },
     },
+    h2: {
+      fontWeight: 500,
+      fontSize: 52,
+      '@media (max-width:1024px)': {
+        fontSize: 32,
+      },
+    },
+    h3: {
+      fontWeight: 500,
+      fontSize: 40,
+      '@media (max-width:1024px)': {
+        fontSize: 24,
+      },
+    },
     h5: {
       fontSize: 24,
       '@media (max-width:1024px)': {
@@ -58,7 +72,6 @@ let theme = createTheme({
   },
   palette: {
     primary: {
-      contrastText: '#ffffff',
       light: '#6CCFF6',
       main: '#F0F9FE',
       dark: '#171717',
@@ -66,6 +79,9 @@ let theme = createTheme({
     secondary: {
       light: '#F0F9FE',
       main: '#6CCFF6',
+    },
+    info: {
+      main: '#84F7C7',
     },
   },
 });
