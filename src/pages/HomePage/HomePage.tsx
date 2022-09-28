@@ -2,16 +2,18 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import { AnimationHero } from '../../components/AnimationHero';
-import { Navbar } from '../../components/Navbar';
-import { Team } from '../../components/Sections/Team';
 import data from '../../assets/data/data.json';
-import { ClientLogos } from '../../components/Sections/ClientLogos';
+import {
+  ClientLogos,
+  Header,
+  Footer,
+  Vision,
+  Skills,
+  Team,
+  Navbar,
+} from '../../components/Sections';
 import { logos } from '../../assets/data/logos';
-import { Footer } from '../../components/Sections/Footer';
-import { Vision } from '../../components/Sections/Vision';
-import { Skills } from '../../components/Sections/Skills';
 import '../../assets/fonts/fonts.css';
-import { ThreeCanvas } from '../../components/Sections/ThreeCanvas';
 import { TeamMember } from '../TeamPage/types';
 import { SlsDbItem } from '../../types';
 import { dbItemToItem } from '../../utils/dbItemToItem';
@@ -58,7 +60,7 @@ export const HomePage = () => {
       ) : (
         <>
           <Navbar data={data} />
-          <ThreeCanvas data={data.header} />
+          <Header data={data.header} />
           <Skills
             heading={data.skills.heading}
             techIcons={icons[0].techIcons}
