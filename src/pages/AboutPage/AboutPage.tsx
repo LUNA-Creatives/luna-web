@@ -1,9 +1,7 @@
 import { Grid } from '@mui/material';
 
-import { Vision } from '../../components/Sections/Vision';
+import { Vision, Footer, Navbar } from '../../components/Sections';
 import data from '../../assets/data/data.json';
-import { Footer } from '../../components/Sections/Footer';
-import { Navbar } from '../../components/Navbar';
 import useStyles from '../style';
 
 export const AboutPage = () => {
