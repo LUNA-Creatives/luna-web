@@ -7,9 +7,8 @@ import {
   useMediaQuery,
 } from '@mui/material';
 
-import { ICallToAction } from './types';
+import { ICallToAction, Section } from './types';
 import useStyles from './style';
-import { Section } from './types';
 import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
 
 export const CallToAction = ({ data }: ICallToAction) => {
