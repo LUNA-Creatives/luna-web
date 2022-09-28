@@ -6,11 +6,11 @@ import { Loader } from './components/Loader';
 
 const App = () => {
   const loader = useStore((state) => state.isLoading);
-  const updateLoader = useStore((state) => state.updateLoader);
+  const setIsLoading = useStore((state) => state.setIsLoading);
 
   useEffect(() => {
     setTimeout(() => {
-      updateLoader(false);
+      setIsLoading(false);
     }, 6000);
   });
   return <ThemeConfig>{loader ? <Loader /> : <Routing />}</ThemeConfig>;
