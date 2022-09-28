@@ -6,6 +6,7 @@ import {
   Button,
   useMediaQuery,
 } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 import { ICallToAction, Section } from './types';
 import useStyles from './style';
@@ -26,13 +27,15 @@ export const CallToAction = ({ data }: ICallToAction) => {
             <Box className={classes.sectionBox} component={'div'} key={index}>
               <Typography variant="h3">{section.subHeadline}</Typography>
               <Typography variant="body1">{section.text}</Typography>
-              <Button
-                href={section.url}
-                className={classes.button}
-                color="primary"
+              <Link
+                className={classes.routeLink}
+                to={section.url}
+                onClick={() => window.scrollTo(0, 0)}
               >
-                {section.button}
-              </Button>
+                <Button className={classes.button} color="primary">
+                  {section.button}
+                </Button>
+              </Link>
               {isDesktop && index === 0 && (
                 <Box component={'div'} className={classes.underline} />
               )}

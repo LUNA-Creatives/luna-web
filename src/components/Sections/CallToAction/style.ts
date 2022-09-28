@@ -56,5 +56,8 @@ export default makeStyles((theme: Theme) =>
       height: '100%',
       borderBottom: `1px solid${theme.palette.primary.dark}`,
     },
+    routeLink: {
+      textDecoration: 'none',
+    },
   })
 );
