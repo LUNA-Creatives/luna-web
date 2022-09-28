@@ -12,7 +12,7 @@
       "links": [
         { "id": 1, "text": "Hem", "link": "/" },
         { "id": 2, "text": "Om oss", "link": "/about-us" },
-        { "id": 3, "text": "Vårt Team", "link": "our-team" }
+        { "id": 3, "text": "Vårt Team", "link": "/our-team" }
       ]
     },
     {

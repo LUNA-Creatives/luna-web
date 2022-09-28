@@ -6,7 +6,7 @@ import lottie from 'lottie-web/build/player/lottie_svg';
 import useStyles from './style';
 import animation from '../../assets/animations/glitchMoonAnimation.json';
 
-export const AnimationHero = () => {
+export const Loader = () => {
   const classes = useStyles();
 
   const animationId = 'animation';

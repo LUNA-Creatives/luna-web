@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { Container, Box, Typography, Link } from '@mui/material';
+import { Container, Box, Typography } from '@mui/material';
 import clsx from 'clsx';
-
+import { Link } from 'react-router-dom';
 import useStyles from './style';
 import { IOverlay, Item, Link as LinkType } from './types';
 
-export const Overlay = ({ data }: IOverlay) => {
+export const Overlay = ({ data, closeOverlay }: IOverlay) => {
   const classes = useStyles();
   const [extend, setExtend] = useState(-1);
 
@@ -24,7 +24,8 @@ export const Overlay = ({ data }: IOverlay) => {
                     key={index}
                     onMouseEnter={() => setExtend(item.id)}
                     onMouseLeave={() => setExtend(-1)}
-                    href={item.link}
+                    to={item.link}
+                    onClick={() => closeOverlay(false)}
                     className={classes.link}
                   >
                     <Typography variant={'h4'}>{item.text}</Typography>

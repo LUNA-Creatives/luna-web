@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import { AnimationHero } from '../../components/AnimationHero';
 import data from '../../assets/data/data.json';
 import {
   ClientLogos,
@@ -16,14 +15,13 @@ import {
 import { logos } from '../../assets/data/logos';
 import '../../assets/fonts/fonts.css';
 import { TeamMember } from '../TeamPage/types';
+import { Skill } from './types';
 import { SlsDbItem } from '../../types';
 import { dbItemToItem } from '../../utils/dbItemToItem';
-import { Skill } from './types';
 
 export const HomePage = () => {
-  const [showAnimation, setShowAnimation] = useState(true);
   const [team, setTeam] = useState<TeamMember[]>([]);
-  const [icons, setIcons] = useState<Skill[]>([]);
+  const [icons, setIcons] = useState<Skill[]>();
 
   const fetchAndSetTeam = async () => {
     try {
@@ -46,35 +44,27 @@ export const HomePage = () => {
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      setShowAnimation(false);
-    }, 6000);
-
     fetchAndSetTeam();
     fetchAndSetIcons();
   }, []);
 
   return (
-    <>
-      {showAnimation ? (
-        <AnimationHero />
-      ) : (
         <>
           <Navbar data={data} />
           <Header data={data.header} />
           <ClientLogos logos={logos} />
           <CallToAction data={data.callToAction} />
-          <Skills
-            heading={data.skills.heading}
-            techIcons={icons[0].techIcons}
-            helperIcons={icons[0].helperIcons}
-            designIcons={icons[0].designIcons}
-          />
+           {icons && (
+        <Skills
+          heading={data.skills.heading}
+          techIcons={icons[0].techIcons}
+          helperIcons={icons[0].helperIcons}
+          designIcons={icons[0].designIcons}
+        />
+        )}
           <Vision data={data.vision} />
           <Team data={team} headline={data.team.headline} />
           <Footer data={data.footer} />
         </>
-      )}
-    </>
   );
 };

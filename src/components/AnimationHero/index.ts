@@ -1,1 +1,0 @@
-export { AnimationHero } from './Animation';
