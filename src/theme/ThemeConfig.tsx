@@ -42,6 +42,11 @@ let theme = createTheme({
         fontSize: 12,
       },
     },
+    subtitle2: {
+      fontFamily: FONT_PRIMARY,
+      lineHeight: 2.1,
+      fontSize: 12,
+    },
   },
   palette: {
     primary: {
