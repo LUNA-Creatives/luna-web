@@ -10,6 +10,7 @@ import {
   Skills,
   Team,
   Navbar,
+  CallToAction,
 } from '../../components/Sections';
 import { logos } from '../../assets/data/logos';
 import '../../assets/fonts/fonts.css';
@@ -48,21 +49,22 @@ export const HomePage = () => {
   }, []);
 
   return (
-    <>
-      <Navbar data={data} />
-      <Header data={data.header} />
-      {icons && (
+        <>
+          <Navbar data={data} />
+          <Header data={data.header} />
+          <ClientLogos logos={logos} />
+          <CallToAction data={data.callToAction} />
+           {icons && (
         <Skills
           heading={data.skills.heading}
           techIcons={icons[0].techIcons}
           helperIcons={icons[0].helperIcons}
           designIcons={icons[0].designIcons}
         />
-      )}
-      <ClientLogos logos={logos} />
-      <Vision data={data.vision} />
-      <Team data={team} headline={data.team.headline} />
-      <Footer data={data.footer} />
-    </>
+        )}
+          <Vision data={data.vision} />
+          <Team data={team} headline={data.team.headline} />
+          <Footer data={data.footer} />
+        </>
   );
 };

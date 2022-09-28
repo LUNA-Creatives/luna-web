@@ -6,6 +6,10 @@ export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
       maxWidth: '100%',
+      minHeight: '100%',
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        height: '100vh',
+      },
       backgroundColor: theme.palette.primary.dark,
       color: theme.palette.primary.main,
     },
@@ -58,6 +62,11 @@ export default makeStyles((theme: Theme) =>
       padding: '15px 34px 15px 34px',
       textDecoration: 'none',
       cursor: 'pointer',
+      backgroundColor: theme.palette.primary.light,
+      border: `1px solid${theme.palette.primary.light}`,
+      '&:hover': {
+        color: theme.palette.primary.light,
+      },
       [theme.breakpoints.down(ipadBreakpoint)]: {
         width: '100%',
       },
