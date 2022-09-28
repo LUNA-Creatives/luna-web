@@ -58,7 +58,7 @@ export const Header = ({ data }: IHeader) => {
               {data.text}
             </Typography>
             <Button
-              color="secondary"
+              color="primary"
               variant="contained"
               onClick={handleScroll}
               className={classes.button}

@@ -62,6 +62,11 @@ export default makeStyles((theme: Theme) =>
       padding: '15px 34px 15px 34px',
       textDecoration: 'none',
       cursor: 'pointer',
+      backgroundColor: theme.palette.primary.light,
+      border: `1px solid${theme.palette.primary.light}`,
+      '&:hover': {
+        color: theme.palette.primary.light,
+      },
       [theme.breakpoints.down(ipadBreakpoint)]: {
         width: '100%',
       },

@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Grid, Container, Typography, Box, Button } from '@mui/material';
 
 import { ICallToAction } from './types';
@@ -8,20 +7,17 @@ import { Section } from './types';
 export const CallToAction = ({ data }: ICallToAction) => {
   const classes = useStyles();
 
-  useEffect(() => {
-    console.log('data', data);
-  }, []);
   return (
     <Grid className={classes.root}>
       <Container className={classes.container}>
-        <Box component={'div'}>
-          <Typography variant="h2">{data.headline}</Typography>
+        <Box component={'div'} className={classes.textBox}>
+          <Typography variant="h1">{data.headline}</Typography>
         </Box>
-        <Box component={'div'}>
+        <Box component={'div'} className={classes.box}>
           {data.sections.map((section: Section, index: number) => (
-            <Box component={'div'}>
+            <Box className={classes.sectionBox} component={'div'} key={index}>
               <Typography variant="h3">{section.subHeadline}</Typography>
-              <Typography variant="h5">{section.text}</Typography>
+              <Typography variant="body1">{section.text}</Typography>
               <Button className={classes.button} color="primary">
                 {section.button}
               </Button>
