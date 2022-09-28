@@ -29,7 +29,7 @@ export const Header = ({ data }: IHeader) => {
       autoplay: true,
       animationData: rocketAnimation,
     });
-  });
+  }, []);
 
   const handleScroll = () => {
     window.scroll({
