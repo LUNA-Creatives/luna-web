@@ -23,7 +23,7 @@ export const Footer = ({ data }: IFooter) => {
 
                 <Icon icon="gridicons:arrow-right" inline={true} />
 
-                <Link underline={'always'} variant={'h5'} href={openEmail}>
+                <Link underline={'always'} href={openEmail}>
                   {data.emailAddress}
                 </Link>
               </Typography>
@@ -31,11 +31,7 @@ export const Footer = ({ data }: IFooter) => {
           </Box>
           <Box component={'div'} className={classes.box}>
             <Grid className={classes.gridContainer}>
-              <Link
-                className={classes.iconBox}
-                href={data.addressLink}
-                variant={'body1'}
-              >
+              <Link className={classes.iconBox} href={data.addressLink}>
                 <motion.div
                   className={classes.iconBox}
                   whileHover={{ scale: 1.2 }}
@@ -46,7 +42,7 @@ export const Footer = ({ data }: IFooter) => {
                     className={classes.icon}
                     icon="ic:outline-place"
                   />
-                  <Typography className={classes.text}>
+                  <Typography variant={'h5'} className={classes.text}>
                     {data.location}
                   </Typography>
                 </motion.div>
@@ -68,11 +64,7 @@ export const Footer = ({ data }: IFooter) => {
                 </motion.div>
               </Link>
 
-              <Link
-                className={classes.iconBox}
-                href={phoneCall}
-                variant={'body1'}
-              >
+              <Link className={classes.iconBox} href={phoneCall}>
                 <motion.div
                   className={classes.iconBox}
                   whileHover={{ scale: 1.2 }}
@@ -83,7 +75,7 @@ export const Footer = ({ data }: IFooter) => {
                     icon="ant-design:phone-outlined"
                     width={30}
                   />
-                  <Typography className={classes.text}>
+                  <Typography variant={'h5'} className={classes.text}>
                     {data.phoneNumber}
                   </Typography>
                 </motion.div>
@@ -102,7 +94,7 @@ export const Footer = ({ data }: IFooter) => {
         </Container>
       </Grid>
 
-      <Typography className={classes.text} variant="body2">
+      <Typography className={classes.text} variant="h6">
         {data.copyRights}
       </Typography>
     </Grid>

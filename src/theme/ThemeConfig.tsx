@@ -8,10 +8,40 @@ import {
 import { CssBaseline, StyledEngineProvider } from '@mui/material';
 
 const FONT_PRIMARY = ['futura-pt', 'sans-serif'].join(',');
+const FONT_SECONDARY = ['playfair-display', 'serif'].join(',');
 
 let theme = createTheme({
   typography: {
     fontFamily: FONT_PRIMARY,
+    h1: {
+      fontWeight: 500,
+      fontSize: 64,
+      '@media (max-width:1024px)': {
+        fontSize: 32,
+      },
+    },
+    h5: {
+      fontSize: 18,
+      '@media (max-width:1024px)': {
+        fontSize: 14,
+      },
+    },
+    body1: {
+      fontFamily: FONT_SECONDARY,
+      lineHeight: 2.1,
+      fontSize: 24,
+      '@media (max-width:1024px)': {
+        fontSize: 16,
+      },
+    },
+    body2: {
+      fontFamily: FONT_SECONDARY,
+      lineHeight: 2.1,
+      fontSize: 18,
+      '@media (max-width:1024px)': {
+        fontSize: 12,
+      },
+    },
   },
   palette: {
     primary: {
