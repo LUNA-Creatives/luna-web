@@ -6,6 +6,10 @@ export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
       maxWidth: '100%',
+      minHeight: '100%',
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        height: '100vh',
+      },
       backgroundColor: theme.palette.primary.dark,
       color: theme.palette.primary.main,
     },

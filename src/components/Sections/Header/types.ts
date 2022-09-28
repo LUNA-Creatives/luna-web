@@ -1,8 +1,8 @@
 export interface IHeader {
   data: {
     headline: string;
-    subHeadline: string;
     text: string;
+    subHeadline: string;
     button: string;
     subText: string;
   };
