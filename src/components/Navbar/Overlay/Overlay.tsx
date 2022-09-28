@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import useStyles from './style';
 import { IOverlay, Item, Link as LinkType } from './types';
 
-export const Overlay = ({ data, updateState }: IOverlay) => {
+export const Overlay = ({ data, closeOverlay }: IOverlay) => {
   const classes = useStyles();
   const [extend, setExtend] = useState(-1);
 
@@ -25,7 +25,7 @@ export const Overlay = ({ data, updateState }: IOverlay) => {
                     onMouseEnter={() => setExtend(item.id)}
                     onMouseLeave={() => setExtend(-1)}
                     to={item.link}
-                    onClick={() => updateState(false)}
+                    onClick={() => closeOverlay(false)}
                     className={classes.link}
                   >
                     <Typography variant={'h4'}>{item.text}</Typography>

@@ -13,10 +13,6 @@ export const Navbar = ({ data }: INavbar) => {
   const [showOverlay, setShowOverlay] = useState(false);
   const [showLogo, setShowLogo] = useState(true);
 
-  const updateState = (newState: boolean) => {
-    setShowOverlay(newState);
-  };
-
   const classes = useStyles();
   const animationId = 'animation';
 
@@ -57,7 +53,10 @@ export const Navbar = ({ data }: INavbar) => {
         })}
       >
         {showOverlay && (
-          <Overlay updateState={updateState} data={data.navbar} />
+          <Overlay
+            closeOverlay={(prop: boolean) => setShowOverlay(prop)}
+            data={data.navbar}
+          />
         )}
       </Box>
 

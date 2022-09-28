@@ -1,6 +1,6 @@
 export interface IOverlay {
   data: [Item];
-  updateState: CallableFunction;
+  closeOverlay: CallableFunction;
 }
 export type Item = {
   headline: string;
