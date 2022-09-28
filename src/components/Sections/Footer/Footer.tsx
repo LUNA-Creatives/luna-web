@@ -94,7 +94,7 @@ export const Footer = ({ data }: IFooter) => {
         </Container>
       </Grid>
 
-      <Typography className={classes.text} variant="h6">
+      <Typography className={classes.text} variant="subtitle2">
         {data.copyRights}
       </Typography>
     </Grid>
