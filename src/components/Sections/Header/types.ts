@@ -4,5 +4,6 @@ export interface IHeader {
     subHeadline: string;
     text: string;
     button: string;
+    subText: string;
   };
 }

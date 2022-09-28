@@ -1,15 +1,26 @@
 import { useEffect } from 'react';
-import { Grid, Container, Typography, Button, Box } from '@mui/material';
+import {
+  Grid,
+  Container,
+  Typography,
+  Button,
+  Box,
+  useMediaQuery,
+} from '@mui/material';
 import { motion } from 'framer-motion';
 import lottie from 'lottie-web/build/player/lottie_svg';
+import { Icon } from '@iconify/react';
 
 import useStyles from './style';
 import { IHeader } from './types';
 import rocketAnimation from '../../../assets/animations/rocketAnimation.json';
+import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
 
 export const Header = ({ data }: IHeader) => {
   const classes = useStyles();
   const animationId = 'rocketAnimation';
+  const isDesktop = useMediaQuery(`(min-width:${ipadBreakpoint}px)`);
+
   useEffect(() => {
     lottie.loadAnimation({
       container: document.querySelector(`#${animationId}`) as Element,
@@ -37,7 +48,7 @@ export const Header = ({ data }: IHeader) => {
           transition={{ duration: 0.5 }}
         >
           <Box component={'div'} className={classes.textBox}>
-            <Typography variant="h5" className={classes.text}>
+            <Typography variant="subtitle1" className={classes.text}>
               {data.subHeadline}
             </Typography>
             <Typography variant="h1" className={classes.headline}>
@@ -46,7 +57,12 @@ export const Header = ({ data }: IHeader) => {
             <Typography variant="body1" className={classes.text}>
               {data.text}
             </Typography>
-            <Button onClick={handleScroll} className={classes.button}>
+            <Button
+              color="secondary"
+              variant="contained"
+              onClick={handleScroll}
+              className={classes.button}
+            >
               {data.button}
             </Button>
           </Box>
@@ -55,6 +71,12 @@ export const Header = ({ data }: IHeader) => {
           </Box>
         </motion.div>
       </Container>
+      {isDesktop && (
+        <Container className={classes.secondaryContainer}>
+          <Icon icon="gridicons:arrow-down" inline={true} />
+          <Typography variant="h6">{data.subText}</Typography>
+        </Container>
+      )}
     </Grid>
   );
 };

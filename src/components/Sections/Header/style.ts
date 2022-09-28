@@ -4,7 +4,11 @@ import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
-    root: { maxWidth: '100%', backgroundColor: theme.palette.primary.dark },
+    root: {
+      maxWidth: '100%',
+      backgroundColor: theme.palette.primary.dark,
+      color: theme.palette.primary.main,
+    },
     container: {
       height: '100%',
       display: 'flex',
@@ -13,13 +17,18 @@ export default makeStyles((theme: Theme) =>
       flexDirection: 'row',
       maxWidth: 1600,
       [theme.breakpoints.up(ipadBreakpoint)]: {
-        height: '100vh',
+        height: '90vh',
       },
+    },
+    secondaryContainer: {
+      display: 'flex',
+      alignItems: 'center',
+      maxWidth: 1600,
     },
     box: {
       display: 'flex',
       flexDirection: 'column-reverse',
-      color: theme.palette.primary.main,
+
       [theme.breakpoints.up(ipadBreakpoint)]: {
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -46,8 +55,6 @@ export default makeStyles((theme: Theme) =>
     button: {
       marginTop: 30,
       borderRadius: 2,
-      backgroundColor: theme.palette.primary.light,
-      color: theme.palette.primary.dark,
       padding: '15px 34px 15px 34px',
       textDecoration: 'none',
       cursor: 'pointer',
