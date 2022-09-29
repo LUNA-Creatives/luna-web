@@ -8,7 +8,7 @@ import {
 import { CssBaseline, StyledEngineProvider } from '@mui/material';
 
 const FONT_PRIMARY = ['futura-pt', 'sans-serif'].join(',');
-const FONT_SECONDARY = ['playfair-display', 'serif'].join(',');
+const FONT_SECONDARY = ['minion-pro', 'serif'].join(',');
 
 let theme = createTheme({
   typography: {
