@@ -19,42 +19,44 @@ export const Overlay = ({ data, closeOverlay }: IOverlay) => {
                 {item.headline}
               </Typography>
               <Box component={'div'} className={classes.linkBox}>
-                {item.links.map((item: LinkType, index: number) =>
+                {item.links.map((type: LinkType, index: number) =>
+                  // Links navigating within app
                   i === 0 ? (
                     <RouterLink
                       key={index}
-                      onMouseEnter={() => setExtend(item.id)}
+                      onMouseEnter={() => setExtend(type.id)}
                       onMouseLeave={() => setExtend(-1)}
-                      to={item.link}
+                      to={type.link}
                       onClick={() =>
                         closeOverlay(false) & (window.scrollTo(0, 0) as any)
                       }
                       className={classes.link}
                     >
-                      <Typography variant={'h4'}>{item.text}</Typography>
-                      <Typography variant={'h4'}>{item?.zipcode}</Typography>
+                      <Typography variant={'h4'}>{type.text}</Typography>
+                      <Typography variant={'h4'}>{type?.zipcode}</Typography>
                       <span
                         className={clsx(classes.underline, {
-                          [classes.extended]: extend === item.id,
+                          [classes.extended]: extend === type.id,
                         })}
                       ></span>
                     </RouterLink>
                   ) : (
+                    // Links navigating outside app
                     <Link
                       key={index}
-                      onMouseEnter={() => setExtend(item.id)}
+                      onMouseEnter={() => setExtend(type.id)}
                       onMouseLeave={() => setExtend(-1)}
-                      href={item.link}
+                      href={type.link}
                       onClick={() =>
                         closeOverlay(false) & (window.scrollTo(0, 0) as any)
                       }
                       className={classes.link}
                     >
-                      <Typography variant={'h4'}>{item.text}</Typography>
-                      <Typography variant={'h4'}>{item?.zipcode}</Typography>
+                      <Typography variant={'h4'}>{type.text}</Typography>
+                      <Typography variant={'h4'}>{type?.zipcode}</Typography>
                       <span
                         className={clsx(classes.underline, {
-                          [classes.extended]: extend === item.id,
+                          [classes.extended]: extend === type.id,
                         })}
                       ></span>
                     </Link>
