@@ -7,3 +7,4 @@ export { Vision } from './Vision';
 export { ClientLogos } from './ClientLogos';
 export { Navbar } from './Navbar';
 export { CallToAction } from './CallToAction';
+export { Services } from './Services';
