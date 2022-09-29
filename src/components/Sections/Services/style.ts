@@ -1,6 +1,8 @@
 import { createStyles, makeStyles } from '@mui/styles';
 import { Theme } from '@mui/material/styles';
 
+import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
+
 export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -8,22 +10,40 @@ export default makeStyles((theme: Theme) =>
       color: theme.palette.secondary.light,
     },
     container: {
+      minHeight: '100%',
       maxWidth: 1600,
     },
     cardContainer: {
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-between',
+      minHeight: '100%',
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+      },
+    },
+    outerBox: {
+      paddingBottom: 50,
+      width: '100%',
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        width: '31%',
+      },
     },
     cardBox: {
-      height: '50vh',
-      width: '30%',
-      padding: '5% 30px 30px 30px',
+      overflow: 'hidden',
+      height: '100%',
+      width: '100%',
       backgroundColor: '#292929',
       borderRadius: 8,
     },
-    box: {
-      borderRadius: 8,
+    textContainer: {
+      paddingTop: 50,
+      paddingBottom: 50,
+    },
+    image: {
+      width: '100%',
+    },
+    innerBox: {
+      padding: '45% 30px 30px 30px',
     },
   })
 );
