@@ -22,7 +22,7 @@ let theme = createTheme({
     },
     h2: {
       fontWeight: 500,
-      fontSize: 52,
+      fontSize: 40,
       '@media (max-width:1024px)': {
         fontSize: 32,
       },

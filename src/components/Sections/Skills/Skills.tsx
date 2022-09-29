@@ -19,7 +19,7 @@ export const Skills = ({
     <Grid className={classes.root}>
       <Grid className={classes.container}>
         <Container className={classes.box}>
-          <Typography className={classes.heading} variant="h1">
+          <Typography className={classes.heading} variant="h2">
             {heading}
           </Typography>
         </Container>
