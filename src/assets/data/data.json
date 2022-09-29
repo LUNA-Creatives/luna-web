@@ -70,11 +70,17 @@
     "card": [
       {
         "headline": "Hemsidor & Webshop",
-        "text": ["Byggd med kod", "Byggd med CMS", "Domän & Webbhotell & Drift"]
+        "text": [
+          "Byggd med kod",
+          "Byggd med CMS",
+          "Domän & Webbhotell & Drift"
+        ],
+        "imageSource": "../images/pink.svg"
       },
       {
         "headline": "Apputveckling",
-        "text": ["Webbapp", "Mobilapp"]
+        "text": ["Webbapp", "Mobilapp"],
+        "imageSource": "../images/yellow.svg"
       },
       {
         "headline": "Design",
@@ -82,7 +88,8 @@
           "Logotyp & Grafisk Profil",
           "Grafisk Formgivning",
           "Bildbehandling"
-        ]
+        ],
+        "imageSource": "../images/green.svg"
       }
     ]
   },

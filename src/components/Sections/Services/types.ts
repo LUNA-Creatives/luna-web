@@ -9,4 +9,5 @@ export interface IServices {
 export type Card = {
   headline: string;
   text: string[];
+  imageSource: string;
 };

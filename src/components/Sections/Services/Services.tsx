@@ -21,30 +21,12 @@ export const Services = ({ data }: IServices) => {
           {data.card.map((card: Card, index: number) => (
             <Box key={index} component={'div'} className={classes.outerBox}>
               <Box component={'div'} className={classes.cardBox}>
-                {index === 0 && (
-                  <img
-                    className={classes.image}
-                    src={pink}
-                    alt="wavy"
-                    loading="lazy"
-                  />
-                )}
-                {index === 1 && (
-                  <img
-                    className={classes.image}
-                    src={yellow}
-                    alt="wavy"
-                    loading="lazy"
-                  />
-                )}
-                {index === 2 && (
-                  <img
-                    className={classes.image}
-                    src={green}
-                    alt="wavy"
-                    loading="lazy"
-                  />
-                )}
+                <img
+                  className={classes.image}
+                  src={card.imageSource}
+                  alt="wavy"
+                  loading="lazy"
+                />
                 <Box className={classes.innerBox} component={'div'} key={index}>
                   <Box component={'div'}>
                     <Typography variant="h2" className={classes.headline}>
