@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Grid, Container, Box, Typography } from '@mui/material';
 
 import useStyles from './style';
@@ -11,9 +10,6 @@ import green from '../../../assets/images/green.svg';
 export const Services = ({ data }: IServices) => {
   const classes = useStyles();
 
-  useEffect(() => {
-    console.log('services', data);
-  }, []);
   return (
     <Grid className={classes.root}>
       <Container className={classes.container}>
@@ -23,7 +19,7 @@ export const Services = ({ data }: IServices) => {
         </Box>
         <Box component={'div'} className={classes.cardContainer}>
           {data.card.map((card: Card, index: number) => (
-            <Box component={'div'} className={classes.outerBox}>
+            <Box key={index} component={'div'} className={classes.outerBox}>
               <Box component={'div'} className={classes.cardBox}>
                 {index === 0 && (
                   <img
