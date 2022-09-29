@@ -12,6 +12,7 @@ export default makeStyles((theme: Theme) =>
       maxWidth: 1600,
     },
     flexBox: {
+      paddingBottom: '5%',
       [theme.breakpoints.up(ipadBreakpoint)]: {
         display: 'flex',
         flexDirection: 'row',
