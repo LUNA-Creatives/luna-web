@@ -51,7 +51,7 @@ export const Services = ({ data }: IServices) => {
                 )}
                 <Box className={classes.innerBox} component={'div'} key={index}>
                   <Box component={'div'}>
-                    <Typography variant="h3">{card.headline}</Typography>
+                    <Typography variant="h2">{card.headline}</Typography>
                     {card.text.map((text: string, index: number) => (
                       <Typography key={index} variant="body1">
                         {text}
