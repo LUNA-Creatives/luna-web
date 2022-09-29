@@ -29,7 +29,7 @@ export const Services = ({ data }: IServices) => {
                   <img
                     className={classes.image}
                     src={pink}
-                    alt=""
+                    alt="wavy"
                     loading="lazy"
                   />
                 )}
@@ -37,7 +37,7 @@ export const Services = ({ data }: IServices) => {
                   <img
                     className={classes.image}
                     src={yellow}
-                    alt=""
+                    alt="wavy"
                     loading="lazy"
                   />
                 )}
@@ -45,7 +45,7 @@ export const Services = ({ data }: IServices) => {
                   <img
                     className={classes.image}
                     src={green}
-                    alt=""
+                    alt="wavy"
                     loading="lazy"
                   />
                 )}
