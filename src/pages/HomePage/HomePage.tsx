@@ -6,7 +6,6 @@ import {
   ClientLogos,
   Header,
   Footer,
-  Vision,
   Skills,
   Team,
   Navbar,
@@ -64,7 +63,6 @@ export const HomePage = () => {
         />
       )}
       <Services data={data.services} />
-      <Vision data={data.vision} />
       <Team data={team} headline={data.team.headline} />
       <Footer data={data.footer} />
     </>
