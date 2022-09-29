@@ -3,10 +3,6 @@ import { Grid, Container, Box, Typography } from '@mui/material';
 import useStyles from './style';
 import { IServices, Card } from './types';
 
-import yellow from '../../../assets/images/yellow.svg';
-import pink from '../../../assets/images/pink.svg';
-import green from '../../../assets/images/green.svg';
-
 export const Services = ({ data }: IServices) => {
   const classes = useStyles();
 
