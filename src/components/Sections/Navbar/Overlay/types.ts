@@ -1,14 +1,14 @@
 export interface IOverlay {
-  data: [Item];
+  data: ColumnData[];
   closeOverlay: CallableFunction;
 }
-export type Item = {
+export type ColumnData = {
   headline: string;
-  links: [Link];
+  navItems: NavItem[];
 };
-export type Link = {
+export type NavItem = {
   id: number;
-  text: string;
+  text1: string;
   link: string;
-  zipcode?: string;
+  text2?: string;
 };

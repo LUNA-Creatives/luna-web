@@ -9,39 +9,39 @@
   "navbar": [
     {
       "headline": "Meny",
-      "links": [
-        { "id": 1, "text": "Hem", "link": "/" },
-        { "id": 2, "text": "Om oss", "link": "/about-us" },
-        { "id": 3, "text": "Vårt Team", "link": "/our-team" }
+      "navItems": [
+        { "id": 1, "text1": "Hem", "link": "/" },
+        { "id": 2, "text1": "Om oss", "link": "/about-us" },
+        { "id": 3, "text1": "Vårt Team", "link": "/our-team" }
       ]
     },
     {
       "headline": "Adress",
-      "links": [
+      "navItems": [
         {
           "id": 4,
-          "text": "Norra Gubberogatan 30",
-          "zipcode": "416 63 Göteborg",
+          "text1": "Norra Gubberogatan 30",
+          "text2": "416 63 Göteborg",
           "link": "https://www.google.com/maps/place/LUNA+Creatives/@57.7112605,11.996917,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff36c51447e05:0x99fdbc7a640753b7!8m2!3d57.7112605!4d11.999111"
         }
       ]
     },
     {
       "headline": "Sociala medier",
-      "links": [
+      "navItems": [
         {
           "id": 5,
-          "text": "LinkedIn",
+          "text1": "LinkedIn",
           "link": "https://www.linkedin.com/company/lunacreatives/"
         },
         {
           "id": 6,
-          "text": "Instagram",
+          "text1": "Instagram",
           "link": "https://www.instagram.com/lunacreatives.se/?hl=en"
         },
         {
           "id": 7,
-          "text": "Facebook",
+          "text1": "Facebook",
           "link": "https://m.facebook.com/LUNA-Creatives-102384795888975/"
         }
       ]
