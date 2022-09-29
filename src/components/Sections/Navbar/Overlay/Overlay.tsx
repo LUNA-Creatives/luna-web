@@ -10,6 +10,11 @@ export const Overlay = ({ data, closeOverlay }: IOverlay) => {
   const classes = useStyles();
   const [extend, setExtend] = useState(-1);
 
+  const openInNewTab = (url: string) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+    closeOverlay(false);
+  };
+
   return (
     <Container className={classes.container}>
       <Container className={classes.flexContainer}>
@@ -47,10 +52,7 @@ export const Overlay = ({ data, closeOverlay }: IOverlay) => {
                       key={index}
                       onMouseEnter={() => setExtend(item.id)}
                       onMouseLeave={() => setExtend(-1)}
-                      href={item.link}
-                      onClick={() =>
-                        closeOverlay(false) & (window.scrollTo(0, 0) as any)
-                      }
+                      onClick={() => openInNewTab(item.link)}
                       className={classes.link}
                     >
                       <Typography variant={'h4'}>{item.text1}</Typography>
