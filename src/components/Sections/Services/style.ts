@@ -43,10 +43,13 @@ export default makeStyles((theme: Theme) =>
       width: '100%',
     },
     innerBox: {
-      padding: '35% 30px 30px 30px',
+      padding: '30% 30px 30px 30px',
       [theme.breakpoints.up(ipadBreakpoint)]: {
-        padding: '40% 30px 30px 30px',
+        padding: '35% 30px 30px 30px',
       },
+    },
+    headline: {
+      paddingBottom: '5%',
     },
   })
 );
