@@ -41,6 +41,8 @@ export default makeStyles((theme: Theme) =>
     },
     image: {
       width: '100%',
+      minHeight: 150,
+      objectFit: 'cover',
     },
     innerBox: {
       padding: '30% 30px 30px 30px',
