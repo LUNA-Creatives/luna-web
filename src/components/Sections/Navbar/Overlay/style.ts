@@ -54,6 +54,7 @@ export default makeStyles((theme: Theme) =>
     link: {
       textDecoration: 'none',
       color: theme.palette.primary.dark,
+      cursor: 'pointer',
     },
     extended: {
       width: '100%',
