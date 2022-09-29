@@ -24,9 +24,9 @@ export const ThreeCanvas = ({data}) => {
         {inView && (
           <Suspense fallback={null}>
             <Model  position={[0, 0, 0]} scale={0.8} url={'space-landing/scene.gltf'} clock={'0'} />
-            <Model url={'iphone/scene.gltf'} position={[5, -8, 12]}  scale={0.01} clock={'-0.3'}/>
+            {/* <Model url={'iphone/scene.gltf'} position={[5, -8, 12]}  scale={0.01} clock={'-0.3'}/>
             <Model url={'macbook/scene.gltf'} position={[10, -2, -2]}  scale={0.6} clock={'0.2'}/>
-            <Model url={'ipad/scene.gltf'} position={[-10, -6, -6]} scale={5.8} clock={'0.3'}/>
+            <Model url={'ipad/scene.gltf'} position={[-10, -6, -6]} scale={5.8} clock={'0.3'}/> */}
           <Stars radius={500} depth={50} count={500} factor={10}/>   
           </Suspense>
         )}

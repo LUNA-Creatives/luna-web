@@ -8,12 +8,7 @@ export default makeStyles((theme: Theme) =>
       backgroundColor: theme.palette.primary.dark,
       color: theme.palette.primary.main,
     },
-    container: {
-      paddingBottom: 100,
-      [theme.breakpoints.up('sm')]: {
-        paddingBottom: 150,
-      },
-    },
+    container: {},
     slider: {
       overflow: 'hidden',
       position: 'relative',

@@ -16,7 +16,7 @@ export default makeStyles((theme: Theme) =>
       [theme.breakpoints.up(ipadBreakpoint)]: {
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
       },
     },
     box: {
