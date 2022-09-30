@@ -18,7 +18,7 @@ export default makeStyles((theme: Theme) =>
       width: '100vw',
     },
     slideTrack: {
-      animation: '$sliderAnimation 80s linear infinite',
+      animation: '$sliderAnimation 100s linear infinite',
       display: 'flex',
       width: 'calc(22vw * 42)',
       [theme.breakpoints.up('sm')]: {
