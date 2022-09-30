@@ -41,7 +41,7 @@ export const CustomerPromise = ({ data }: ICustomerPromise) => {
               variant="contained"
               onClick={handleScroll}
             >
-              {data.button}
+              {data.buttonText}
             </Button>
           </Box>
           {isDesktop && (
