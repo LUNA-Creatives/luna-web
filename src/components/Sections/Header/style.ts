@@ -66,6 +66,7 @@ export default makeStyles((theme: Theme) =>
       border: `1px solid${theme.palette.primary.light}`,
       '&:hover': {
         color: theme.palette.primary.light,
+        backgroundColor: theme.palette.primary.dark,
       },
       [theme.breakpoints.down(ipadBreakpoint)]: {
         width: '100%',
