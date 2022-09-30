@@ -7,6 +7,7 @@ export default makeStyles((theme: Theme) =>
       paddingTop: 100,
       backgroundColor: theme.palette.primary.dark,
       color: theme.palette.primary.main,
+      overflow: 'hidden',
     },
     container: {},
     slider: {
