@@ -23,7 +23,7 @@ import { dbItemToItem } from '../../utils/dbItemToItem';
 
 export const HomePage = () => {
   const [team, setTeam] = useState<TeamMember[]>([]);
-  const [icons, setIcons] = useState<Skill[]>();
+  const [icons, setIcons] = useState<Skill[]>([]);
 
   const fetchAndSetTeam = async () => {
     try {
@@ -56,14 +56,7 @@ export const HomePage = () => {
       <Header data={data.header} />
       <ClientLogos logos={logos} />
       <CallToAction data={data.callToAction} />
-      {icons && (
-        <Skills
-          heading={data.skills.heading}
-          techIcons={icons[0].techIcons}
-          helperIcons={icons[0].helperIcons}
-          designIcons={icons[0].designIcons}
-        />
-      )}
+      {icons && <Skills icons={icons} />}
       <Services data={data.services} />
       <CustomDivider />
       <CustomerPromise data={data.customerPromise} />

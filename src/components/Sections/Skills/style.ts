@@ -4,10 +4,12 @@ import { Theme } from '@mui/material/styles';
 export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      paddingTop: 100,
       backgroundColor: theme.palette.primary.dark,
       color: theme.palette.primary.main,
       overflow: 'hidden',
+      [theme.breakpoints.up('sm')]: {
+        paddingTop: 50,
+      },
     },
     container: {},
     slider: {
@@ -16,33 +18,22 @@ export default makeStyles((theme: Theme) =>
       width: '100vw',
     },
     slideTrack: {
-      animation: '$scrollMobile 80s linear infinite',
+      animation: '$scrollMobile 100s linear infinite',
       display: 'flex',
-      width: 'calc(150px * 14)',
-      [theme.breakpoints.up('sm')]: {
-        width: 'calc(14vw * 14)',
-        animation: '$scrollDesktop 80s linear infinite',
-      },
-    },
-    slideTrackUneven: {
-      animation: '$scrollMobile 80s linear infinite',
-      display: 'flex',
-      width: 'calc(150px * 14)',
-      marginLeft: 75,
-      [theme.breakpoints.up('sm')]: {
-        marginLeft: '7vw',
-        width: 'calc(14vw * 14)',
+      width: 'calc(70px * 42)',
+      [theme.breakpoints.up(1400)]: {
+        width: 'calc(100px * 42)',
         animation: '$scrollDesktop 80s linear infinite',
       },
     },
     slide: {
-      width: 250,
       display: 'flex',
       marginTop: 50,
-
-      [theme.breakpoints.up('sm')]: {
-        margin: 50,
-        width: '14vw',
+      margin: 10,
+      width: 70,
+      [theme.breakpoints.up(1400)]: {
+        margin: 20,
+        width: 100,
       },
     },
     box: {
@@ -52,14 +43,15 @@ export default makeStyles((theme: Theme) =>
       paddingBottom: '5%',
     },
     iconBox: {
-      backgroundColor: '#2C2C2C',
-      borderRadius: 5,
-      width: 80,
-      padding: 20,
+      backgroundColor: '#212121',
+      borderRadius: 27,
+      width: 70,
+      padding: 10,
       display: 'flex',
       justifyContent: 'center',
-      [theme.breakpoints.up('sm')]: {
-        width: 100,
+      [theme.breakpoints.up(1400)]: {
+        width: '4vw',
+        padding: '20%',
       },
     },
     icon: {
@@ -69,11 +61,11 @@ export default makeStyles((theme: Theme) =>
     },
     '@keyframes scrollDesktop': {
       '0%': { transform: 'translate(0, 0)' },
-      '100%': { transform: 'translate(calc(-50%), 0)' },
+      '100%': { transform: 'translate(calc(-140px * 21), 0)' },
     },
     '@keyframes scrollMobile': {
       '0%': { transform: 'translate(0, 0)' },
-      '100%': { transform: 'translate(calc(-150px * 7), 0)' },
+      '100%': { transform: 'translate(calc(-90px * 21), 0)' },
     },
   })
 );
