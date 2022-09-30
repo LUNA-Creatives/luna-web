@@ -11,7 +11,9 @@ import {
   Navbar,
   CallToAction,
   Services,
+  CustomerPromise,
 } from '../../components/Sections';
+import { CustomDivider } from '../../components/CustomDivider';
 import { logos } from '../../assets/data/logos';
 import '../../assets/fonts/fonts.css';
 import { TeamMember } from '../TeamPage/types';
@@ -63,6 +65,8 @@ export const HomePage = () => {
         />
       )}
       <Services data={data.services} />
+      <CustomDivider />
+      <CustomerPromise data={data.customerPromise} />
       <Team data={team} headline={data.team.headline} />
       <Footer data={data.footer} />
     </>

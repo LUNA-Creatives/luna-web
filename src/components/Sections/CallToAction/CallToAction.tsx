@@ -25,7 +25,7 @@ export const CallToAction = ({ data }: ICallToAction) => {
         <Box component={'div'} className={classes.box}>
           {data.sections.map((section: Section, index: number) => (
             <Box className={classes.sectionBox} component={'div'} key={index}>
-              <Typography variant="h3">{section.subHeadline}</Typography>
+              <Typography variant="h2">{section.subHeadline}</Typography>
               <Typography variant="body1">{section.text}</Typography>
               <Link
                 className={classes.routeLink}

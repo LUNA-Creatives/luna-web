@@ -12,7 +12,7 @@ export const Vision = ({ data }: IVision) => {
   return (
     <Grid className={classes.root}>
       <Container className={classes.container}>
-        <Typography className={classes.headline} variant={'h1'}>
+        <Typography className={classes.headline} variant={'h2'}>
           {data.headline}
         </Typography>
         <Grid container item xs={12}>
