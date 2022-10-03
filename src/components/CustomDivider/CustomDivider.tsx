@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     backgroundColor: theme.palette.primary.dark,
     height: 50,
     [theme.breakpoints.up(ipadBreakpoint)]: {
-      height: '10vw',
+      height: 150,
     },
   },
   container: {
