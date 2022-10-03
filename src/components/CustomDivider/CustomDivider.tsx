@@ -5,21 +5,19 @@ import { Theme } from '@mui/material/styles';
 import { ipadBreakpoint } from '../../utils/screenSizeBreakpoints';
 
 export interface IDivider {
-  backgroundColor?: string;
+  hasBackgroundColor?: boolean;
 }
 
-export const CustomDivider = ({ backgroundColor }: IDivider) => {
+export const CustomDivider = ({ hasBackgroundColor }: IDivider) => {
   const classes = useStyles();
-  const background = {
-    backgroundColor: backgroundColor,
-  };
 
   return (
     <Grid className={classes.root}>
       <Container className={classes.container}>
-        {backgroundColor && (
-          <Divider style={background} className={classes.divider} />
-        )}
+        <Divider
+          sx={{ backgroundColor: hasBackgroundColor ? '#4D4D4D' : 'none' }}
+          className={classes.divider}
+        />
       </Container>
     </Grid>
   );

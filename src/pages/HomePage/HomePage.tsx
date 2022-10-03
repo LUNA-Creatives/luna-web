@@ -65,7 +65,7 @@ export const HomePage = () => {
         />
       )}
       <Services data={data.services} />
-      <CustomDivider backgroundColor={'#4D4D4D'} />
+      <CustomDivider hasBackgroundColor={true} />
       <CustomerPromise data={data.customerPromise} />
       <CustomDivider />
       <Team data={team} headline={data.team.headline} />
