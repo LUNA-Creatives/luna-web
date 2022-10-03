@@ -5,13 +5,13 @@ import data from '../../assets/data/data.json';
 import {
   ClientLogos,
   Header,
-  Footer,
   Skills,
   Team,
   Navbar,
   CallToAction,
   Services,
   CustomerPromise,
+  Footer,
 } from '../../components/Sections';
 import { CustomDivider } from '../../components/CustomDivider';
 import { logos } from '../../assets/data/logos';
