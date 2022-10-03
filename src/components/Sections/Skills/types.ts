@@ -1,10 +1,9 @@
 export interface ISkills {
-  heading?: string;
-  techIcons: Icon[];
-  helperIcons: Icon[];
-  designIcons: Icon[];
+  icons: Icon[];
 }
 
 export type Icon = {
+  alt: string;
+  id: number;
   url: string;
 };

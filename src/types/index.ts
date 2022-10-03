@@ -1,3 +1,3 @@
-import { SlsDbItem } from './types';
+import { SlsDbItem, TeamMember } from './types';
 
-export type { SlsDbItem };
+export type { SlsDbItem, TeamMember };
