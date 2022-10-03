@@ -57,8 +57,9 @@ export const HomePage = () => {
       <CallToAction data={data.callToAction} />
       {icons && <Skills icons={icons} />}
       <Services data={data.services} />
-      <CustomDivider />
+      <CustomDivider hasBackgroundColor />
       <CustomerPromise data={data.customerPromise} />
+      <CustomDivider />
       <Team data={team} headline={data.team.headline} />
       <Footer data={data.footer} />
     </>
