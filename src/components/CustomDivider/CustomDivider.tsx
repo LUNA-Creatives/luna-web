@@ -4,12 +4,22 @@ import { makeStyles } from '@mui/styles';
 import { Theme } from '@mui/material/styles';
 import { ipadBreakpoint } from '../../utils/screenSizeBreakpoints';
 
-export const CustomDivider = () => {
+export interface IDivider {
+  backgroundColor?: string;
+}
+
+export const CustomDivider = ({ backgroundColor }: IDivider) => {
   const classes = useStyles();
+  const background = {
+    backgroundColor: backgroundColor,
+  };
+
   return (
     <Grid className={classes.root}>
       <Container className={classes.container}>
-        <Divider className={classes.divider} />
+        {backgroundColor && (
+          <Divider style={background} className={classes.divider} />
+        )}
       </Container>
     </Grid>
   );
@@ -22,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     backgroundColor: theme.palette.primary.dark,
     height: 50,
     [theme.breakpoints.up(ipadBreakpoint)]: {
-      height: 200,
+      height: '10vw',
     },
   },
   container: {
@@ -30,6 +40,5 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   divider: {
     width: '100%',
-    backgroundColor: '#4D4D4D',
   },
 }));
