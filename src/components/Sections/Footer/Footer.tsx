@@ -29,15 +29,18 @@ export const Footer = ({ data }: IFooter) => {
               )}
               {column.socialLinks &&
                 column.socialLinks.map((link: socialLinks, index: number) => (
-                  <Box component={'div'} className={classes.linkBox}>
+                  <Box
+                    key={index}
+                    component={'div'}
+                    className={classes.linkBox}
+                  >
                     <Link
                       onClick={() => openInNewTab(link.url)}
-                      key={index}
                       className={classes.link}
                     >
                       <Typography
                         fontWeight={'600'}
-                        key={index}
+                        lineHeight={'1.8'}
                         variant={'body1'}
                       >
                         {link.text}
@@ -59,10 +62,10 @@ export const Footer = ({ data }: IFooter) => {
               }
               className={classes.link}
             >
-              <Typography variant={'h5'}>
+              <Typography variant={'h5'} lineHeight={'1.8'}>
                 {data.subHeadline.contactInformation.streetName}
               </Typography>
-              <Typography variant={'h5'}>
+              <Typography variant={'h5'} lineHeight={'1.8'}>
                 {data.subHeadline.contactInformation.city}
               </Typography>
             </Link>
@@ -70,12 +73,12 @@ export const Footer = ({ data }: IFooter) => {
               onClick={() => openInNewTab(openEmail)}
               className={classes.link}
             >
-              <Typography variant={'h5'} fontWeight={'500'}>
+              <Typography variant={'h5'} fontWeight={'500'} lineHeight={'1.8'}>
                 {data.subHeadline.email}
               </Typography>
             </Link>
             <Link href={phoneCall} className={classes.link}>
-              <Typography fontWeight={'500'} variant={'h5'}>
+              <Typography fontWeight={'500'} variant={'h5'} lineHeight={'1.8'}>
                 {data.subHeadline.phoneNumber}
               </Typography>
             </Link>

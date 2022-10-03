@@ -50,7 +50,7 @@ let theme = createTheme({
     },
     body1: {
       fontFamily: FONT_SECONDARY,
-      lineHeight: 1.5,
+      lineHeight: 2.1,
       fontSize: 24,
       '@media (max-width:1024px)': {
         fontSize: 16,
