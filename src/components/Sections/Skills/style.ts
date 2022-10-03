@@ -48,15 +48,12 @@ export default makeStyles((theme: Theme) =>
       },
       [theme.breakpoints.up('md')]: {
         width: '8vw',
-        margin: '1vw',
       },
       [theme.breakpoints.up('lg')]: {
         width: '6vw',
-        margin: '1vw',
       },
       [theme.breakpoints.up('xl')]: {
         width: '4vw',
-        margin: '1vw',
       },
     },
     box: {
