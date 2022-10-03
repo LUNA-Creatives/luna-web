@@ -45,7 +45,9 @@ export const Card = ({ name, role, profileImage, gif }: ICard) => {
         />
       </Box>
       <Box component={'div'} className={classes.textBox}>
-        <Typography variant={'h5'}>{name}</Typography>
+        <Typography className={classes.text} variant={'h5'}>
+          {name}
+        </Typography>
         <Typography variant={'body2'}>{role}</Typography>
       </Box>
     </>
