@@ -16,14 +16,13 @@ import {
 import { CustomDivider } from '../../components/CustomDivider';
 import { logos } from '../../assets/data/logos';
 import '../../assets/fonts/fonts.css';
-import { TeamMember } from '../TeamPage/types';
-import { Skill } from './types';
-import { SlsDbItem } from '../../types';
+import { Icon } from '../../components/Sections/Skills/types';
+import { SlsDbItem, TeamMember } from '../../types';
 import { dbItemToItem } from '../../utils/dbItemToItem';
 
 export const HomePage = () => {
   const [team, setTeam] = useState<TeamMember[]>([]);
-  const [icons, setIcons] = useState<Skill[]>([]);
+  const [icons, setIcons] = useState<Icon[]>([]);
 
   const fetchAndSetTeam = async () => {
     try {
@@ -38,7 +37,7 @@ export const HomePage = () => {
   const fetchAndSetIcons = async () => {
     try {
       const { data } = await axios.get<SlsDbItem[]>('/api/icons');
-      const iconsData: Skill[] = dbItemToItem(data);
+      const iconsData: Icon[] = dbItemToItem(data);
       setIcons(iconsData);
     } catch (e) {
       console.log(e);
