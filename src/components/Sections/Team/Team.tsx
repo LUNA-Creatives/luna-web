@@ -11,7 +11,11 @@ export const Team = ({ data, headline }: ITeam) => {
   return (
     <Grid className={classes.root}>
       <Container className={classes.container}>
-        <Typography variant="h2" className={classes.headline}>
+        <Typography
+          variant="h2"
+          sx={{ textTransform: 'uppercase' }}
+          className={classes.headline}
+        >
           {headline}
         </Typography>
 
