@@ -7,8 +7,12 @@ export default makeStyles((theme: Theme) =>
     root: { backgroundColor: '#F5F5F5' },
     container: {
       maxWidth: 1600,
-      paddingTop: 120,
-      paddingBottom: 100,
+      paddingTop: 80,
+      paddingBottom: 20,
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        paddingTop: 120,
+        paddingBottom: 100,
+      },
     },
     flexBox: {
       [theme.breakpoints.up(ipadBreakpoint)]: {
