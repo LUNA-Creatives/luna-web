@@ -14,7 +14,7 @@ export default makeStyles((theme: Theme) =>
     container: {
       position: 'fixed',
       display: 'flex',
-      maxWidth: 1800,
+      maxWidth: 1600,
       top: 20,
       [theme.breakpoints.down(ipadBreakpoint)]: {
         top: 0,
