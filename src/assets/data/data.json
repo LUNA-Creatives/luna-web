@@ -102,7 +102,7 @@
     "buttonText": "Kontakta oss"
   },
   "team": {
-    "headline": "Vårt team"
+    "headline": "Team"
   },
   "vision": {
     "headline": "Tanken bakom Luna",
@@ -123,6 +123,13 @@
   },
   "skills": {
     "heading": "Vi väljer rätt för dig"
+  },
+  "contact": {
+    "headline": "Kontakta oss direkt",
+    "text": "Vårt kreativa team tar din idé till nästa nivå och inspirerar andra längs vägen.",
+    "buttonText": "Kontakta oss",
+    "punchline": "To the moon and beyond!",
+    "imageSource": "../images/arrow-long.svg"
   },
   "footer": {
     "emailAddress": "erik@lunacreatives.se",

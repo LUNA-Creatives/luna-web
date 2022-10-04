@@ -12,6 +12,7 @@ import {
   CallToAction,
   Services,
   CustomerPromise,
+  Contact,
 } from '../../components/Sections';
 import { CustomDivider } from '../../components/CustomDivider';
 import { logos } from '../../assets/data/logos';
@@ -61,6 +62,7 @@ export const HomePage = () => {
       <CustomerPromise data={data.customerPromise} />
       <CustomDivider />
       <Team data={team} headline={data.team.headline} />
+      <Contact data={data.contact} />
       <Footer data={data.footer} />
     </>
   );
