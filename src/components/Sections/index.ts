@@ -10,3 +10,4 @@ export { CallToAction } from './CallToAction';
 export { Services } from './Services';
 export { CustomerPromise } from './CustomerPromise';
 export { Contact } from './Contact';
+export { Popup } from './Popup';
