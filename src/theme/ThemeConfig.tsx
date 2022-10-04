@@ -36,7 +36,7 @@ let theme = createTheme({
     },
     h5: {
       fontSize: 24,
-      lineHeight: 2.1,
+      fontWeight: 500,
       '@media (max-width:1024px)': {
         fontSize: 18,
       },

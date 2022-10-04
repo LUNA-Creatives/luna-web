@@ -18,7 +18,11 @@ export default makeStyles((theme: Theme) =>
       position: 'relative',
     },
     headline: {
-      paddingBottom: 50,
+      paddingBottom: 0,
+      paddingTop: 10,
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        paddingBottom: 50,
+      },
       [theme.breakpoints.up('lg')]: {
         paddingBottom: '5%',
       },

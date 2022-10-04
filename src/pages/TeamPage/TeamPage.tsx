@@ -5,8 +5,7 @@ import { Grid } from '@mui/material';
 import { Team, Footer, Navbar } from '../../components/Sections';
 import data from '../../assets/data/data.json';
 import useStyles from '../style';
-import { SlsDbItem } from '../../types/types';
-import { TeamMember } from './types';
+import { SlsDbItem, TeamMember } from '../../types';
 import { dbItemToItem } from '../../utils/dbItemToItem';
 
 export const TeamPage = () => {

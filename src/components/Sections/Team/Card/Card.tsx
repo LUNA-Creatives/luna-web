@@ -1,7 +1,6 @@
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
 
 import { ipadBreakpoint } from '../../../../utils/screenSizeBreakpoints';
 import useStyles from './style';
@@ -10,16 +9,11 @@ import { ICard } from './types';
 export const Card = ({ name, role, profileImage, gif }: ICard) => {
   const classes = useStyles();
   const controls = useAnimation();
-  const [ref, inView] = useInView();
 
-  useEffect(() => {
-    if (!inView) {
-      controls.start('hidden');
-    }
-  }, [inView, controls]);
+  useEffect(() => {}, []);
 
   const variants = {
-    visible: { opacity: 1, transition: { duration: 1 } },
+    visible: { opacity: 1 },
     hidden: { opacity: 0 },
   };
 
@@ -28,7 +22,6 @@ export const Card = ({ name, role, profileImage, gif }: ICard) => {
     <>
       <Box component={'div'} className={classes.imageBox}>
         <motion.img
-          ref={ref}
           variants={variants}
           animate={controls}
           initial="hidden"
@@ -45,7 +38,9 @@ export const Card = ({ name, role, profileImage, gif }: ICard) => {
         />
       </Box>
       <Box component={'div'} className={classes.textBox}>
-        <Typography variant={'h5'}>{name}</Typography>
+        <Typography className={classes.text} variant={'h5'}>
+          {name}
+        </Typography>
         <Typography variant={'body2'}>{role}</Typography>
       </Box>
     </>
@@ -60,7 +55,14 @@ export const Card = ({ name, role, profileImage, gif }: ICard) => {
       {ProfileCard}
     </Box>
   ) : (
-    <motion.div onPanStart={() => controls.start('visible')}>
+    <motion.div
+      onPanStart={async () =>
+        (await controls.start('visible')) &
+        (setTimeout(() => {
+          controls.start('hidden');
+        }, 2000) as any)
+      }
+    >
       <Box component={'div'} className={classes.container}>
         {ProfileCard}
       </Box>

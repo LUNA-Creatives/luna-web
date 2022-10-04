@@ -16,14 +16,13 @@ import {
 import { CustomDivider } from '../../components/CustomDivider';
 import { logos } from '../../assets/data/logos';
 import '../../assets/fonts/fonts.css';
-import { TeamMember } from '../TeamPage/types';
-import { Skill } from './types';
-import { SlsDbItem } from '../../types';
+import { Icon } from '../../components/Sections/Skills/types';
+import { SlsDbItem, TeamMember } from '../../types';
 import { dbItemToItem } from '../../utils/dbItemToItem';
 
 export const HomePage = () => {
   const [team, setTeam] = useState<TeamMember[]>([]);
-  const [icons, setIcons] = useState<Skill[]>();
+  const [icons, setIcons] = useState<Icon[]>([]);
 
   const fetchAndSetTeam = async () => {
     try {
@@ -38,7 +37,7 @@ export const HomePage = () => {
   const fetchAndSetIcons = async () => {
     try {
       const { data } = await axios.get<SlsDbItem[]>('/api/icons');
-      const iconsData: Skill[] = dbItemToItem(data);
+      const iconsData: Icon[] = dbItemToItem(data);
       setIcons(iconsData);
     } catch (e) {
       console.log(e);
@@ -56,17 +55,11 @@ export const HomePage = () => {
       <Header data={data.header} />
       <ClientLogos logos={logos} />
       <CallToAction data={data.callToAction} />
-      {icons && (
-        <Skills
-          heading={data.skills.heading}
-          techIcons={icons[0].techIcons}
-          helperIcons={icons[0].helperIcons}
-          designIcons={icons[0].designIcons}
-        />
-      )}
+      {icons && <Skills icons={icons} />}
       <Services data={data.services} />
-      <CustomDivider />
+      <CustomDivider hasBackgroundColor />
       <CustomerPromise data={data.customerPromise} />
+      <CustomDivider />
       <Team data={team} headline={data.team.headline} />
       <Footer data={data.footer} />
     </>
