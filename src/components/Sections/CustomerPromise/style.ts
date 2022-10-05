@@ -33,6 +33,7 @@ export default makeStyles((theme: Theme) =>
     headline: {
       paddingTop: '5%',
       paddingBottom: '2%',
+      textTransform: 'uppercase',
     },
     text: {
       paddingBottom: '5%',

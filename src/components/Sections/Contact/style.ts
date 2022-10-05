@@ -26,6 +26,7 @@ export default makeStyles((theme: Theme) =>
     },
     headline: {
       paddingBottom: 20,
+      textTransform: 'uppercase',
     },
     imageBox: {
       width: 'auto',

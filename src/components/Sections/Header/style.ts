@@ -49,6 +49,7 @@ export default makeStyles((theme: Theme) =>
       paddingTop: 14,
       paddingBottom: 14,
       minWidth: '100%',
+      textTransform: 'uppercase',
     },
     text: {
       maxWidth: '100%',

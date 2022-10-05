@@ -52,11 +52,7 @@ export const Popup = ({ data }: IPopup) => {
             </Box>
             <Box component={'div'} className={classes.box}>
               <Box component={'div'} className={classes.textBox}>
-                <Typography
-                  className={classes.headline}
-                  sx={{ textTransform: 'uppercase' }}
-                  variant={'h2'}
-                >
+                <Typography className={classes.headline} variant={'h2'}>
                   {data.headline}
                 </Typography>
                 <Typography display={'inline'} variant={'body1'}>

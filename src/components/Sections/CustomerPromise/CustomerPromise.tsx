@@ -25,11 +25,7 @@ export const CustomerPromise = ({ data }: ICustomerPromise) => {
   return (
     <Grid className={classes.root}>
       <Container className={classes.container}>
-        <Typography
-          className={classes.headline}
-          variant="h2"
-          sx={{ textTransform: 'uppercase' }}
-        >
+        <Typography className={classes.headline} variant="h2">
           {data.headline}
         </Typography>
         <Box component={'div'} className={classes.flexBox}>
