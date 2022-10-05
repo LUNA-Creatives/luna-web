@@ -18,7 +18,7 @@ export default makeStyles((theme: Theme) =>
     },
     container: {
       borderRadius: 5,
-      height: '70vh',
+      minHeight: '100%',
       maxWidth: '90%',
 
       backgroundColor: theme.palette.primary.dark,
@@ -52,14 +52,13 @@ export default makeStyles((theme: Theme) =>
         display: 'flex',
         flexDirection: 'row',
       },
+      [theme.breakpoints.down(ipadBreakpoint)]: {
+        '& > :first-child': { marginBottom: 30 },
+      },
     },
     columnBox: {
       width: ' 50%',
-      [theme.breakpoints.down(ipadBreakpoint)]: {
-        marginBottom: 30,
-      },
     },
-
     link: {
       color: theme.palette.primary.main,
       cursor: 'pointer',
