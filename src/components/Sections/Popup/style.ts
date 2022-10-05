@@ -18,17 +18,18 @@ export default makeStyles((theme: Theme) =>
     },
     container: {
       borderRadius: 5,
-      height: '70vh',
+      minHeight: '100%',
       maxWidth: '90%',
 
       backgroundColor: theme.palette.primary.dark,
-      padding: '8%',
+      padding: '15% 8%',
       position: 'relative',
       color: theme.palette.primary.main,
       filter: `drop-shadow(0 0 0.4rem black)`,
       [theme.breakpoints.up(ipadBreakpoint)]: {
         height: '100%',
         width: 'auto',
+        padding: '8%',
       },
     },
     box: {
@@ -52,14 +53,13 @@ export default makeStyles((theme: Theme) =>
         display: 'flex',
         flexDirection: 'row',
       },
+      [theme.breakpoints.down(ipadBreakpoint)]: {
+        '& > :first-child': { marginBottom: 30 },
+      },
     },
     columnBox: {
       width: ' 50%',
-      [theme.breakpoints.down(ipadBreakpoint)]: {
-        marginBottom: 30,
-      },
     },
-
     link: {
       color: theme.palette.primary.main,
       cursor: 'pointer',
@@ -68,7 +68,7 @@ export default makeStyles((theme: Theme) =>
       paddingBottom: 20,
       textTransform: 'uppercase',
       [theme.breakpoints.down(ipadBreakpoint)]: {
-        paddingBottom: 10,
+        paddingBottom: 0,
       },
     },
     closeButton: {
