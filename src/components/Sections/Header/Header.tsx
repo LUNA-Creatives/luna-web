@@ -15,11 +15,13 @@ import useStyles from './style';
 import { IHeader } from './types';
 import rocketAnimation from '../../../assets/animations/rocketAnimation.json';
 import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
+import { useStore } from '../../../state/GlobalState';
 
 export const Header = ({ data }: IHeader) => {
   const classes = useStyles();
   const animationId = 'rocketAnimation';
   const isDesktop = useMediaQuery(`(min-width:${ipadBreakpoint}px)`);
+  const setShowPopup = useStore((state) => state.setShowPopup);
 
   useEffect(() => {
     lottie.loadAnimation({
@@ -30,13 +32,6 @@ export const Header = ({ data }: IHeader) => {
       animationData: rocketAnimation,
     });
   }, []);
-
-  const handleScroll = () => {
-    window.scroll({
-      top: document.body.scrollHeight,
-      behavior: 'smooth',
-    });
-  };
 
   return (
     <Grid className={classes.root}>
@@ -60,7 +55,7 @@ export const Header = ({ data }: IHeader) => {
             <Button
               color="primary"
               variant="contained"
-              onClick={handleScroll}
+              onClick={() => setShowPopup(true)}
               className={classes.button}
             >
               {data.button}

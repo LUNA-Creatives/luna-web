@@ -3,17 +3,16 @@ import {
   Container,
   Box,
   Typography,
-  useMediaQuery,
   Button,
+  useMediaQuery,
 } from '@mui/material';
 
+import { IContact } from './types';
 import useStyles from './style';
-import { ICustomerPromise } from './types';
-import lunaIphone from '../../../assets/images/lunaIphone.png';
 import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
 import { useStore } from '../../../state/GlobalState';
 
-export const CustomerPromise = ({ data }: ICustomerPromise) => {
+export const Contact = ({ data }: IContact) => {
   const classes = useStyles();
   const isDesktop = useMediaQuery(`(min-width:${ipadBreakpoint}px)`);
   const setShowPopup = useStore((state) => state.setShowPopup);
@@ -21,21 +20,27 @@ export const CustomerPromise = ({ data }: ICustomerPromise) => {
   return (
     <Grid className={classes.root}>
       <Container className={classes.container}>
-        <Typography className={classes.headline} variant="h2">
-          {data.headline}
-        </Typography>
         <Box component={'div'} className={classes.flexBox}>
           <Box component={'div'} className={classes.textBox}>
-            {data.textSections.map((text: string, index: number) => (
-              <Typography key={index} variant="body1" className={classes.text}>
-                {text}
+            <Typography className={classes.headline} variant={'h2'}>
+              {data.headline}
+            </Typography>
+            <Box component={'div'}>
+              <Typography display={'inline'} variant={'body1'}>
+                {data.text}{' '}
               </Typography>
-            ))}
+              <Typography
+                display={'inline'}
+                fontWeight={'600'}
+                variant={'body1'}
+              >
+                {data.punchline}
+              </Typography>
+            </Box>
             <Button
+              onClick={() => setShowPopup(true)}
               className={classes.button}
               color="primary"
-              variant="contained"
-              onClick={() => setShowPopup(true)}
             >
               {data.buttonText}
             </Button>
@@ -44,8 +49,8 @@ export const CustomerPromise = ({ data }: ICustomerPromise) => {
             <Box component={'div'} className={classes.imageBox}>
               <img
                 className={classes.image}
-                src={lunaIphone}
-                alt="luna App"
+                src={data.imageSource}
+                alt="wavy"
                 loading="lazy"
               />
             </Box>

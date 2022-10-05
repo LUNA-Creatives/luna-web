@@ -12,13 +12,19 @@ export const Vision = ({ data }: IVision) => {
   return (
     <Grid className={classes.root}>
       <Container className={classes.container}>
-        <Typography className={classes.headline} variant={'h2'}>
+        <Typography
+          className={classes.headline}
+          variant={'h2'}
+          
+        >
           {data.headline}
         </Typography>
         <Grid container item xs={12}>
           <Grid item xs={12} className={classes.flexContainer}>
             <Box component={'div'} className={classes.textBox}>
-              <Typography variant={'h3'}>{data.vision.headline}</Typography>
+              <Typography variant={'h3'} className={classes.subHeadline}>
+                {data.vision.headline}
+              </Typography>
               <Typography variant={'h6'}> {data.vision.body}</Typography>
             </Box>
             <Box component={'div'} width={'60%'} sx={{ width: '100%' }}>
@@ -53,7 +59,9 @@ export const Vision = ({ data }: IVision) => {
           </Grid>
           <Grid item xs={12} className={classes.flexContainer}>
             <Box component={'div'} className={classes.textBox}>
-              <Typography variant={'h3'}>{data.mission.headline}</Typography>
+              <Typography variant={'h3'} sx={{ textTransform: 'uppercase' }}>
+                {data.mission.headline}
+              </Typography>
               <Typography variant={'h6'}> {data.mission.body}</Typography>
             </Box>
             <Box component={'div'} sx={{ width: '100%' }} width={'60%'}>

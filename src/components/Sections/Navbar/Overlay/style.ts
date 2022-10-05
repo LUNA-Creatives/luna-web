@@ -33,9 +33,10 @@ export default makeStyles((theme: Theme) =>
         placeContent: 'space-between',
       },
     },
-    heading: {
+    headline: {
       paddingBottom: 10,
       paddingTop: 10,
+      textTransform: 'uppercase',
       [theme.breakpoints.up(ipadBreakpoint)]: {
         paddingBottom: 20,
       },
