@@ -1,6 +1,5 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Grid, Container, Box, Typography, Link } from '@mui/material';
-import { useEffect } from 'react';
 
 import useStyles from './style';
 import { IPopup, SubHeadline } from './types';
