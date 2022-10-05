@@ -20,6 +20,9 @@ export default makeStyles((theme: Theme) =>
       flexWrap: 'wrap',
       justifyContent: 'space-between',
       width: '100%',
+      [theme.breakpoints.up('lg')]: {
+        paddingBottom: 100,
+      },
     },
     headline: {
       paddingBottom: 20,

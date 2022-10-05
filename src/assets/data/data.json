@@ -125,22 +125,44 @@
     "heading": "Vi väljer rätt för dig"
   },
   "footer": {
-    "emailAddress": "erik@lunacreatives.se",
-    "heading": "Vårt kreativa team tar din idé till nästa nivå och inspirerar andra längs vägen.",
-    "text": "Let's Build",
-    "location": "Norra Gubberogatan 30",
-    "zipCode": "416 63",
-    "phoneNumber": "+46722504672",
-    "addressLink": "https://www.google.com/maps/place/LUNA+Creatives/@57.7112605,11.996917,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff36c51447e05:0x99fdbc7a640753b7!8m2!3d57.7112605!4d11.999111",
-    "copyRights": "© 2022 LUNA Creatives. All Rights Reserved.",
-    "urls": {
-      "linkedInUrl": "https://www.linkedin.com/company/lunacreatives/",
-      "instagramUrl": "https://www.instagram.com/lunacreatives.se/?hl=en",
-      "facebookUrl": "https://m.facebook.com/LUNA-Creatives-102384795888975/"
-    }
-  },
-  "ThreeCanvas": {
-    "headlineOne": "FRAMTIDENS",
-    "headlineTwo": "TECHPARTNER"
+    "headline": [
+      {
+        "id": 1,
+        "text": "Vi tar gärna ett möte",
+        "subtitle": "Hör gärna av dig till oss om du är intresserad av att jobba tillsammans för att skapa något speciellt!"
+      },
+      {
+        "id": 2,
+        "text": "Sociala Medier",
+        "socialLinks": [
+          {
+            "id": 1,
+            "text": "LinkedIn",
+            "url": "https://www.linkedin.com/company/lunacreatives/"
+          },
+          {
+            "id": 2,
+            "text": "Instagram",
+            "url": "https://www.instagram.com/lunacreatives.se/?hl=en"
+          },
+          {
+            "id": 3,
+            "text": "Facebook",
+            "url": "https://m.facebook.com/LUNA-Creatives-102384795888975/"
+          }
+        ]
+      }
+    ],
+    "subHeadline": {
+      "text": "Kontor",
+      "contactInformation": {
+        "streetName": "Norra Gubberogatan",
+        "city": "Göteborg, Sverige",
+        "url": "https://www.google.com/maps/place/LUNA+Creatives/@57.7112605,11.996917,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff36c51447e05:0x99fdbc7a640753b7!8m2!3d57.7112605!4d11.999111"
+      },
+      "email": "erik@lunacreatives.se",
+      "phoneNumber": "+46722504672"
+    },
+    "copyRights": "© 2022 LUNA Creatives. All Rights Reserved."
   }
 }

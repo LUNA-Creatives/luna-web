@@ -36,14 +36,20 @@ let theme = createTheme({
     },
     h5: {
       fontSize: 24,
-      fontWeight: 500,
       '@media (max-width:1024px)': {
         fontSize: 18,
       },
     },
+    h6: {
+      lineHeight: 1.5,
+      fontSize: 24,
+      '@media (max-width:1024px)': {
+        fontSize: 16,
+      },
+    },
     body1: {
       fontFamily: FONT_SECONDARY,
-      lineHeight: 2.1,
+      lineHeight: 1.5,
       fontSize: 24,
       '@media (max-width:1024px)': {
         fontSize: 16,
