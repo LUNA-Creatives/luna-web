@@ -127,21 +127,26 @@
   "footer": {
     "headline": [
       {
+        "id": 1,
         "text": "Vi tar gärna ett möte",
         "subtitle": "Hör gärna av dig till oss om du är intresserad av att jobba tillsammans för att skapa något speciellt!"
       },
       {
+        "id": 2,
         "text": "Sociala Medier",
         "socialLinks": [
           {
+            "id": 1,
             "text": "LinkedIn",
             "url": "https://www.linkedin.com/company/lunacreatives/"
           },
           {
+            "id": 2,
             "text": "Instagram",
             "url": "https://www.instagram.com/lunacreatives.se/?hl=en"
           },
           {
+            "id": 3,
             "text": "Facebook",
             "url": "https://m.facebook.com/LUNA-Creatives-102384795888975/"
           }

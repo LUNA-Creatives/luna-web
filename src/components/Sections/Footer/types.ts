@@ -6,6 +6,7 @@ export interface IFooter {
   };
 }
 export type headline = {
+  id: number;
   text: string;
   subtitle?: string;
   socialLinks?: socialLinks[];
@@ -17,6 +18,7 @@ export type subHeadline = {
   phoneNumber?: string;
 };
 export type socialLinks = {
+  id: number;
   text: string;
   url: string;
 };

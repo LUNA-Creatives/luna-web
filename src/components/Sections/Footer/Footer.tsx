@@ -17,8 +17,8 @@ export const Footer = ({ data }: IFooter) => {
     <Grid className={classes.root}>
       <Container className={classes.container}>
         <Box component={'div'} className={classes.flexBox}>
-          {data.headline.map((column: headline, index: number) => (
-            <Box key={index} component={'div'} className={classes.textBox}>
+          {data.headline.map((column: headline) => (
+            <Box key={column.id} component={'div'} className={classes.textBox}>
               <Typography className={classes.headline} variant={'h2'}>
                 {column.text}
               </Typography>
@@ -28,9 +28,9 @@ export const Footer = ({ data }: IFooter) => {
                 </Typography>
               )}
               {column.socialLinks &&
-                column.socialLinks.map((link: socialLinks, index: number) => (
+                column.socialLinks.map((link: socialLinks) => (
                   <Box
-                    key={index}
+                    key={link.id}
                     component={'div'}
                     className={classes.linkBox}
                   >
