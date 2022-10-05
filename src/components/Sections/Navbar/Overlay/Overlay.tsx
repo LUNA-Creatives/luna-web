@@ -21,7 +21,7 @@ export const Overlay = ({ data, closeOverlay }: IOverlay) => {
         {data.map((column: ColumnData, i: number) => (
           <Box key={i} component={'div'} className={classes.textContainer}>
             <Box component={'div'} className={classes.textBox}>
-              <Typography variant={'h3'} className={classes.heading}>
+              <Typography variant={'h3'} className={classes.headline}>
                 {column.headline}
               </Typography>
               <Box component={'div'} className={classes.linkBox}>

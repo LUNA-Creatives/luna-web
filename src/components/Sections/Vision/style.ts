@@ -20,12 +20,16 @@ export default makeStyles((theme: Theme) =>
     headline: {
       paddingBottom: 0,
       paddingTop: 10,
+      textTransform: 'uppercase',
       [theme.breakpoints.up(ipadBreakpoint)]: {
         paddingBottom: 50,
       },
       [theme.breakpoints.up('lg')]: {
         paddingBottom: '5%',
       },
+    },
+    subHeadline: {
+      textTransform: 'uppercase',
     },
     grid: {
       position: 'relative',

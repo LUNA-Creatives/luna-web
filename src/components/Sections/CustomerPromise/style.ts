@@ -33,6 +33,7 @@ export default makeStyles((theme: Theme) =>
     headline: {
       paddingTop: '5%',
       paddingBottom: '2%',
+      textTransform: 'uppercase',
     },
     text: {
       paddingBottom: '5%',
@@ -44,7 +45,7 @@ export default makeStyles((theme: Theme) =>
         width: '100%',
       },
       borderRadius: 2,
-      padding: '15px 34px 15px 34px',
+      padding: '15px 34px',
       textDecoration: 'none',
       cursor: 'pointer',
       backgroundColor: theme.palette.primary.light,

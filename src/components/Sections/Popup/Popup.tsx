@@ -1,6 +1,5 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Grid, Container, Box, Typography, Link } from '@mui/material';
-import { useEffect } from 'react';
 
 import useStyles from './style';
 import { IPopup, SubHeadline } from './types';
@@ -53,11 +52,7 @@ export const Popup = ({ data }: IPopup) => {
             </Box>
             <Box component={'div'} className={classes.box}>
               <Box component={'div'} className={classes.textBox}>
-                <Typography
-                  className={classes.headline}
-                  sx={{ textTransform: 'uppercase' }}
-                  variant={'h2'}
-                >
+                <Typography className={classes.headline} variant={'h2'}>
                   {data.headline}
                 </Typography>
                 <Typography display={'inline'} variant={'body1'}>
@@ -72,9 +67,9 @@ export const Popup = ({ data }: IPopup) => {
                 </Typography>
               </Box>
               <Box component={'div'} className={classes.flexBox}>
-                {data.subHeadline.map((column: SubHeadline, index: number) => (
+                {data.subHeadline.map((column: SubHeadline) => (
                   <Box
-                    key={index}
+                    key={column.id}
                     component={'div'}
                     className={classes.columnBox}
                   >

@@ -66,6 +66,7 @@ export default makeStyles((theme: Theme) =>
     },
     headline: {
       paddingBottom: 20,
+      textTransform: 'uppercase',
       [theme.breakpoints.down(ipadBreakpoint)]: {
         paddingBottom: 0,
       },
