@@ -11,17 +11,13 @@ import useStyles from './style';
 import { ICustomerPromise } from './types';
 import lunaIphone from '../../../assets/images/lunaIphone.png';
 import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
+import { useStore } from '../../../state/GlobalState';
 
 export const CustomerPromise = ({ data }: ICustomerPromise) => {
   const classes = useStyles();
   const isDesktop = useMediaQuery(`(min-width:${ipadBreakpoint}px)`);
+  const setShowPopup = useStore((state) => state.setShowPopup);
 
-  const handleScroll = () => {
-    window.scroll({
-      top: document.body.scrollHeight,
-      behavior: 'smooth',
-    });
-  };
   return (
     <Grid className={classes.root}>
       <Container className={classes.container}>
@@ -39,7 +35,7 @@ export const CustomerPromise = ({ data }: ICustomerPromise) => {
               className={classes.button}
               color="primary"
               variant="contained"
-              onClick={handleScroll}
+              onClick={() => setShowPopup(true)}
             >
               {data.buttonText}
             </Button>
