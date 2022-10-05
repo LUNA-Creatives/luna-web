@@ -22,7 +22,7 @@ export default makeStyles((theme: Theme) =>
       maxWidth: '90%',
 
       backgroundColor: theme.palette.primary.dark,
-      padding: '15% 8% 15% 8%',
+      padding: '15% 8%',
       position: 'relative',
       color: theme.palette.primary.main,
       filter: `drop-shadow(0 0 0.4rem black)`,
