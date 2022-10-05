@@ -11,9 +11,7 @@ export const Services = ({ data }: IServices) => {
       <Container className={classes.container}>
         <Box component={'div'} className={classes.textContainer}>
           <Typography variant="subtitle1">{data.subHeadline}</Typography>
-          <Typography variant="h2" sx={{ textTransform: 'uppercase' }}>
-            {data.headline}
-          </Typography>
+          <Typography variant="h2">{data.headline}</Typography>
         </Box>
         <Box component={'div'} className={classes.cardContainer}>
           {data.card.map((card: Card, index: number) => (

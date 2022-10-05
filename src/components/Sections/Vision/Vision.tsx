@@ -15,14 +15,14 @@ export const Vision = ({ data }: IVision) => {
         <Typography
           className={classes.headline}
           variant={'h2'}
-          sx={{ textTransform: 'uppercase' }}
+          
         >
           {data.headline}
         </Typography>
         <Grid container item xs={12}>
           <Grid item xs={12} className={classes.flexContainer}>
             <Box component={'div'} className={classes.textBox}>
-              <Typography variant={'h3'} sx={{ textTransform: 'uppercase' }}>
+              <Typography variant={'h3'} className={classes.subHeadline}>
                 {data.vision.headline}
               </Typography>
               <Typography variant={'h6'}> {data.vision.body}</Typography>

@@ -8,6 +8,7 @@ export interface IPopup {
 }
 
 export type SubHeadline = {
+  id: number;
   headline: string;
   text?: string;
   street?: string;

@@ -51,11 +51,7 @@ export const Header = ({ data }: IHeader) => {
             <Typography variant="subtitle1" className={classes.text}>
               {data.subHeadline}
             </Typography>
-            <Typography
-              variant="h1"
-              sx={{ textTransform: 'uppercase' }}
-              className={classes.headline}
-            >
+            <Typography variant="h1" className={classes.headline}>
               {data.headline}
             </Typography>
             <Typography variant="body1" className={classes.text}>

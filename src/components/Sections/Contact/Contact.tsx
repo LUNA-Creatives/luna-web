@@ -22,11 +22,7 @@ export const Contact = ({ data }: IContact) => {
       <Container className={classes.container}>
         <Box component={'div'} className={classes.flexBox}>
           <Box component={'div'} className={classes.textBox}>
-            <Typography
-              className={classes.headline}
-              variant={'h2'}
-              sx={{ textTransform: 'uppercase' }}
-            >
+            <Typography className={classes.headline} variant={'h2'}>
               {data.headline}
             </Typography>
             <Box component={'div'}>

@@ -52,6 +52,7 @@ export default makeStyles((theme: Theme) =>
     },
     headline: {
       paddingBottom: '5%',
+      textTransform: 'uppercase',
     },
   })
 );
