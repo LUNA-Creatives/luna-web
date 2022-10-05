@@ -137,12 +137,14 @@
     "punchline": "To the moon and beyond!",
     "subHeadline": [
       {
+        "id": 1,
         "headline": "Kontor",
         "street": "Norra Gubberogatan",
         "city": "Göteborg, Sverige",
         "url": "https://www.google.com/maps/place/LUNA+Creatives/@57.7112605,11.996917,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff36c51447e05:0x99fdbc7a640753b7!8m2!3d57.7112605!4d11.999111"
       },
       {
+        "id": 2,
         "headline": "Kontakt",
         "emailAddress": "erik@lunacreatives.se",
         "phoneNumber": "+46722504672"
