@@ -29,6 +29,7 @@ export default makeStyles((theme: Theme) =>
       [theme.breakpoints.up(ipadBreakpoint)]: {
         height: '100%',
         width: 'auto',
+        padding: '8%',
       },
     },
     box: {
@@ -66,7 +67,7 @@ export default makeStyles((theme: Theme) =>
     headline: {
       paddingBottom: 20,
       [theme.breakpoints.down(ipadBreakpoint)]: {
-        paddingBottom: 10,
+        paddingBottom: 0,
       },
     },
     closeButton: {
