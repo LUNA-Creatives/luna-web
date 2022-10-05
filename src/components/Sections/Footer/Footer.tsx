@@ -1,100 +1,91 @@
-import { Link, Grid, Container, Typography, Box } from '@mui/material';
-import { Icon } from '@iconify/react';
+import { Grid, Container, Box, Typography, Link } from '@mui/material';
 
-import useStyles from './style';
-import { IFooter } from './types';
-import { motion } from 'framer-motion';
+import { IFooter, headline, socialLinks } from './types';
+import useStyle from './style';
 
 export const Footer = ({ data }: IFooter) => {
-  const classes = useStyles();
-  const openEmail = `mailto:${data.emailAddress}?`;
-  const phoneCall = `tel:${data.phoneNumber}`;
+  const classes = useStyle();
+
+  const openEmail = `mailto:${data.subHeadline.email}?`;
+  const phoneCall = `tel:${data.subHeadline.phoneNumber}`;
+
+  const openInNewTab = (url: string) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <Grid className={classes.root}>
-      <Grid className={classes.container}>
-        <Container className={classes.flexbox}>
-          <Box component={'div'}>
-            <Box component={'div'} className={classes.textBox}>
-              <Typography variant={'h2'}>{data.heading}</Typography>
-            </Box>
-            <Box component={'div'} className={classes.textBox}>
-              <Typography variant={'h5'}>
-                {data.text}
-
-                <Icon icon="gridicons:arrow-right" inline={true} />
-
-                <Link underline={'always'} href={openEmail}>
-                  {data.emailAddress}
-                </Link>
+      <Container className={classes.container}>
+        <Box component={'div'} className={classes.flexBox}>
+          {data.headline.map((column: headline) => (
+            <Box key={column.id} component={'div'} className={classes.textBox}>
+              <Typography className={classes.headline} variant={'h2'}>
+                {column.text}
               </Typography>
+              {column.subtitle && (
+                <Typography className={classes.text} variant={'body1'}>
+                  {column.subtitle}
+                </Typography>
+              )}
+              {column.socialLinks &&
+                column.socialLinks.map((link: socialLinks) => (
+                  <Box
+                    key={link.id}
+                    component={'div'}
+                    className={classes.linkBox}
+                  >
+                    <Link
+                      onClick={() => openInNewTab(link.url)}
+                      className={classes.link}
+                    >
+                      <Typography
+                        fontWeight={'600'}
+                        lineHeight={'1.8'}
+                        variant={'body1'}
+                      >
+                        {link.text}
+                      </Typography>
+                    </Link>
+                  </Box>
+                ))}
             </Box>
+          ))}
+        </Box>
+        <Box component={'div'} className={classes.textBox}>
+          <Typography className={classes.headline} variant={'h6'}>
+            {data.subHeadline.text}
+          </Typography>
+          <Box component={'div'} className={classes.linkBox}>
+            <Link
+              onClick={() =>
+                openInNewTab(data.subHeadline.contactInformation.url)
+              }
+              className={classes.link}
+            >
+              <Typography variant={'h5'} lineHeight={'1.8'}>
+                {data.subHeadline.contactInformation.streetName}
+              </Typography>
+              <Typography variant={'h5'} lineHeight={'1.8'}>
+                {data.subHeadline.contactInformation.city}
+              </Typography>
+            </Link>
+            <Link
+              onClick={() => openInNewTab(openEmail)}
+              className={classes.link}
+            >
+              <Typography variant={'h5'} fontWeight={'500'} lineHeight={'1.8'}>
+                {data.subHeadline.email}
+              </Typography>
+            </Link>
+            <Link href={phoneCall} className={classes.link}>
+              <Typography fontWeight={'500'} variant={'h5'} lineHeight={'1.8'}>
+                {data.subHeadline.phoneNumber}
+              </Typography>
+            </Link>
           </Box>
-          <Box component={'div'} className={classes.box}>
-            <Grid className={classes.gridContainer}>
-              <Link className={classes.iconBox} href={data.addressLink}>
-                <motion.div
-                  className={classes.iconBox}
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 1.2 }}
-                >
-                  <Icon
-                    width={30}
-                    className={classes.icon}
-                    icon="ic:outline-place"
-                  />
-                  <Typography variant={'h5'} className={classes.text}>
-                    {data.location}
-                  </Typography>
-                </motion.div>
-              </Link>
-              <Link
-                href={data.urls.instagramUrl}
-                className={classes.socialIcon}
-              >
-                <motion.div
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 1.2 }}
-                  className={classes.icon}
-                >
-                  <Icon
-                    icon="akar-icons:instagram-fill"
-                    width={30}
-                    className={classes.icon}
-                  />
-                </motion.div>
-              </Link>
-
-              <Link className={classes.iconBox} href={phoneCall}>
-                <motion.div
-                  className={classes.iconBox}
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 1.2 }}
-                >
-                  <Icon
-                    className={classes.icon}
-                    icon="ant-design:phone-outlined"
-                    width={30}
-                  />
-                  <Typography variant={'h5'} className={classes.text}>
-                    {data.phoneNumber}
-                  </Typography>
-                </motion.div>
-              </Link>
-              <Link href={data.urls.linkedInUrl} className={classes.socialIcon}>
-                <motion.div
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 1.2 }}
-                  className={classes.icon}
-                >
-                  <Icon icon="akar-icons:linkedin-fill" width={30} />
-                </motion.div>
-              </Link>
-            </Grid>
-          </Box>
-        </Container>
-      </Grid>
-
-      <Typography className={classes.text} variant="subtitle2">
+        </Box>
+      </Container>
+      <Typography className={classes.copyRights} variant="subtitle2">
         {data.copyRights}
       </Typography>
     </Grid>

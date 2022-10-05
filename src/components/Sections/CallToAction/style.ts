@@ -36,9 +36,10 @@ export default makeStyles((theme: Theme) =>
     sectionBox: {
       paddingBottom: '5%',
     },
+    subHeadline: { paddingBottom: 15 },
     button: {
+      marginTop: 20,
       [theme.breakpoints.down(ipadBreakpoint)]: {
-        marginTop: '5%',
         width: '100%',
       },
       borderRadius: 2,
