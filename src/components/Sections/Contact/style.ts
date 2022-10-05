@@ -40,7 +40,7 @@ export default makeStyles((theme: Theme) =>
     button: {
       marginTop: 30,
       borderRadius: 2,
-      padding: '15px 34px 15px 34px',
+      padding: '15px 34px',
       textDecoration: 'none',
       cursor: 'pointer',
       backgroundColor: theme.palette.primary.dark,
