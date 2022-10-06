@@ -6,6 +6,7 @@ export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
       backgroundColor: theme.palette.primary.dark,
+      height: '100%',
     },
     container: {
       maxWidth: 1600,
@@ -19,14 +20,15 @@ export default makeStyles((theme: Theme) =>
         width: '30%',
       },
     },
-    imageBox: {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '40vh',
+    parallax: {
+      position: 'relative',
+      top: -50,
+
+      overflow: 'hidden',
     },
     image: {
-      height: '50%',
+      height: 'auto',
+      width: '100%',
     },
   })
 );

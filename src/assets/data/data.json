@@ -203,14 +203,14 @@
     {
       "slug": "website",
       "header": {
-        "imageSource": "../images/rectangle-pink.png",
-        "headline": "hemsida till fast pris – 3 paket att välja på"
+        "imageSource": "../images/webpage.jpg"
       },
       "information": [
         {
           "id": 1,
+          "headline": "hemsida till fast pris – 3 paket att välja på",
           "subHeadline": "Vad är en hemsida?",
-          "text": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
+          "text1": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
         },
         {
           "id": 2,
@@ -245,19 +245,19 @@
     {
       "slug": "app",
       "header": {
-        "imageSource": "../images/rectangle-pink.png",
-        "headline": "App"
+        "imageSource": "../images/webpage.jpg"
       },
       "information": [
         {
           "id": 1,
+          "headline": "App",
           "subHeadline": "Vad är en App?",
-          "text": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
+          "text1": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
         },
         {
           "id": 2,
           "subHeadline": "Vad ingår?",
-          "text": "Nedan ser du vad som ingår när du väljer ett av våra paket för att bygga hemsida",
+          "text2": "Nedan ser du vad som ingår när du väljer ett av våra paket för att bygga hemsida",
           "listItems": [
             {
               "id": 1,
@@ -280,19 +280,19 @@
     {
       "slug": "design",
       "header": {
-        "imageSource": "../images/rectangle-pink.png",
-        "headline": "Design"
+        "imageSource": "../images/webpage.jpg"
       },
       "information": [
         {
           "id": 1,
+          "headline": "Design",
           "subHeadline": "Vad är design?",
-          "text": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
+          "text1": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
         },
         {
           "id": 2,
           "subHeadline": "Vad kan ingå i designarbetet?",
-          "text": "Nedan ser du vad vi kan erbjuda dig och ditt företag.",
+          "text2": "Nedan ser du vad vi kan erbjuda dig och ditt företag.",
           "listItems": [
             {
               "id": 1,

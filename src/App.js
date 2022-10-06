@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 import { ThemeConfig } from './theme/ThemeConfig';
 import { Routing } from './routing';
 import { useStore } from './state/GlobalState';
@@ -13,7 +15,11 @@ const App = () => {
       setIsLoading(false);
     }, 6000);
   });
-  return <ThemeConfig>{loader ? <Loader /> : <Routing />}</ThemeConfig>;
+  return (
+    <ThemeConfig>
+      <ParallaxProvider>{loader ? <Loader /> : <Routing />} </ParallaxProvider>
+    </ThemeConfig>
+  );
 };
 
 export default App;

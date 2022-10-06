@@ -1,6 +1,6 @@
 export interface IHeader {
   data: {
-    imageSource: string;
+    imageSource?: string;
     headline: string;
     subHeadline: string;
     text: string;
