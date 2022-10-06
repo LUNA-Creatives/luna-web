@@ -21,10 +21,10 @@ export default makeStyles((theme: Theme) =>
       },
     },
     parallax: {
-      position: 'relative',
-      // top: -50,
-
-      overflow: 'hidden',
+      aspectRatio: '1 / 1',
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        aspectRatio: '2 / 1',
+      },
     },
     image: {
       height: 'auto',
