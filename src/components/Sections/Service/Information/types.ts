@@ -5,7 +5,8 @@ export interface IInformation {
 export type Column = {
   id: number;
   subHeadline: string;
-  text?: string;
+  text1?: string;
+  text2?: string;
   listItems?: Item[];
 };
 

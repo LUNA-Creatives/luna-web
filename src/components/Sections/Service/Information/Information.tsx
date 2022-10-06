@@ -15,10 +15,19 @@ export const Information = ({ data }: IInformation) => {
               <Typography className={classes.upperCase} variant={'subtitle1'}>
                 {column.subHeadline}
               </Typography>
-              <Typography className={classes.text} variant={'body1'}>
-                {column.text}
-              </Typography>
-
+              {column.text1 && (
+                <Typography className={classes.text} variant={'body1'}>
+                  {column.text1}
+                </Typography>
+              )}
+              {column.text2 && (
+                <Typography
+                  className={`${classes.text}, ${classes.bold}`}
+                  variant={'body1'}
+                >
+                  {column.text2}
+                </Typography>
+              )}
               {column.listItems?.map((item: Item) => (
                 <Box
                   key={item.id}

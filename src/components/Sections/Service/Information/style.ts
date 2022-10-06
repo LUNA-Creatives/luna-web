@@ -29,6 +29,10 @@ export default makeStyles((theme: Theme) =>
     text: {
       paddingBottom: 10,
     },
+    bold: {
+      fontWeight: 600,
+      paddingBottom: 10,
+    },
     upperCase: {
       textTransform: 'uppercase',
     },
