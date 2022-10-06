@@ -69,22 +69,29 @@
     "subHeadline": "HUR KAN VI HJÄLPA DIG?",
     "card": [
       {
-        "headline": "Hemsidor & Webshop",
-        "text": [
-          "Byggd med kod",
-          "Byggd med CMS",
-          "Domän & Webbhotell & Drift"
+        "id": 1,
+        "slug": "/website",
+        "headline": "Hemsidor",
+        "listItems": [
+          "Design",
+          "Utveckling",
+          "Email",
+          "Domän, Webbhotell & Drift"
         ],
         "imageSource": "../images/pink.svg"
       },
       {
+        "id": 2,
+        "slug": "/app",
         "headline": "Apputveckling",
-        "text": ["Webbapp", "Mobilapp"],
+        "listItems": ["Webbapp", "Mobilapp"],
         "imageSource": "../images/yellow.svg"
       },
       {
+        "id": 3,
+        "slug": "/design",
         "headline": "Design",
-        "text": [
+        "listItems": [
           "Logotyp & Grafisk Profil",
           "Grafisk Formgivning",
           "Bildbehandling"
@@ -191,5 +198,121 @@
       "phoneNumber": "+46722504672"
     },
     "copyRights": "© 2022 LUNA Creatives. All Rights Reserved."
-  }
+  },
+  "servicePage": [
+    {
+      "slug": "website",
+      "header": {
+        "imageSource": "../images/rectangle-pink.png",
+        "headline": "hemsida till fast pris – 3 paket att välja på",
+        "subHeadline": "Vad är en hemsida?",
+        "text": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
+      },
+      "information": [
+        {
+          "id": 1,
+          "subHeadline": "Vad är en hemsida?",
+          "text": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
+        },
+        {
+          "id": 2,
+          "subHeadline": "I SAMTLIGA PAKET INGÅR FÖLJANDE?",
+          "listItems": [
+            {
+              "id": 1,
+              "text": "Uppstartsmöte där vi går igenom behov och design."
+            },
+            { "id": 2, "text": "Designskiss." },
+            {
+              "id": 3,
+              "text": "Hjälp med att köpa domän och koppla domän till hemsida."
+            },
+            { "id": 4, "text": "Hjälp med uppsättning av konto och server." },
+            {
+              "id": 5,
+              "text": "Hjälp med uppsättning av mail med egen domän (e.g. namn@bolagsnamn.se)."
+            },
+            {
+              "id": 6,
+              "text": "Upplärning så man kan ändra design och administrera sidan självständigt"
+            },
+            { "id": 7, "text": "Besökstatistik" },
+            { "id": 8, "text": "Webbsida som även är anpassad för mobil" }
+          ]
+        }
+      ],
+      "packages": [],
+      "portfolio": []
+    },
+    {
+      "slug": "app",
+      "header": {
+        "imageSource": "../images/rectangle-pink.png",
+        "headline": "App"
+      },
+      "information": [
+        {
+          "id": 1,
+          "subHeadline": "Vad är en App?",
+          "text": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
+        },
+        {
+          "id": 2,
+          "subHeadline": "Vad ingår?",
+          "text": "Nedan ser du vad som ingår när du väljer ett av våra paket för att bygga hemsida",
+          "listItems": [
+            {
+              "id": 1,
+              "text": "Design"
+            },
+            { "id": 2, "text": "Utveckling" },
+            {
+              "id": 3,
+              "text": "Email"
+            },
+            { "id": 4, "text": "Hjälp med uppsättning av konto och server." },
+            {
+              "id": 5,
+              "text": "Hjälp med uppsättning av mail med egen domän (e.g. namn@bolagsnamn.se)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "design",
+      "header": {
+        "imageSource": "../images/rectangle-pink.png",
+        "headline": "Design"
+      },
+      "information": [
+        {
+          "id": 1,
+          "subHeadline": "Vad är design?",
+          "text": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
+        },
+        {
+          "id": 2,
+          "subHeadline": "Vad kan ingå i designarbetet?",
+          "text": "Nedan ser du vad vi kan erbjuda dig och ditt företag.",
+          "listItems": [
+            {
+              "id": 1,
+              "text": "Personligt anpassad logga."
+            },
+            { "id": 2, "text": "Personligt anpassad grafisk profil." },
+            {
+              "id": 3,
+              "text": "Designsystem"
+            },
+            { "id": 4, "text": "Designstrategi" },
+            {
+              "id": 5,
+              "text": "Användaranays"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
