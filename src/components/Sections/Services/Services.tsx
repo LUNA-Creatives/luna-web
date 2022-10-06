@@ -19,6 +19,7 @@ export const Services = ({ data }: IServices) => {
             <RouterLink
               key={card.id}
               to={'services' + card.slug}
+              onClick={() => window.scrollTo(0, 0)}
               className={classes.outerBox}
             >
               <Box component={'div'} className={classes.cardBox}>
