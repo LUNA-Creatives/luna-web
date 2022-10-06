@@ -22,7 +22,7 @@ export default makeStyles((theme: Theme) =>
     },
     parallax: {
       position: 'relative',
-      top: -50,
+      // top: -50,
 
       overflow: 'hidden',
     },
