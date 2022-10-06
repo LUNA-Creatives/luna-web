@@ -15,7 +15,9 @@ export const Information = ({ data }: IInformation) => {
               <Typography className={classes.upperCase} variant={'subtitle1'}>
                 {column.subHeadline}
               </Typography>
-              <Typography variant={'body1'}>{column.text}</Typography>
+              <Typography className={classes.text} variant={'body1'}>
+                {column.text}
+              </Typography>
 
               {column.listItems?.map((item: Item) => (
                 <Box
