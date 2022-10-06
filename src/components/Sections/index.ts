@@ -11,3 +11,4 @@ export { Services } from './Services';
 export { CustomerPromise } from './CustomerPromise';
 export { Contact } from './Contact';
 export { Popup } from './Popup';
+export { Service } from './Service';
