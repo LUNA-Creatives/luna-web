@@ -15,6 +15,7 @@ export default makeStyles((theme: Theme) =>
     },
     cardContainer: {
       minHeight: '100%',
+      paddingBottom: 50,
       [theme.breakpoints.up(ipadBreakpoint)]: {
         display: 'flex',
         flexDirection: 'row',
@@ -22,10 +23,15 @@ export default makeStyles((theme: Theme) =>
       },
     },
     outerBox: {
-      paddingBottom: 50,
+      textDecoration: 'none',
+      color: theme.palette.primary.main,
+
       width: '100%',
       [theme.breakpoints.up(ipadBreakpoint)]: {
         width: '31%',
+        '&:hover': {
+          boxShadow: `1px 1px 50px 2px  black`,
+        },
       },
     },
     cardBox: {
@@ -38,6 +44,7 @@ export default makeStyles((theme: Theme) =>
     textContainer: {
       paddingTop: 50,
       paddingBottom: 50,
+      textTransform: 'uppercase',
     },
     image: {
       width: '100%',

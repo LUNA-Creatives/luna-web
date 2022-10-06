@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 
-import { HomePage, TeamPage, AboutPage } from '../pages';
+import { HomePage, TeamPage, AboutPage, ServicePage } from '../pages';
 
 export const Routing = () => {
   return (
@@ -10,6 +10,7 @@ export const Routing = () => {
           <Route index element={<HomePage />} />
           <Route path="about-us" element={<AboutPage />} />
           <Route path="our-team" element={<TeamPage />} />
+          <Route path="services/:slug" element={<ServicePage />} />
         </Route>
       </Routes>
     </BrowserRouter>

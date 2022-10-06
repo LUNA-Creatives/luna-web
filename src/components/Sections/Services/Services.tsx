@@ -1,4 +1,5 @@
 import { Grid, Container, Box, Typography } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 
 import useStyles from './style';
 import { IServices, Card } from './types';
@@ -14,8 +15,12 @@ export const Services = ({ data }: IServices) => {
           <Typography variant="h2">{data.headline}</Typography>
         </Box>
         <Box component={'div'} className={classes.cardContainer}>
-          {data.card.map((card: Card, index: number) => (
-            <Box key={index} component={'div'} className={classes.outerBox}>
+          {data.card.map((card: Card) => (
+            <RouterLink
+              key={card.id}
+              to={'services' + card.slug}
+              className={classes.outerBox}
+            >
               <Box component={'div'} className={classes.cardBox}>
                 <img
                   className={classes.image}
@@ -23,20 +28,20 @@ export const Services = ({ data }: IServices) => {
                   alt="wavy"
                   loading="lazy"
                 />
-                <Box className={classes.innerBox} component={'div'} key={index}>
+                <Box className={classes.innerBox} component={'div'}>
                   <Box component={'div'}>
                     <Typography variant="h2" className={classes.headline}>
                       {card.headline}
                     </Typography>
-                    {card.text.map((text: string, index: number) => (
-                      <Typography key={index} variant="body1">
+                    {card.listItems.map((text: string) => (
+                      <Typography key={text} variant="body1">
                         {text}
                       </Typography>
                     ))}
                   </Box>
                 </Box>
               </Box>
-            </Box>
+            </RouterLink>
           ))}
         </Box>
       </Container>

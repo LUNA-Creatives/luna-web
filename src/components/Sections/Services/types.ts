@@ -7,7 +7,9 @@ export interface IServices {
 }
 
 export type Card = {
+  id: number;
+  slug: string;
   headline: string;
-  text: string[];
+  listItems: string[];
   imageSource: string;
 };
