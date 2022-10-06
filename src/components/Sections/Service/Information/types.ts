@@ -1,5 +1,6 @@
 export interface IInformation {
   data: Column[];
+  headline: string;
 }
 
 export type Column = {

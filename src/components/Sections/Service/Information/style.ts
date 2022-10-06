@@ -7,8 +7,19 @@ export default makeStyles((theme: Theme) =>
     root: {
       backgroundColor: theme.palette.primary.dark,
     },
+    parallax: {},
     container: {
       maxWidth: 1600,
+      color: theme.palette.primary.main,
+      paddingTop: 50,
+    },
+    headline: {
+      textTransform: 'uppercase',
+      width: '100%',
+      paddingBottom: 30,
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        width: '50%',
+      },
     },
     flexBox: {
       [theme.breakpoints.up(ipadBreakpoint)]: {
@@ -20,7 +31,7 @@ export default makeStyles((theme: Theme) =>
     textBox: {
       width: '100%',
       paddingBottom: 20,
-      color: theme.palette.primary.main,
+
       [theme.breakpoints.up(ipadBreakpoint)]: {
         width: '45%',
         paddingBottom: 0,

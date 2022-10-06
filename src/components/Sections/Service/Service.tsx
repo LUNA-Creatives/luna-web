@@ -6,7 +6,7 @@ export const Service = ({ data }: any) => {
   return (
     <>
       <Header data={data.header} />
-      <Information data={data.information} />
+      <Information headline={data.headline} data={data.information} />
       <CustomDivider hasBackgroundColor />
     </>
   );
