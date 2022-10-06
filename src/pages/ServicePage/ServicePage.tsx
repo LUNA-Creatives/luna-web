@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Grid } from '@mui/material';
 
 import data from '../../assets/data/data.json';
 import { useStore } from '../../state/GlobalState';
-import useStyles from '../style';
 import {
   Contact,
   Popup,
@@ -14,7 +12,6 @@ import {
 } from '../../components/Sections';
 
 export const ServicePage = () => {
-  const classes = useStyles();
   const { slug } = useParams();
   const showPopup = useStore((state) => state.showPopup);
   const [slugData, setSlugData] = useState() as any;
@@ -31,12 +28,10 @@ export const ServicePage = () => {
   return (
     <>
       {showPopup && <Popup data={data.popup} />}
-      <Grid className={classes.root}>
-        <Navbar data={data.navbar} />
-        {slugData && <Service data={slugData} />}
-        <Contact data={data.contact} />
-        <Footer data={data.footer} />
-      </Grid>
+      <Navbar data={data} />
+      {slugData && <Service data={slugData} />}
+      <Contact data={data.contact} />
+      <Footer data={data.footer} />
     </>
   );
 };

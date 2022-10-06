@@ -203,14 +203,12 @@
     {
       "slug": "website",
       "header": {
-        "imageSource": "../images/rectangle-pink.png",
-        "headline": "hemsida till fast pris – 3 paket att välja på",
-        "subHeadline": "Vad är en hemsida?",
-        "text": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
+        "imageSource": "../images/webpage.jpg"
       },
       "information": [
         {
           "id": 1,
+          "headline": "hemsida till fast pris – 3 paket att välja på",
           "subHeadline": "Vad är en hemsida?",
           "text1": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
         },
@@ -247,12 +245,12 @@
     {
       "slug": "app",
       "header": {
-        "imageSource": "../images/rectangle-pink.png",
-        "headline": "App"
+        "imageSource": "../images/webpage.jpg"
       },
       "information": [
         {
           "id": 1,
+          "headline": "App",
           "subHeadline": "Vad är en App?",
           "text1": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
         },
@@ -282,12 +280,12 @@
     {
       "slug": "design",
       "header": {
-        "imageSource": "../images/rectangle-pink.png",
-        "headline": "Design"
+        "imageSource": "../images/webpage.jpg"
       },
       "information": [
         {
           "id": 1,
+          "headline": "Design",
           "subHeadline": "Vad är design?",
           "text1": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
         },
