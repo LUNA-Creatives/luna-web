@@ -30,6 +30,7 @@ export default makeStyles((theme: Theme) =>
         width: '31%',
         '&:hover': {
           boxShadow: `1px 1px 50px 2px  black`,
+          transform: 'scale(1.01)',
         },
       },
     },
