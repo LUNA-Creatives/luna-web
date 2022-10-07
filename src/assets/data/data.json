@@ -85,7 +85,7 @@
         "slug": "/app",
         "headline": "Apputveckling",
         "listItems": ["Webbapp", "Mobilapp"],
-        "imageSource": "../images/yellow.svg"
+        "imageSource": "../images/blue.svg"
       },
       {
         "id": 3,
@@ -96,7 +96,7 @@
           "Grafisk Formgivning",
           "Bildbehandling"
         ],
-        "imageSource": "../images/green.svg"
+        "imageSource": "../images/yellow.svg"
       }
     ]
   },
@@ -240,7 +240,82 @@
           ]
         }
       ],
-      "packages": [],
+      "offers": [
+        {
+          "id": 1,
+          "isActive": false,
+          "subHeadline": { "text": "Basic" },
+          "headline": { "price": "19.500kr", "vatText": "/ex moms" },
+          "text1": "Enbart en landningssida med flera sektioner, exempelvis:",
+          "listItems": [
+            {
+              "id": 1,
+              "text": "Header"
+            },
+            {
+              "id": 2,
+              "text": "Produkt/Erbjudande"
+            },
+            {
+              "id": 3,
+              "text": "Team"
+            },
+            {
+              "id": 4,
+              "text": "Om oss"
+            },
+            {
+              "id": 5,
+              "text": "Footer med kontaktuppgifter"
+            }
+          ],
+          "disabledTextGroup": {
+            "price": "Pris: 19.500kr/ex moms",
+            "logo": "Egen logo: 4.995kr/ex moms"
+          }
+        },
+        {
+          "id": 2,
+          "isActive": true,
+          "subHeadline": { "text": "Pro", "activeText": "Populär!" },
+          "headline": { "price": "34.500kr", "vatText": "/ex moms" },
+          "text1": "Upp till fem sidor med sektioner, exempelvis:",
+          "listItems": [
+            {
+              "id": 1,
+              "text": "Header"
+            },
+            {
+              "id": 2,
+              "text": "Produkt/Erbjudande"
+            },
+            {
+              "id": 3,
+              "text": "Team"
+            },
+            {
+              "id": 4,
+              "text": "Om oss"
+            },
+            {
+              "id": 5,
+              "text": "Footer med kontaktuppgifter"
+            }
+          ],
+          "disabledTextGroup": {
+            "priceText": "Pris: 34.500kr/ex moms",
+            "logoText": "Egen logo: 1.995kr/ex moms"
+          }
+        },
+        {
+          "id": 3,
+          "isActive": false,
+          "subHeadline": { "text": "Custom" },
+          "headline": { "text": "Offert" },
+          "text2": "Oftast vill man ha specifika integrationer, funktionalitet och animationer som vi inte kan estimera utan behovsanalys.",
+          "text3": " Kontakta oss för att gå vidare!"
+        }
+      ],
       "portfolio": []
     },
     {
