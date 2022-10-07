@@ -85,7 +85,7 @@
         "slug": "/app",
         "headline": "Apputveckling",
         "listItems": ["Webbapp", "Mobilapp"],
-        "imageSource": "../images/yellow.svg"
+        "imageSource": "../images/blue.svg"
       },
       {
         "id": 3,
@@ -96,7 +96,7 @@
           "Grafisk Formgivning",
           "Bildbehandling"
         ],
-        "imageSource": "../images/green.svg"
+        "imageSource": "../images/yellow.svg"
       }
     ]
   },
@@ -246,7 +246,7 @@
       "slug": "app",
       "headline": "App",
       "header": {
-        "imageSource": "../images/iphone.jpg"
+        "imageSource": "../images/app.jpg"
       },
       "information": [
         {
@@ -281,7 +281,7 @@
       "slug": "design",
       "headline": "Design",
       "header": {
-        "imageSource": "../images/webpage.jpg"
+        "imageSource": "../images/design.jpg"
       },
       "information": [
         {
