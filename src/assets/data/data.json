@@ -202,9 +202,10 @@
   "servicePage": [
     {
       "slug": "website",
+
       "headline": "hemsida till fast pris – 3 paket att välja på",
       "header": {
-        "imageSource": "../images/desktop.png"
+        "imageSource": "../images/desktop.jpg"
       },
       "information": [
         {
@@ -246,7 +247,7 @@
       "slug": "app",
       "headline": "Apputveckling",
       "header": {
-        "imageSource": "../images/phone.jpg"
+        "imageSource": "../images/webpage.jpg"
       },
       "information": [
         {
