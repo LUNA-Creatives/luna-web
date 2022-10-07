@@ -247,7 +247,7 @@
       "slug": "app",
       "headline": "Apputveckling",
       "header": {
-        "imageSource": "../images/webpage.jpg"
+        "imageSource": "../images/phone.jpg"
       },
       "information": [
         {
@@ -282,7 +282,7 @@
       "slug": "design",
       "headline": "Design",
       "header": {
-        "imageSource": "../images/desktop.png"
+        "imageSource": "../images/phone.jpg"
       },
       "information": [
         {
