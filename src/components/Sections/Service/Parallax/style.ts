@@ -5,7 +5,6 @@ import { ipadBreakpoint } from '../../../../utils/screenSizeBreakpoints';
 export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      backgroundColor: theme.palette.primary.dark,
       height: '100%',
     },
     container: {
@@ -22,13 +21,15 @@ export default makeStyles((theme: Theme) =>
     },
     parallax: {
       aspectRatio: '1 / 1',
-      [theme.breakpoints.up(ipadBreakpoint)]: {
+      [theme.breakpoints.up('sm')]: {
+        aspectRatio: '1 / 1',
+      },
+      [theme.breakpoints.up('lg')]: {
+        aspectRatio: '2 / 1',
+      },
+      [theme.breakpoints.up('xl')]: {
         aspectRatio: '3 / 1',
       },
-    },
-    image: {
-      height: 'auto',
-      width: '100%',
     },
   })
 );
