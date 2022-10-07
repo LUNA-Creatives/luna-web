@@ -23,7 +23,7 @@ export default makeStyles((theme: Theme) =>
     parallax: {
       aspectRatio: '1 / 1',
       [theme.breakpoints.up(ipadBreakpoint)]: {
-        aspectRatio: '2 / 1',
+        aspectRatio: '3 / 1',
       },
     },
     image: {

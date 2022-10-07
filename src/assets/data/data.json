@@ -204,7 +204,7 @@
       "slug": "website",
       "headline": "hemsida till fast pris – 3 paket att välja på",
       "header": {
-        "imageSource": "../images/webpage.jpg"
+        "imageSource": "../images/desktop.png"
       },
       "information": [
         {
@@ -244,34 +244,34 @@
     },
     {
       "slug": "app",
-      "headline": "App",
+      "headline": "Apputveckling",
       "header": {
-        "imageSource": "../images/webpage.jpg"
+        "imageSource": "../images/phone.jpg"
       },
       "information": [
         {
           "id": 1,
           "subHeadline": "Vad är en App?",
-          "text1": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
+          "text1": "En app kan se ut på många olika sätt. Allt från en enklare anteckningsapp till gedigna appar som Instagram och Facebook. Vi sätter oss gärna ner och tar fram en lösning utifrån eran idé och målsättning. Ni kanske behöver hjälp att ta en befintlig app till nästa steg. Kontakta oss isåfall för vidare samarbete!"
         },
         {
           "id": 2,
-          "subHeadline": "Vad ingår?",
-          "text2": "Nedan ser du vad som ingår när du väljer ett av våra paket för att bygga hemsida",
+          "subHeadline": "Vad vi erbjuder",
+          "text2": "Nedan ser du vad vi kan erbjuda inom apputveckling",
           "listItems": [
             {
               "id": 1,
-              "text": "Design"
+              "text": "Projektledning."
             },
-            { "id": 2, "text": "Utveckling" },
+            { "id": 2, "text": "Utveckling av app, system och säkerhet." },
             {
               "id": 3,
-              "text": "Email"
+              "text": "Design"
             },
-            { "id": 4, "text": "Hjälp med uppsättning av konto och server." },
+            { "id": 4, "text": "Support" },
             {
               "id": 5,
-              "text": "Hjälp med uppsättning av mail med egen domän (e.g. namn@bolagsnamn.se)."
+              "text": "Användaranays (statistik / användarresa)"
             }
           ]
         }
@@ -281,13 +281,13 @@
       "slug": "design",
       "headline": "Design",
       "header": {
-        "imageSource": "../images/webpage.jpg"
+        "imageSource": "../images/desktop.png"
       },
       "information": [
         {
           "id": 1,
           "subHeadline": "Vad är design?",
-          "text1": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
+          "text1": "Visste du att noga utvald design faktiskt kan vara avgörande för ditt företag?. Idag kan man ta reda på mycket genom att samla data om hur användare faktiskt beteer sig på en hemsida/app. Därav också ta reda på vilken typ av design de föredrar för att t.ex slutföra ett köp."
         },
         {
           "id": 2,
