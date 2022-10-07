@@ -1,9 +1,9 @@
-import { Header } from './Header';
+import { Parallax } from './Parallax';
 
 export const Service = ({ data }: any) => {
   return (
     <>
-      <Header data={data.header} />
+      <Parallax data={data.header} />
     </>
   );
 };

@@ -4,7 +4,7 @@ import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import { IHeader } from './types';
 import useStyles from './style';
 
-export const Header = ({ data }: IHeader) => {
+export const Parallax = ({ data }: IHeader) => {
   const classes = useStyles();
 
   return (
