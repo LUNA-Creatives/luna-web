@@ -6,13 +6,15 @@ export default makeStyles((theme: Theme) =>
   createStyles({
     cardBox: {
       marginBottom: 10,
-      minHeight: '100%',
+      minHeight: '55vh',
+
       width: '100%',
       backgroundColor: '#292929',
       borderRadius: 8,
       color: theme.palette.primary.main,
       [theme.breakpoints.up(ipadBreakpoint)]: {
         marginBottom: 0,
+        minHeight: '100%',
       },
     },
     innerBox: {
@@ -61,6 +63,9 @@ export default makeStyles((theme: Theme) =>
       paddingLeft: 10,
       display: 'inline-flex',
       width: '100%',
+    },
+    text: {
+      paddingTop: 10,
     },
   })
 );

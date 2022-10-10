@@ -44,7 +44,10 @@ export const Card = ({ data }: ICard) => {
             {data.text1}
           </Typography>
           <Typography variant={'body1'}>{data.text2}</Typography>
-          <Typography className={classes.boldText} variant={'body1'}>
+          <Typography
+            className={`${classes.boldText} & ${classes.text}`}
+            variant={'body1'}
+          >
             {data.text3}
           </Typography>
         </Box>
