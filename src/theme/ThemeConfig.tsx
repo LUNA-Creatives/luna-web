@@ -78,6 +78,9 @@ let theme = createTheme({
     },
   },
   palette: {
+    background: {
+      default: '#171717',
+    },
     primary: {
       light: '#6CCFF6',
       main: '#F0F9FE',
