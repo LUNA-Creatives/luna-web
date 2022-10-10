@@ -6,8 +6,12 @@ export const Service = ({ data }: any) => {
     <>
       <Parallax data={data.header} />
       <Information headline={data.headline} data={data.information} />
-      <CustomDivider hasBackgroundColor />
-      {data.offers && <OurOffers data={data.offers} />}
+      <CustomDivider />
+      {data.offers && (
+        <>
+          <OurOffers data={data.offers} /> <CustomDivider hasBackgroundColor />
+        </>
+      )}
       <Portfolio data={data.portfolio} />
     </>
   );

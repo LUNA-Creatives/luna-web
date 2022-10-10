@@ -7,7 +7,6 @@ export default makeStyles((theme: Theme) =>
     root: {},
     container: {
       maxWidth: 1600,
-      paddingBottom: 75,
     },
     cardsContainer: {
       [theme.breakpoints.up(ipadBreakpoint)]: {
