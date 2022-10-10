@@ -14,17 +14,21 @@ export const Portfolio = ({ data }: IPortfolio) => {
     <Grid className={classes.root}>
       <Container className={classes.container}>
         <Box component={'div'}>
-          <Typography
-            className={`${classes.headline} & ${classes.upperCase}`}
-            variant={'h1'}
-          >
-            {data.headline}
-          </Typography>
-          <Typography className={classes.bold}>{data.subHeadline}</Typography>
+          <Box component={'div'} className={classes.textBox}>
+            <Typography
+              className={`${classes.headline} & ${classes.upperCase}`}
+              variant={'h1'}
+            >
+              {data.headline}
+            </Typography>
+            <Typography className={`${classes.headline} & ${classes.bold}`}>
+              {data.subHeadline}
+            </Typography>
+          </Box>
           {data.customerCases.map((item: CustomerCases) =>
             item.headline ? (
               <Box component={'div'} key={item.id} className={classes.textBox}>
-                <Typography className={classes.headline} variant={'body1'}>
+                <Typography className={classes.text} variant={'body1'}>
                   {item.headline}
                 </Typography>
                 {item.customerCases?.map((item: CustomerCase) => (
