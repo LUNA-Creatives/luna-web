@@ -9,7 +9,7 @@ import { ipadBreakpoint } from '../../../../utils/screenSizeBreakpoints';
 export const Parallax = ({ data }: IHeader) => {
   const classes = useStyles();
   const isDesktop = useMediaQuery(`(min-width:${ipadBreakpoint}px)`);
-  const [speedProp, setSpeedProp] = useState(0);
+  const [speedProp, setSpeedProp] = useState(-10);
 
   useEffect(() => {
     if (isDesktop) {
