@@ -206,7 +206,6 @@
   "servicePage": [
     {
       "slug": "website",
-
       "headline": "hemsida till fast pris – 3 paket att välja på",
       "header": {
         "imageSource": "../images/desktop.jpg"
@@ -274,8 +273,8 @@
             }
           ],
           "disabledTextGroup": {
-            "price": "Pris: 19.500kr/ex moms",
-            "logo": "Egen logo: 4.995kr/ex moms"
+            "priceText": "Pris: 19.500kr/ex moms",
+            "logoText": "Egen logo: 4.995kr/ex moms"
           }
         },
         {
@@ -319,8 +318,7 @@
           "text2": "Oftast vill man ha specifika integrationer, funktionalitet och animationer som vi inte kan estimera utan behovsanalys.",
           "text3": " Kontakta oss för att gå vidare!"
         }
-      ],
-      "portfolio": []
+      ]
     },
     {
       "slug": "app",
