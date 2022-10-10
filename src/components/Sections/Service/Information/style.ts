@@ -47,5 +47,8 @@ export default makeStyles((theme: Theme) =>
     upperCase: {
       textTransform: 'uppercase',
     },
+    inlineBox: {
+      display: 'inline-flex',
+    },
   })
 );
