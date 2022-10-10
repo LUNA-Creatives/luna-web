@@ -11,8 +11,17 @@ export default makeStyles((theme: Theme) =>
       color: theme.palette.primary.main,
       paddingBottom: 75,
     },
+    textBox: {
+      paddingTop: 10,
+      paddingBottom: 10,
+    },
     headline: {
       paddingBottom: 10,
+    },
+    bold: {
+      fontWeight: 600,
+    },
+    upperCase: {
       textTransform: 'uppercase',
     },
     linkBox: {

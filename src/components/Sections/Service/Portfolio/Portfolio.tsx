@@ -14,14 +14,19 @@ export const Portfolio = ({ data }: IPortfolio) => {
     <Grid className={classes.root}>
       <Container className={classes.container}>
         <Box component={'div'}>
-          <Typography className={classes.headline} variant={'h1'}>
+          <Typography
+            className={`${classes.headline} & ${classes.upperCase}`}
+            variant={'h1'}
+          >
             {data.headline}
           </Typography>
-          <Typography variant={'body1'}>{data.subHeadline}</Typography>
+          <Typography className={classes.bold}>{data.subHeadline}</Typography>
           {data.customerCases.map((item: CustomerCases) =>
             item.headline ? (
-              <Box component={'div'} key={item.id}>
-                <Typography variant={'body1'}>{item.headline}</Typography>
+              <Box component={'div'} key={item.id} className={classes.textBox}>
+                <Typography className={classes.headline} variant={'body1'}>
+                  {item.headline}
+                </Typography>
                 {item.customerCases?.map((item: CustomerCase) => (
                   <Box
                     key={item.id}
@@ -41,7 +46,7 @@ export const Portfolio = ({ data }: IPortfolio) => {
             ) : (
               <Box component={'div'} className={classes.linkBox}>
                 <Link
-                  key={item.customerLink}
+                  key={item.id}
                   onClick={() => openInNewTab(item.customerLink as string)}
                   className={`${classes.link} & ${classes.inlineBox}`}
                 >
