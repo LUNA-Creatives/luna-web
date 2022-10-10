@@ -1,6 +1,11 @@
 import { Parallax } from './Parallax';
-
-export const Service = ({ data }: any) => {
+import { Header } from '../Service/Parallax';
+export interface IService {
+  data: {
+    header: Header;
+  };
+}
+export const Service = ({ data }: IService) => {
   return (
     <>
       <Parallax data={data.header} />
