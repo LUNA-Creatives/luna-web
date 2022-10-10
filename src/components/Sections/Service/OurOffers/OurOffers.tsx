@@ -2,10 +2,10 @@ import { Grid, Container, Box } from '@mui/material';
 
 import { Card } from './Card';
 import useStyles from './style';
-import { IOffers } from './types';
+import { IOurOffers } from './types';
 import { Card as CardType } from './Card/types';
 
-export const OurOffers = ({ data }: IOffers) => {
+export const OurOffers = ({ data }: IOurOffers) => {
   const classes = useStyles();
 
   return (
