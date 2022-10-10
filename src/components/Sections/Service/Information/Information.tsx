@@ -39,13 +39,10 @@ export const Information = ({ data, headline }: IInformation) => {
                 </Typography>
               )}
               {column.listItems?.map((item: Item) => (
-                <Box
-                  key={item.id}
-                  component={'div'}
-                  className={classes.inlineBox}
-                >
-                  <li></li>
-                  <Typography variant={'body1'}>{item.text}</Typography>
+                <Box component={'div'} key={item.id}>
+                  <Typography component={'li'} variant={'body1'}>
+                    {item.text}
+                  </Typography>
                 </Box>
               ))}
             </Box>
