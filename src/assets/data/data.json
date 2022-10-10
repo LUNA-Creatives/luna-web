@@ -69,27 +69,38 @@
     "subHeadline": "HUR KAN VI HJÄLPA DIG?",
     "card": [
       {
-        "headline": "Hemsidor & Webshop",
-        "text": [
-          "Byggd med kod",
-          "Byggd med CMS",
-          "Domän & Webbhotell & Drift"
+        "id": 1,
+        "slug": "/website",
+        "headline": "Hemsidor",
+        "listItems": [
+          "Design",
+          "Utveckling",
+          "Email",
+          "Domän, Webbhotell & Drift"
         ],
         "imageSource": "../images/pink.svg"
       },
       {
+        "id": 2,
+        "slug": "/app",
         "headline": "Apputveckling",
-        "text": ["Webbapp", "Mobilapp"],
-        "imageSource": "../images/yellow.svg"
+        "listItems": [
+          "Mobilapp för iOS",
+          "Mobilapp för Android",
+          "App för webben"
+        ],
+        "imageSource": "../images/blue.svg"
       },
       {
+        "id": 3,
+        "slug": "/design",
         "headline": "Design",
-        "text": [
+        "listItems": [
           "Logotyp & Grafisk Profil",
           "Grafisk Formgivning",
           "Bildbehandling"
         ],
-        "imageSource": "../images/green.svg"
+        "imageSource": "../images/yellow.svg"
       }
     ]
   },
@@ -191,5 +202,283 @@
       "phoneNumber": "+46722504672"
     },
     "copyRights": "© 2022 LUNA Creatives. All Rights Reserved."
-  }
+  },
+  "servicePage": [
+    {
+      "slug": "website",
+      "headline": "hemsida till fast pris – 3 paket att välja på",
+      "header": {
+        "imageSource": "../images/desktop.jpg"
+      },
+      "information": [
+        {
+          "id": 1,
+          "subHeadline": "Vad är en hemsida?",
+          "text1": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
+        },
+        {
+          "id": 2,
+          "subHeadline": "I SAMTLIGA PAKET INGÅR FÖLJANDE?",
+          "listItems": [
+            {
+              "id": 1,
+              "text": "Uppstartsmöte där vi går igenom behov och design."
+            },
+            { "id": 2, "text": "Designskiss." },
+            {
+              "id": 3,
+              "text": "Hjälp med att köpa domän och koppla domän till hemsida."
+            },
+            { "id": 4, "text": "Hjälp med uppsättning av konto och server." },
+            {
+              "id": 5,
+              "text": "Hjälp med uppsättning av mail med egen domän (e.g. namn@bolagsnamn.se)."
+            },
+            {
+              "id": 6,
+              "text": "Upplärning så man kan ändra design och administrera sidan självständigt"
+            },
+            { "id": 7, "text": "Besökstatistik" },
+            { "id": 8, "text": "Webbsida som även är anpassad för mobil" }
+          ]
+        }
+      ],
+      "offers": [
+        {
+          "id": 1,
+          "isActive": false,
+          "subHeadline": { "text": "Basic" },
+          "headline": { "price": "19.500kr", "vatText": "/ex moms" },
+          "text1": "Enbart en landningssida med flera sektioner, exempelvis:",
+          "listItems": [
+            {
+              "id": 1,
+              "text": "Header"
+            },
+            {
+              "id": 2,
+              "text": "Produkt/Erbjudande"
+            },
+            {
+              "id": 3,
+              "text": "Team"
+            },
+            {
+              "id": 4,
+              "text": "Om oss"
+            },
+            {
+              "id": 5,
+              "text": "Footer med kontaktuppgifter"
+            }
+          ],
+          "disabledTextGroup": {
+            "priceText": "Pris: 19.500kr/ex moms",
+            "logoText": "Egen logo: 4.995kr/ex moms"
+          }
+        },
+        {
+          "id": 2,
+          "isActive": true,
+          "subHeadline": { "text": "Pro", "activeText": "Populär!" },
+          "headline": { "price": "34.500kr", "vatText": "/ex moms" },
+          "text1": "Upp till fem sidor med sektioner, exempelvis:",
+          "listItems": [
+            {
+              "id": 1,
+              "text": "Header"
+            },
+            {
+              "id": 2,
+              "text": "Produkt/Erbjudande"
+            },
+            {
+              "id": 3,
+              "text": "Team"
+            },
+            {
+              "id": 4,
+              "text": "Om oss"
+            },
+            {
+              "id": 5,
+              "text": "Footer med kontaktuppgifter"
+            }
+          ],
+          "disabledTextGroup": {
+            "priceText": "Pris: 34.500kr/ex moms",
+            "logoText": "Egen logo: 1.995kr/ex moms"
+          }
+        },
+        {
+          "id": 3,
+          "isActive": false,
+          "subHeadline": { "text": "Custom" },
+          "headline": { "text": "Offert" },
+          "text2": "Oftast vill man ha specifika integrationer, funktionalitet och animationer som vi inte kan estimera utan behovsanalys.",
+          "text3": " Kontakta oss för att gå vidare!"
+        }
+      ],
+      "portfolio": {
+        "headline": "Tidigare jobb",
+        "subHeadline": "Nedan kan du klicka dig in på hemsidor vi byggt för våra kunder:",
+        "customerCases": [
+          {
+            "id": 1,
+            "customer": "Time To Tell",
+            "customerLink": "https://www.timetotell.se/"
+          },
+          {
+            "id": 2,
+            "customer": "Generation Waste",
+            "customerLink": "https://www.generationwaste.com/"
+          },
+          {
+            "id": 3,
+            "customer": "We are Women",
+            "customerLink": "https://www.wearewomen.io/"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "app",
+      "headline": "Apputveckling",
+      "header": {
+        "imageSource": "../images/app.jpg"
+      },
+      "information": [
+        {
+          "id": 1,
+          "subHeadline": "Vad är en App?",
+          "text1": "En app kan se ut på många olika sätt. Allt från en enklare anteckningsapp till gedigna appar som Instagram och Facebook. Vi sätter oss gärna ner och tar fram en lösning utifrån eran idé och målsättning. Ni kanske behöver hjälp att ta en befintlig app till nästa steg. Kontakta oss isåfall för vidare samarbete!"
+        },
+        {
+          "id": 2,
+          "subHeadline": "Vad vi erbjuder",
+          "text2": "Nedan ser du vad vi kan erbjuda inom apputveckling",
+          "listItems": [
+            {
+              "id": 1,
+              "text": "Projektledning."
+            },
+            { "id": 2, "text": "Utveckling av app, system och säkerhet." },
+            {
+              "id": 3,
+              "text": "Design"
+            },
+            { "id": 4, "text": "Support" },
+            {
+              "id": 5,
+              "text": "Användaranays (statistik / användarresa)"
+            }
+          ]
+        }
+      ],
+      "portfolio": {
+        "headline": "Tidigare jobb",
+        "subHeadline": "Nedan kan du klicka dig vidare till appar vi byggt för våra kunder:",
+        "customerCases": [
+          {
+            "id": 4,
+            "headline": "Mobil Appar:",
+            "customerCases": [
+              {
+                "id": 41,
+                "customer": "Time To Tell",
+                "customerLink": "https://apps.apple.com/se/app/time-to-tell/id1533259219?l=en"
+              },
+              {
+                "id": 42,
+                "customer": "Generation Waste",
+                "customerLink": "https://apps.apple.com/se/app/generation-waste-v2/id1601492651?l=en"
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "headline": "Webb Appar:",
+            "customerCases": [
+              {
+                "id": 51,
+                "customer": "Time To Tell",
+                "customerLink": "https://app.timetotell.se/"
+              },
+              {
+                "id": 52,
+                "customer": "Generation Waste",
+                "customerLink": "https://apps.apple.com/se/app/generation-waste-v2/id1601492651?l=en"
+              },
+              {
+                "id": 53,
+                "customer": "Moneytransferto.com",
+                "customerLink": "https://moneytransferto.com/"
+              },
+              {
+                "id": 54,
+                "customer": "Samla",
+                "customerLink": "https://poc-invoice-front.dev.zenio.digital/"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "slug": "design",
+      "headline": "Design",
+      "header": {
+        "imageSource": "../images/design.jpg"
+      },
+      "information": [
+        {
+          "id": 1,
+          "subHeadline": "Vad är design?",
+          "text1": "Visste du att noga utvald design faktiskt kan vara avgörande för ditt företag?. Idag kan man ta reda på mycket genom att samla data om hur användare faktiskt beteer sig på en hemsida/app. Därav också ta reda på vilken typ av design de föredrar för att t.ex slutföra ett köp."
+        },
+        {
+          "id": 2,
+          "subHeadline": "Vad kan ingå i designarbetet?",
+          "text2": "Nedan ser du vad vi kan erbjuda dig och ditt företag.",
+          "listItems": [
+            {
+              "id": 1,
+              "text": "Personligt anpassad logga."
+            },
+            { "id": 2, "text": "Personligt anpassad grafisk profil." },
+            {
+              "id": 3,
+              "text": "Designsystem"
+            },
+            { "id": 4, "text": "Designstrategi" },
+            {
+              "id": 5,
+              "text": "Användaranalys"
+            }
+          ]
+        }
+      ],
+      "portfolio": {
+        "headline": "Tidigare jobb",
+        "subHeadline": "Nedan kan du klicka dig vidare till kunder vi gjort olika design uppdrag för:",
+        "customerCases": [
+          {
+            "id": 6,
+            "customer": "Generation Waste",
+            "customerLink": "https://www.generationwaste.com/"
+          },
+          {
+            "id": 7,
+            "customer": "We are Women",
+            "customerLink": "https://www.wearewomen.io/"
+          },
+          {
+            "id": 8,
+            "customer": "Milenko",
+            "customerLink": "https://www.milenko.se/"
+          }
+        ]
+      }
+    }
+  ]
 }

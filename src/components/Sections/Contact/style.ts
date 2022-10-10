@@ -10,8 +10,12 @@ export default makeStyles((theme: Theme) =>
     },
     container: {
       maxWidth: 1600,
-      paddingTop: 100,
-      paddingBottom: 100,
+      paddingTop: 50,
+      paddingBottom: 50,
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        paddingTop: 100,
+        paddingBottom: 100,
+      },
     },
     flexBox: {
       display: 'flex',
