@@ -1,7 +1,7 @@
 import { Divider, Grid, Container } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-
 import { Theme } from '@mui/material/styles';
+
 import { ipadBreakpoint } from '../../utils/screenSizeBreakpoints';
 
 export interface IDivider {
@@ -15,7 +15,10 @@ export const CustomDivider = ({ hasBackgroundColor }: IDivider) => {
     <Grid className={classes.root}>
       <Container className={classes.container}>
         <Divider
-          sx={{ backgroundColor: hasBackgroundColor ? '#4D4D4D' : 'none' }}
+          sx={{
+            borderColor: 'transparent',
+            backgroundColor: hasBackgroundColor ? '#4D4D4D' : 'transparent',
+          }}
           className={classes.divider}
         />
       </Container>
