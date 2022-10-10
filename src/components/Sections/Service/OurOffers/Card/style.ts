@@ -6,19 +6,23 @@ export default makeStyles((theme: Theme) =>
   createStyles({
     cardBox: {
       marginBottom: 10,
-      minHeight: '55vh',
-
+      minHeight: '45vh',
       width: '100%',
       backgroundColor: '#292929',
       borderRadius: 8,
       color: theme.palette.primary.main,
       [theme.breakpoints.up(ipadBreakpoint)]: {
         marginBottom: 0,
+        display: 'flex',
         minHeight: '100%',
       },
     },
     innerBox: {
       padding: 20,
+      display: 'flex',
+      minHeight: 'inherit',
+      justifyContent: 'space-between',
+      flexDirection: 'column',
     },
     upperCase: {
       textTransform: 'uppercase',
@@ -31,7 +35,10 @@ export default makeStyles((theme: Theme) =>
     headlineBox: {
       display: 'inline-flex',
       placeItems: 'baseline',
-      marginBottom: 30,
+      marginBottom: 10,
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        marginBottom: 30,
+      },
     },
     activeText: {
       color: theme.palette.info.main,
@@ -40,7 +47,6 @@ export default makeStyles((theme: Theme) =>
       color: '#979797',
     },
     textBox: {
-      display: 'block',
       marginBottom: 10,
     },
     boldText: {
@@ -50,13 +56,10 @@ export default makeStyles((theme: Theme) =>
       border: `2px solid${theme.palette.info.main}`,
     },
     listBox: {
-      display: 'block',
-      marginBottom: 30,
-      [theme.breakpoints.up('md')]: {
-        marginBottom: '25%',
-      },
-      [theme.breakpoints.up('lg')]: {
-        marginBottom: '45%',
+      marginBottom: 20,
+
+      [theme.breakpoints.up(ipadBreakpoint)]: {
+        marginBottom: '30%',
       },
     },
     inlineBox: {
