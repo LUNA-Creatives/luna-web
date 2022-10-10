@@ -3,6 +3,7 @@ import { Grid, Container, Box } from '@mui/material';
 import lottie from 'lottie-web/build/player/lottie_svg';
 import clsx from 'clsx';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import { Link as RouterLink } from 'react-router-dom';
 
 import useStyles from './style';
 import { INavbar } from './types';
@@ -62,33 +63,42 @@ export const Navbar = ({ data }: INavbar) => {
 
       <Grid className={classes.root}>
         <Container className={classes.container}>
-          <Box
-            component={'div'}
+          <RouterLink
+            to={'/'}
+            onClick={() => window.scrollTo(0, 0) as any}
             className={clsx(classes.animation, {
               [classes.easeInOut]: showOverlay || !showLogo,
             })}
             id={animationId}
           />
           <Box
-            onClick={() => setShowOverlay(true)}
             component={'div'}
-            className={clsx(classes.menuIcon, {
+            onClick={() => setShowOverlay(true)}
+            className={clsx(classes.menuButton, {
+              [classes.buttonBackground]: !showOverlay,
               [classes.disabled]: showOverlay,
             })}
           >
-            <div className={classes.line} />
-            <div className={classes.line} />
-            <div className={classes.line} />
+            <Box component={'div'} className={classes.menuIcon}>
+              <div className={classes.line} />
+              <div className={classes.line} />
+              <div className={classes.line} />
+            </Box>
           </Box>
           <Box
-            onClick={() => setShowOverlay(false)}
             component={'div'}
-            className={clsx(classes.menuIcon, classes.closeIcon, {
+            onClick={() => setShowOverlay(false)}
+            className={clsx(classes.menuButton, {
               [classes.easeInOut]: !showOverlay,
             })}
           >
-            <span className={`${classes.right} ${classes.rotate}`} />
-            <span className={`${classes.left} ${classes.rotate}`} />
+            <Box
+              component={'div'}
+              className={clsx(classes.menuIcon, classes.closeIcon)}
+            >
+              <span className={`${classes.right} ${classes.rotate}`} />
+              <span className={`${classes.left} ${classes.rotate}`} />
+            </Box>
           </Box>
         </Container>
       </Grid>
