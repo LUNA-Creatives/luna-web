@@ -27,7 +27,6 @@ export const ServicePage = () => {
         const serviceData: IServicePage = serviceObject;
         setServiceData(serviceData);
       }
-      console.log('data', serviceData);
     });
   }, [serviceData, servicePageData, slug]);
   return (
