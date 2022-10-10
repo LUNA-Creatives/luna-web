@@ -1,7 +1,5 @@
 import { CustomDivider } from '../../CustomDivider';
-import { Information } from './Information';
-import { OurOffers } from './OurOffers';
-import { Parallax } from './Parallax';
+import { Portfolio, Parallax, OurOffers, Information } from './index';
 
 export const Service = ({ data }: any) => {
   return (
@@ -10,6 +8,7 @@ export const Service = ({ data }: any) => {
       <Information headline={data.headline} data={data.information} />
       <CustomDivider hasBackgroundColor />
       {data.offers && <OurOffers data={data.offers} />}
+      <Portfolio data={data.portfolio} />
     </>
   );
 };

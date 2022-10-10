@@ -320,7 +320,27 @@
           "text3": " Kontakta oss för att gå vidare!"
         }
       ],
-      "portfolio": []
+      "portfolio": {
+        "headline": "Tidigare jobb",
+        "subHeadline": "Nedan kan du klicka dig in på hemsidor vi byggt för andra kunder:",
+        "customerCases": [
+          {
+            "id": 1,
+            "customer": "Time To Tell",
+            "customerLink": "https://www.timetotell.se/"
+          },
+          {
+            "id": 2,
+            "customer": "Generation Waste",
+            "customerLink": "https://www.generationwaste.com/"
+          },
+          {
+            "id": 3,
+            "customer": "We are Women",
+            "customerLink": "https://www.wearewomen.io/"
+          }
+        ]
+      }
     },
     {
       "slug": "app",
@@ -355,7 +375,55 @@
             }
           ]
         }
-      ]
+      ],
+      "portfolio": {
+        "headline": "Tidigare jobb",
+        "subHeadline": "Nedan kan du klicka dig in på Appar vi byggt för andra kunder:",
+        "customerCases": [
+          {
+            "id": 4,
+            "headline": "Mobil Appar:",
+            "customerCases": [
+              {
+                "id": 41,
+                "customer": "Time To Tell",
+                "customerLink": "https://apps.apple.com/se/app/time-to-tell/id1533259219?l=en"
+              },
+              {
+                "id": 42,
+                "customer": "Generation Waste",
+                "customerLink": "https://apps.apple.com/se/app/generation-waste-v2/id1601492651?l=en"
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "headline": "Webb Appar:",
+            "customerCases": [
+              {
+                "id": 51,
+                "customer": "Time To Tell",
+                "customerLink": "https://app.timetotell.se/"
+              },
+              {
+                "id": 52,
+                "customer": "Generation Waste",
+                "customerLink": "https://apps.apple.com/se/app/generation-waste-v2/id1601492651?l=en"
+              },
+              {
+                "id": 53,
+                "customer": "Moneytransferto.com",
+                "customerLink": "https://moneytransferto.com/"
+              },
+              {
+                "id": 54,
+                "customer": "Samla",
+                "customerLink": ""
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "slug": "design",
@@ -390,7 +458,28 @@
             }
           ]
         }
-      ]
+      ],
+      "portfolio": {
+        "headline": "Tidigare jobb",
+        "subHeadline": "Nedan kan du klicka dig vidare till kunder vi gjort olika design uppdrag för:",
+        "customerCases": [
+          {
+            "id": 6,
+            "customer": "Generation Waste",
+            "customerLink": "https://www.generationwaste.com/"
+          },
+          {
+            "id": 7,
+            "customer": "We are Women",
+            "customerLink": "https://www.wearewomen.io/"
+          },
+          {
+            "id": 8,
+            "customer": "Milenko",
+            "customerLink": "https://www.milenko.se/"
+          }
+        ]
+      }
     }
   ]
 }
