@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Grid, Container, Box, Typography, Link } from '@mui/material';
 
 import useStyles from './style';
@@ -6,9 +5,7 @@ import { IPortfolio, CustomerCases, CustomerCase } from './types';
 
 export const Portfolio = ({ data }: IPortfolio) => {
   const classes = useStyles();
-  useEffect(() => {
-    console.log('dtaa', data.customerCases);
-  });
+
   const openInNewTab = (url: string) => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
