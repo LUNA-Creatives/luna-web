@@ -84,7 +84,11 @@
         "id": 2,
         "slug": "/app",
         "headline": "Apputveckling",
-        "listItems": ["Webbapp", "Mobilapp"],
+        "listItems": [
+          "Mobilapp för iOS",
+          "Mobilapp för Android",
+          "App för webben"
+        ],
         "imageSource": "../images/blue.svg"
       },
       {
@@ -322,7 +326,7 @@
       "slug": "app",
       "headline": "Apputveckling",
       "header": {
-        "imageSource": "../images/phone.jpg"
+        "imageSource": "../images/app.jpg"
       },
       "information": [
         {
@@ -357,7 +361,7 @@
       "slug": "design",
       "headline": "Design",
       "header": {
-        "imageSource": "../images/phone.jpg"
+        "imageSource": "../images/design.jpg"
       },
       "information": [
         {
