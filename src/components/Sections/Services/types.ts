@@ -12,4 +12,5 @@ export type Card = {
   headline: string;
   listItems: string[];
   imageSource: string;
+  borderColor: string;
 };

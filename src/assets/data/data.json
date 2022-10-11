@@ -78,7 +78,8 @@
           "Email",
           "Domän, Webbhotell & Drift"
         ],
-        "imageSource": "../images/pink.svg"
+        "imageSource": "../images/pink.svg",
+        "borderColor": "#FCEAE4"
       },
       {
         "id": 2,
@@ -89,7 +90,8 @@
           "Mobilapp för Android",
           "App för webben"
         ],
-        "imageSource": "../images/blue.svg"
+        "imageSource": "../images/blue.svg",
+        "borderColor": "#6CCFF6"
       },
       {
         "id": 3,
@@ -100,7 +102,8 @@
           "Grafisk Formgivning",
           "Bildbehandling"
         ],
-        "imageSource": "../images/yellow.svg"
+        "imageSource": "../images/yellow.svg",
+        "borderColor": "#F7E584"
       }
     ]
   },

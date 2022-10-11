@@ -22,7 +22,15 @@ export const Services = ({ data }: IServices) => {
               onClick={() => window.scrollTo(0, 0)}
               className={classes.outerBox}
             >
-              <Box component={'div'} className={classes.cardBox}>
+              <Box
+                component={'div'}
+                className={classes.cardBox}
+                sx={{
+                  '&:hover': {
+                    border: `3px solid${card.borderColor}`,
+                  },
+                }}
+              >
                 <img
                   className={classes.image}
                   src={card.imageSource}

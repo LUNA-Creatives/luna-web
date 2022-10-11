@@ -28,10 +28,6 @@ export default makeStyles((theme: Theme) =>
       width: '100%',
       [theme.breakpoints.up(ipadBreakpoint)]: {
         width: '31%',
-        '&:hover': {
-          boxShadow: `1px 1px 50px 2px  black`,
-          transform: 'scale(1.01)',
-        },
       },
     },
     cardBox: {
@@ -41,6 +37,7 @@ export default makeStyles((theme: Theme) =>
       backgroundColor: '#292929',
       borderRadius: 8,
       marginBottom: 30,
+      border: `3px solid${theme.palette.primary.dark}`,
       [theme.breakpoints.up(ipadBreakpoint)]: {
         marginBottom: 0,
       },
