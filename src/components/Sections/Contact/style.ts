@@ -6,7 +6,7 @@ import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
 export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      backgroundColor: theme.palette.info.main,
+      backgroundColor: theme.palette.secondary.main,
     },
     container: {
       maxWidth: 1600,

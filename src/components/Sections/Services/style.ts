@@ -7,7 +7,7 @@ export default makeStyles((theme: Theme) =>
   createStyles({
     root: {
       backgroundColor: theme.palette.primary.dark,
-      color: theme.palette.secondary.light,
+      color: theme.palette.primary.main,
     },
     container: {
       minHeight: '100%',
