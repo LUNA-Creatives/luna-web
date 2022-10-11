@@ -325,18 +325,18 @@
         "customerCases": [
           {
             "id": 1,
-            "customer": "Time To Tell",
-            "customerLink": "https://www.timetotell.se/"
+            "customer": "Milenko",
+            "customerLink": "https://www.milenko.se/"
           },
           {
             "id": 2,
-            "customer": "Generation Waste",
-            "customerLink": "https://www.generationwaste.com/"
+            "customer": "We are Women",
+            "customerLink": "https://www.wearewomen.io/"
           },
           {
             "id": 3,
-            "customer": "We are Women",
-            "customerLink": "https://www.wearewomen.io/"
+            "customer": "Generation Waste",
+            "customerLink": "https://www.generationwaste.com/"
           }
         ]
       }

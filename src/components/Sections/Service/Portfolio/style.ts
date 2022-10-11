@@ -20,9 +20,6 @@ export default makeStyles((theme: Theme) =>
     },
     textBox: {
       paddingBottom: 10,
-      [theme.breakpoints.up(ipadBreakpoint)]: {
-        paddingBottom: 20,
-      },
     },
     headline: {
       paddingBottom: 10,
