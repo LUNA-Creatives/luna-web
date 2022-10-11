@@ -1,5 +1,5 @@
 import { Card } from './Card/types';
 
-export interface IOffers {
+export interface IOurOffers {
   data: Card[];
 }

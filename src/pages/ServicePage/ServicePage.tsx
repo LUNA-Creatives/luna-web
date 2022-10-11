@@ -10,26 +10,30 @@ import {
   Navbar,
   Service,
 } from '../../components/Sections';
+import { IServicePage } from './types';
 
 export const ServicePage = () => {
   const { slug } = useParams();
   const showPopup = useStore((state) => state.showPopup);
-  const [slugData, setSlugData] = useState() as any;
+  const [serviceData, setServiceData] = useState<IServicePage>();
 
-  const mappedArray = data.servicePage.map((x: any) => x);
+  const servicePageData: IServicePage[] = data.servicePage.map(
+    (serviceObject: IServicePage) => serviceObject
+  );
 
   useEffect(() => {
-    mappedArray.forEach((o: any) => {
-      if (o.slug === slug) {
-        setSlugData(o);
+    servicePageData.forEach((serviceObject) => {
+      if (serviceObject.slug === slug) {
+        const serviceData: IServicePage = serviceObject;
+        setServiceData(serviceData);
       }
     });
-  });
+  }, [serviceData, servicePageData, slug]);
   return (
     <>
       {showPopup && <Popup data={data.popup} />}
       <Navbar data={data} />
-      {slugData && <Service data={slugData} />}
+      {serviceData && <Service data={serviceData} />}
       <Contact data={data.contact} />
       <Footer data={data.footer} />
     </>

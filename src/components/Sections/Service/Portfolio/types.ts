@@ -5,6 +5,11 @@ export interface IPortfolio {
     customerCases: CustomerCases[];
   };
 }
+export type Portfolio = {
+  headline: string;
+  subHeadline: string;
+  customerCases: CustomerCases[];
+};
 export type CustomerCases = {
   headline?: string | undefined;
   customerCases?: CustomerCase[] | undefined;

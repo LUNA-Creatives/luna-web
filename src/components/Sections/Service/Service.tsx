@@ -1,7 +1,9 @@
 import { CustomDivider } from '../../CustomDivider';
 import { Portfolio, Parallax, OurOffers, Information } from './index';
+import { IService } from './types';
 
-export const Service = ({ data }: any) => {
+
+export const Service = ({ data }: IService) => {
   return (
     <>
       <Parallax data={data.header} />

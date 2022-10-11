@@ -17,13 +17,11 @@ export const Portfolio = ({ data }: IPortfolio) => {
           <Box component={'div'} className={classes.textBox}>
             <Typography
               className={`${classes.headline} & ${classes.upperCase}`}
-              variant={'h1'}
+              variant={'h2'}
             >
               {data.headline}
             </Typography>
-            <Typography className={`${classes.headline} & ${classes.bold}`}>
-              {data.subHeadline}
-            </Typography>
+            <Typography className={classes.bold}>{data.subHeadline}</Typography>
           </Box>
           {data.customerCases.map((item: CustomerCases) =>
             item.headline ? (
