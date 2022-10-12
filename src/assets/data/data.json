@@ -10,7 +10,7 @@
     {
       "id": 1,
       "headline": "Meny",
-      "navItems": [
+      "routerItems": [
         { "id": 11, "text1": "Hem", "link": "/" },
         {
           "id": 12,
@@ -30,7 +30,7 @@
     {
       "id": 2,
       "headline": "Adress",
-      "navItems": [
+      "linkItems": [
         {
           "id": 21,
           "text1": "Norra Gubberogatan 30",
@@ -42,7 +42,7 @@
     {
       "id": 3,
       "headline": "Sociala medier",
-      "navItems": [
+      "linkItems": [
         {
           "id": 31,
           "text1": "LinkedIn",

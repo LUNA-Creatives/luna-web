@@ -8,7 +8,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import useStyles from './style';
 import { INavbar } from './types';
 import animation from '../../../assets/animations/logoLoopingGlitchAnimation.json';
-import { Overlay } from './Overlay';
+import { Menu } from './Menu';
 
 export const Navbar = ({ data }: INavbar) => {
   const [showOverlay, setShowOverlay] = useState(false);
@@ -44,9 +44,59 @@ export const Navbar = ({ data }: INavbar) => {
       document.removeEventListener('scroll', handleScroll);
     };
   });
+  const LogoButton = (
+    <RouterLink
+      to={'/'}
+      onClick={() => window.scrollTo(0, 0) as any}
+      className={clsx(classes.animation, {
+        [classes.easeInOut]: showOverlay || !showLogo,
+      })}
+      id={animationId}
+    />
+  );
+  const MenuButton = (
+    <Box
+      component={'div'}
+      onClick={() => setShowOverlay(true)}
+      className={clsx(classes.menuButton, {
+        [classes.buttonBackground]: !showOverlay,
+        [classes.disabled]: showOverlay,
+      })}
+    >
+      <Box component={'div'} className={classes.menuIcon}>
+        <div className={classes.line} />
+        <div className={classes.line} />
+        <div className={classes.line} />
+      </Box>
+    </Box>
+  );
+  const CloseButton = (
+    <Box
+      component={'div'}
+      onClick={() => setShowOverlay(false)}
+      className={clsx(classes.menuButton, {
+        [classes.easeInOut]: !showOverlay,
+      })}
+    >
+      <Box
+        component={'div'}
+        className={clsx(classes.menuIcon, classes.closeIcon)}
+      >
+        <span className={`${classes.right} ${classes.rotate}`} />
+        <span className={`${classes.left} ${classes.rotate}`} />
+      </Box>
+    </Box>
+  );
 
   return (
     <>
+      <Grid className={classes.root}>
+        <Container className={classes.container}>
+          {LogoButton}
+          {MenuButton}
+          {CloseButton}
+        </Container>
+      </Grid>
       <Box
         component={'div'}
         className={clsx(classes.overlay, {
@@ -54,54 +104,12 @@ export const Navbar = ({ data }: INavbar) => {
         })}
       >
         {showOverlay && (
-          <Overlay
+          <Menu
             closeOverlay={(prop: boolean) => setShowOverlay(prop)}
             data={data.navbar}
           />
         )}
       </Box>
-
-      <Grid className={classes.root}>
-        <Container className={classes.container}>
-          <RouterLink
-            to={'/'}
-            onClick={() => window.scrollTo(0, 0) as any}
-            className={clsx(classes.animation, {
-              [classes.easeInOut]: showOverlay || !showLogo,
-            })}
-            id={animationId}
-          />
-          <Box
-            component={'div'}
-            onClick={() => setShowOverlay(true)}
-            className={clsx(classes.menuButton, {
-              [classes.buttonBackground]: !showOverlay,
-              [classes.disabled]: showOverlay,
-            })}
-          >
-            <Box component={'div'} className={classes.menuIcon}>
-              <div className={classes.line} />
-              <div className={classes.line} />
-              <div className={classes.line} />
-            </Box>
-          </Box>
-          <Box
-            component={'div'}
-            onClick={() => setShowOverlay(false)}
-            className={clsx(classes.menuButton, {
-              [classes.easeInOut]: !showOverlay,
-            })}
-          >
-            <Box
-              component={'div'}
-              className={clsx(classes.menuIcon, classes.closeIcon)}
-            >
-              <span className={`${classes.right} ${classes.rotate}`} />
-              <span className={`${classes.left} ${classes.rotate}`} />
-            </Box>
-          </Box>
-        </Container>
-      </Grid>
     </>
   );
 };
