@@ -44,6 +44,25 @@ export default makeStyles((theme: Theme) =>
         marginLeft: '-70px',
       },
     },
+    menuButton: {
+      display: 'flex',
+      flexDirection: 'column',
+      zIndex: 9999,
+      height: 50,
+      width: 50,
+      position: 'absolute',
+      right: 15,
+      top: 6,
+      cursor: 'pointer',
+      margin: 10,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderRadius: '50%',
+    },
+    buttonBackground: {
+      filter: `drop-shadow(0 0 0.2rem ${theme.palette.primary.dark})`,
+      backgroundColor: '#292929',
+    },
     menuIcon: {
       display: 'flex',
       flexDirection: 'column',
@@ -51,8 +70,6 @@ export default makeStyles((theme: Theme) =>
       height: 30,
       width: 30,
       position: 'absolute',
-      right: 15,
-      top: 6,
       cursor: 'pointer',
       margin: 10,
       justifyContent: 'space-around',
@@ -65,6 +82,7 @@ export default makeStyles((theme: Theme) =>
     },
     closeIcon: {
       justifyContent: 'center',
+      alignItems: 'center',
     },
     rotate: {
       height: 2,

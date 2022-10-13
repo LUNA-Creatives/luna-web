@@ -41,7 +41,7 @@ export default makeStyles((theme: Theme) =>
       },
     },
     activeText: {
-      color: theme.palette.info.main,
+      color: theme.palette.secondary.main,
     },
     disabledText: {
       color: '#979797',
@@ -53,7 +53,7 @@ export default makeStyles((theme: Theme) =>
       fontWeight: 600,
     },
     active: {
-      border: `2px solid${theme.palette.info.main}`,
+      border: `2px solid${theme.palette.secondary.main}`,
     },
     listBox: {
       marginBottom: 20,

@@ -8,18 +8,31 @@
   },
   "navbar": [
     {
+      "id": 1,
       "headline": "Meny",
-      "navItems": [
-        { "id": 1, "text1": "Hem", "link": "/" },
-        { "id": 2, "text1": "Om oss", "link": "/about-us" },
-        { "id": 3, "text1": "Vårt Team", "link": "/our-team" }
+      "routerItems": [
+        { "id": 11, "text1": "Hem", "link": "/" },
+        {
+          "id": 12,
+          "toggleItem": {
+            "text1": "Tjänster",
+            "serviceItems": [
+              { "id": 121, "text": "Hemsidor", "link": "/services/website" },
+              { "id": 122, "text": "App", "link": "/services/app" },
+              { "id": 123, "text": "Design", "link": "/services/design" }
+            ]
+          }
+        },
+        { "id": 13, "text1": "Om oss", "link": "/about-us" },
+        { "id": 24, "text1": "Vårt Team", "link": "/our-team" }
       ]
     },
     {
+      "id": 2,
       "headline": "Adress",
-      "navItems": [
+      "linkItems": [
         {
-          "id": 4,
+          "id": 21,
           "text1": "Norra Gubberogatan 30",
           "text2": "416 63 Göteborg",
           "link": "https://www.google.com/maps/place/LUNA+Creatives/@57.7112605,11.996917,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff36c51447e05:0x99fdbc7a640753b7!8m2!3d57.7112605!4d11.999111"
@@ -27,20 +40,21 @@
       ]
     },
     {
+      "id": 3,
       "headline": "Sociala medier",
-      "navItems": [
+      "linkItems": [
         {
-          "id": 5,
+          "id": 31,
           "text1": "LinkedIn",
           "link": "https://www.linkedin.com/company/lunacreatives/"
         },
         {
-          "id": 6,
+          "id": 32,
           "text1": "Instagram",
           "link": "https://www.instagram.com/lunacreatives.se/?hl=en"
         },
         {
-          "id": 7,
+          "id": 33,
           "text1": "Facebook",
           "link": "https://m.facebook.com/LUNA-Creatives-102384795888975/"
         }
@@ -69,7 +83,7 @@
     "subHeadline": "HUR KAN VI HJÄLPA DIG?",
     "card": [
       {
-        "id": 1,
+        "id": 4,
         "slug": "/website",
         "headline": "Hemsidor",
         "listItems": [
@@ -78,10 +92,11 @@
           "Email",
           "Domän, Webbhotell & Drift"
         ],
-        "imageSource": "../images/pink.svg"
+        "imageSource": "../images/pink.svg",
+        "borderColor": "#FCEAE4"
       },
       {
-        "id": 2,
+        "id": 5,
         "slug": "/app",
         "headline": "Apputveckling",
         "listItems": [
@@ -89,10 +104,11 @@
           "Mobilapp för Android",
           "App för webben"
         ],
-        "imageSource": "../images/blue.svg"
+        "imageSource": "../images/blue.svg",
+        "borderColor": "#6CCFF6"
       },
       {
-        "id": 3,
+        "id": 6,
         "slug": "/design",
         "headline": "Design",
         "listItems": [
@@ -100,7 +116,8 @@
           "Grafisk Formgivning",
           "Bildbehandling"
         ],
-        "imageSource": "../images/yellow.svg"
+        "imageSource": "../images/yellow.svg",
+        "borderColor": "#F7E584"
       }
     ]
   },
@@ -148,14 +165,14 @@
     "punchline": "To the moon and beyond!",
     "subHeadline": [
       {
-        "id": 1,
+        "id": 7,
         "headline": "Kontor",
         "street": "Norra Gubberogatan",
         "city": "Göteborg, Sverige",
         "url": "https://www.google.com/maps/place/LUNA+Creatives/@57.7112605,11.996917,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff36c51447e05:0x99fdbc7a640753b7!8m2!3d57.7112605!4d11.999111"
       },
       {
-        "id": 2,
+        "id": 8,
         "headline": "Kontakt",
         "emailAddress": "erik@lunacreatives.se",
         "phoneNumber": "+46722504672"
@@ -165,26 +182,26 @@
   "footer": {
     "headline": [
       {
-        "id": 1,
+        "id": 9,
         "text": "Vi tar gärna ett möte",
         "subtitle": "Hör gärna av dig till oss om du är intresserad av att jobba tillsammans för att skapa något speciellt!"
       },
       {
-        "id": 2,
+        "id": 10,
         "text": "Sociala Medier",
         "socialLinks": [
           {
-            "id": 1,
+            "id": 101,
             "text": "LinkedIn",
             "url": "https://www.linkedin.com/company/lunacreatives/"
           },
           {
-            "id": 2,
+            "id": 102,
             "text": "Instagram",
             "url": "https://www.instagram.com/lunacreatives.se/?hl=en"
           },
           {
-            "id": 3,
+            "id": 103,
             "text": "Facebook",
             "url": "https://m.facebook.com/LUNA-Creatives-102384795888975/"
           }
@@ -212,63 +229,66 @@
       },
       "information": [
         {
-          "id": 1,
+          "id": 11,
           "subHeadline": "Vad är en hemsida?",
           "text1": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
         },
         {
-          "id": 2,
+          "id": 111,
           "subHeadline": "I SAMTLIGA PAKET INGÅR FÖLJANDE?",
           "listItems": [
             {
-              "id": 1,
+              "id": 1111,
               "text": "Uppstartsmöte där vi går igenom behov och design."
             },
-            { "id": 2, "text": "Designskiss." },
+            { "id": 1112, "text": "Designskiss." },
             {
-              "id": 3,
+              "id": 1113,
               "text": "Hjälp med att köpa domän och koppla domän till hemsida."
             },
-            { "id": 4, "text": "Hjälp med uppsättning av konto och server." },
             {
-              "id": 5,
+              "id": 1114,
+              "text": "Hjälp med uppsättning av konto och server."
+            },
+            {
+              "id": 1115,
               "text": "Hjälp med uppsättning av mail med egen domän (e.g. namn@bolagsnamn.se)."
             },
             {
-              "id": 6,
+              "id": 1116,
               "text": "Upplärning så man kan ändra design och administrera sidan självständigt"
             },
-            { "id": 7, "text": "Besökstatistik" },
-            { "id": 8, "text": "Webbsida som även är anpassad för mobil" }
+            { "id": 1117, "text": "Besökstatistik" },
+            { "id": 1118, "text": "Webbsida som även är anpassad för mobil" }
           ]
         }
       ],
       "offers": [
         {
-          "id": 1,
+          "id": 12,
           "isActive": false,
           "subHeadline": { "text": "Basic" },
           "headline": { "price": "19.500kr", "vatText": "/ex moms" },
           "text1": "Enbart en landningssida med flera sektioner, exempelvis:",
           "listItems": [
             {
-              "id": 1,
+              "id": 121,
               "text": "Header"
             },
             {
-              "id": 2,
+              "id": 122,
               "text": "Produkt/Erbjudande"
             },
             {
-              "id": 3,
+              "id": 123,
               "text": "Team"
             },
             {
-              "id": 4,
+              "id": 124,
               "text": "Om oss"
             },
             {
-              "id": 5,
+              "id": 125,
               "text": "Footer med kontaktuppgifter"
             }
           ],
@@ -278,30 +298,30 @@
           }
         },
         {
-          "id": 2,
+          "id": 13,
           "isActive": true,
           "subHeadline": { "text": "Pro", "activeText": "Populär!" },
           "headline": { "price": "34.500kr", "vatText": "/ex moms" },
           "text1": "Upp till fem sidor med sektioner, exempelvis:",
           "listItems": [
             {
-              "id": 1,
+              "id": 131,
               "text": "Header"
             },
             {
-              "id": 2,
+              "id": 132,
               "text": "Produkt/Erbjudande"
             },
             {
-              "id": 3,
+              "id": 133,
               "text": "Team"
             },
             {
-              "id": 4,
+              "id": 134,
               "text": "Om oss"
             },
             {
-              "id": 5,
+              "id": 135,
               "text": "Footer med kontaktuppgifter"
             }
           ],
@@ -311,7 +331,7 @@
           }
         },
         {
-          "id": 3,
+          "id": 14,
           "isActive": false,
           "subHeadline": { "text": "Custom" },
           "headline": { "text": "Offert" },
@@ -324,19 +344,19 @@
         "subHeadline": "Nedan kan du klicka dig in på hemsidor vi byggt för våra kunder:",
         "customerCases": [
           {
-            "id": 1,
-            "customer": "Time To Tell",
-            "customerLink": "https://www.timetotell.se/"
+            "id": 15,
+            "customer": "Milenko",
+            "customerLink": "https://www.milenko.se/"
           },
           {
-            "id": 2,
-            "customer": "Generation Waste",
-            "customerLink": "https://www.generationwaste.com/"
-          },
-          {
-            "id": 3,
+            "id": 16,
             "customer": "We are Women",
             "customerLink": "https://www.wearewomen.io/"
+          },
+          {
+            "id": 17,
+            "customer": "Generation Waste",
+            "customerLink": "https://www.generationwaste.com/"
           }
         ]
       }
@@ -349,27 +369,27 @@
       },
       "information": [
         {
-          "id": 1,
+          "id": 18,
           "subHeadline": "Vad är en App?",
           "text1": "En app kan se ut på många olika sätt. Allt från en enklare anteckningsapp till gedigna appar som Instagram och Facebook. Vi sätter oss gärna ner och tar fram en lösning utifrån eran idé och målsättning. Ni kanske behöver hjälp att ta en befintlig app till nästa steg. Kontakta oss isåfall för vidare samarbete!"
         },
         {
-          "id": 2,
+          "id": 19,
           "subHeadline": "Vad vi erbjuder",
           "text2": "Nedan ser du vad vi kan erbjuda inom apputveckling",
           "listItems": [
             {
-              "id": 1,
+              "id": 191,
               "text": "Projektledning."
             },
-            { "id": 2, "text": "Utveckling av app, system och säkerhet." },
+            { "id": 192, "text": "Utveckling av app, system och säkerhet." },
             {
-              "id": 3,
+              "id": 193,
               "text": "Design"
             },
-            { "id": 4, "text": "Support" },
+            { "id": 194, "text": "Support" },
             {
-              "id": 5,
+              "id": 195,
               "text": "Användaranays (statistik / användarresa)"
             }
           ]
@@ -380,42 +400,42 @@
         "subHeadline": "Nedan kan du klicka dig vidare till appar vi byggt för våra kunder:",
         "customerCases": [
           {
-            "id": 4,
+            "id": 20,
             "headline": "Mobil Appar:",
             "customerCases": [
               {
-                "id": 41,
+                "id": 201,
                 "customer": "Time To Tell",
                 "customerLink": "https://apps.apple.com/se/app/time-to-tell/id1533259219?l=en"
               },
               {
-                "id": 42,
+                "id": 202,
                 "customer": "Generation Waste",
                 "customerLink": "https://apps.apple.com/se/app/generation-waste-v2/id1601492651?l=en"
               }
             ]
           },
           {
-            "id": 5,
+            "id": 21,
             "headline": "Webb Appar:",
             "customerCases": [
               {
-                "id": 51,
+                "id": 211,
                 "customer": "Time To Tell",
                 "customerLink": "https://app.timetotell.se/"
               },
               {
-                "id": 52,
+                "id": 212,
                 "customer": "Generation Waste",
                 "customerLink": "https://apps.apple.com/se/app/generation-waste-v2/id1601492651?l=en"
               },
               {
-                "id": 53,
+                "id": 213,
                 "customer": "Moneytransferto.com",
                 "customerLink": "https://moneytransferto.com/"
               },
               {
-                "id": 54,
+                "id": 214,
                 "customer": "Samla",
                 "customerLink": "https://poc-invoice-front.dev.zenio.digital/"
               }
@@ -432,27 +452,27 @@
       },
       "information": [
         {
-          "id": 1,
+          "id": 22,
           "subHeadline": "Vad är design?",
           "text1": "Visste du att noga utvald design faktiskt kan vara avgörande för ditt företag?. Idag kan man ta reda på mycket genom att samla data om hur användare faktiskt beteer sig på en hemsida/app. Därav också ta reda på vilken typ av design de föredrar för att t.ex slutföra ett köp."
         },
         {
-          "id": 2,
+          "id": 23,
           "subHeadline": "Vad kan ingå i designarbetet?",
           "text2": "Nedan ser du vad vi kan erbjuda dig och ditt företag.",
           "listItems": [
             {
-              "id": 1,
+              "id": 231,
               "text": "Personligt anpassad logga."
             },
-            { "id": 2, "text": "Personligt anpassad grafisk profil." },
+            { "id": 232, "text": "Personligt anpassad grafisk profil." },
             {
-              "id": 3,
+              "id": 233,
               "text": "Designsystem"
             },
-            { "id": 4, "text": "Designstrategi" },
+            { "id": 234, "text": "Designstrategi" },
             {
-              "id": 5,
+              "id": 235,
               "text": "Användaranalys"
             }
           ]
@@ -463,17 +483,17 @@
         "subHeadline": "Nedan kan du klicka dig vidare till kunder vi gjort olika design uppdrag för:",
         "customerCases": [
           {
-            "id": 6,
+            "id": 24,
             "customer": "Generation Waste",
             "customerLink": "https://www.generationwaste.com/"
           },
           {
-            "id": 7,
+            "id": 25,
             "customer": "We are Women",
             "customerLink": "https://www.wearewomen.io/"
           },
           {
-            "id": 8,
+            "id": 26,
             "customer": "Milenko",
             "customerLink": "https://www.milenko.se/"
           }

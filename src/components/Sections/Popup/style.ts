@@ -20,7 +20,6 @@ export default makeStyles((theme: Theme) =>
       borderRadius: 5,
       minHeight: '100%',
       maxWidth: '90%',
-
       backgroundColor: theme.palette.primary.dark,
       padding: '15% 8%',
       position: 'relative',
