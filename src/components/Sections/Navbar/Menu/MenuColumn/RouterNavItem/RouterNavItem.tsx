@@ -10,11 +10,11 @@ import { ServiceItem } from '../../types';
 
 export const RouterNavItem = ({ closeOverlay, data }: IRouterNavItem) => {
   const classes = useStyles();
-  const [extend, setExtend] = useState(-1);
+  const [extendUnderline, setExtendUnderline] = useState(-1);
   const [showToggleItems, setShowToggleItems] = useState(false);
 
   const handleToggleItem = (itemId: number) => {
-    setExtend(itemId);
+    setExtendUnderline(itemId);
     if (showToggleItems) {
       setShowToggleItems(false);
     } else {
@@ -26,8 +26,8 @@ export const RouterNavItem = ({ closeOverlay, data }: IRouterNavItem) => {
       {data.link && (
         <RouterLink
           key={data.id}
-          onMouseEnter={() => setExtend(data.id)}
-          onMouseLeave={() => setExtend(-1)}
+          onMouseEnter={() => setExtendUnderline(data.id)}
+          onMouseLeave={() => setExtendUnderline(-1)}
           to={data.link}
           onClick={() => closeOverlay(false) & (window.scrollTo(0, 0) as any)}
           className={classes.link}
@@ -35,7 +35,7 @@ export const RouterNavItem = ({ closeOverlay, data }: IRouterNavItem) => {
           <Typography variant={'h4'}>{data.text1}</Typography>
           <span
             className={clsx(classes.underline, {
-              [classes.extended]: extend === data.id,
+              [classes.extended]: extendUnderline === data.id,
             })}
           ></span>
         </RouterLink>
@@ -45,14 +45,14 @@ export const RouterNavItem = ({ closeOverlay, data }: IRouterNavItem) => {
           <Box
             className={classes.link}
             component={'div'}
-            onMouseEnter={() => setExtend(data.id)}
-            onMouseLeave={() => setExtend(-1)}
+            onMouseEnter={() => setExtendUnderline(data.id)}
+            onMouseLeave={() => setExtendUnderline(-1)}
             onClick={() => handleToggleItem(data.id)}
           >
             <Typography variant={'h4'}>{data.toggleItem?.text1}</Typography>
             <span
               className={clsx(classes.underline, {
-                [classes.extended]: extend === data.id,
+                [classes.extended]: extendUnderline === data.id,
                 [classes.active]: showToggleItems,
               })}
             ></span>

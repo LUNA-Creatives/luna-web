@@ -6,7 +6,7 @@ import useStyles from './style';
 import { ILinkItem } from './types';
 export const LinkItem = ({ closeOverlay, data }: ILinkItem) => {
   const classes = useStyles();
-  const [extend, setExtend] = useState(-1);
+  const [extendUnderline, setExtendUnderline] = useState(false);
 
   const openInNewTab = (url: string) => {
     window.open(url, '_blank', 'noopener,noreferrer');
@@ -15,8 +15,8 @@ export const LinkItem = ({ closeOverlay, data }: ILinkItem) => {
   return (
     <Link
       key={data.id}
-      onMouseEnter={() => setExtend(data.id)}
-      onMouseLeave={() => setExtend(-1)}
+      onMouseEnter={() => setExtendUnderline(true)}
+      onMouseLeave={() => setExtendUnderline(false)}
       onClick={() => openInNewTab(data.link as string)}
       className={classes.link}
     >
@@ -24,7 +24,7 @@ export const LinkItem = ({ closeOverlay, data }: ILinkItem) => {
       <Typography variant={'h4'}>{data?.text2}</Typography>
       <span
         className={clsx(classes.underline, {
-          [classes.extended]: extend === data.id,
+          [classes.extended]: extendUnderline,
         })}
       ></span>
     </Link>
