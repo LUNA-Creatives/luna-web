@@ -52,14 +52,14 @@ export const Header = ({ data }: IHeader) => {
             <Typography variant="body1" className={classes.text}>
               {data.text}
             </Typography>
-            <Button
+            {/* <Button
               color="primary"
               variant="contained"
               onClick={() => setShowPopup(true)}
               className={classes.button}
             >
               {data.button}
-            </Button>
+            </Button> */}
           </Box>
           <Box className={classes.animation} component={'div'}>
             <Box component={'div'} id={animationId} />

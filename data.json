@@ -2,7 +2,7 @@
   {
     "key": "teamMember:1",
     "value": {
-      "role": "VD och grundare",
+      "role": "Head of Luna & Founder",
       "profileImage": "https://brilliant-code-hfv1j.cloud.serverless.com/public/images/erik.jpg",
       "id": "1",
       "name": "Erik Nguyen",
@@ -14,7 +14,7 @@
   {
     "key": "teamMember:2",
     "value": {
-      "role": "Designer och grundare",
+      "role": "Head of Design & Founder",
       "profileImage": "https://brilliant-code-hfv1j.cloud.serverless.com/public/images/anders.jpg",
       "id": "2",
       "name": "Anders Berlander",

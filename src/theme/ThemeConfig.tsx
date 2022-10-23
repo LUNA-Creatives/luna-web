@@ -88,7 +88,7 @@ let theme = createTheme({
     },
     secondary: {
       light: '#FCEAE4',
-      main: '#84F7C7',
+      main: '#6CCFF6',
       dark: '#F7E584',
     },
   },

@@ -41,7 +41,7 @@ export default makeStyles((theme: Theme) =>
       textAlign: 'center',
     },
     boxes: {
-      width: 150,
+      width: 175,
     },
     logoContainer: {
       marginLeft: 5,

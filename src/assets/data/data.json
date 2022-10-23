@@ -1,10 +1,10 @@
 {
   "header": {
-    "headline": "Vi Bygger Appar, Hemsidor och adminverktyg.",
-    "subHeadline": "DIGITAL WEBBYRÅ I GÖTEBORG",
-    "text": "Oavsett om det handlar om en hemsida, en applikation eller ett renodlat design- och konceptarbete använder vi våra tre hantverk till att lösa era problem och ge er fler och nöjdare kunder.",
+    "headline": "Your potential well built for the digital future",
+    "subHeadline": "",
+    "text": "Apps, websites and digital tools. On a mission to provide technological advancement for businesses of tomorrow.",
     "button": "Kontakta oss",
-    "subText": "SCROLL DOWN"
+    "subText": "Scroll down"
   },
   "navbar": [
     {
@@ -62,35 +62,35 @@
     }
   ],
   "callToAction": {
-    "headline": "Bra webbdesign utan funktionalitet är som en sportbil utan motor.",
+    "headline": "Break the rules, create change and inspire tomorrow.",
     "sections": [
       {
-        "subHeadline": "Läs mer om oss",
-        "text": "Tillsammans skapar vi digitala lösningar som hjälper er att fungera smartare, sälja bättre och kommunicera mer effektivt.",
-        "button": "Läs mer",
+        "subHeadline": "About Luna",
+        "text": "To inspire the businesses of tomorrow by challenging the standards of today. Learn more about our vision.",
+        "button": "More info",
         "url": "about-us"
       },
       {
-        "subHeadline": "Läs mer om vårt team",
-        "text": "Vi tror att lyckade digitala projekt kombinerar verklighetens utmaningar och den digitala teknikens möjligheter.",
-        "button": "Läs mer",
+        "subHeadline": "The team",
+        "text": "Find out who's working at Luna.",
+        "button": "Meet the team",
         "url": "our-team"
       }
     ]
   },
   "services": {
-    "headline": "Våra tjänster",
-    "subHeadline": "HUR KAN VI HJÄLPA DIG?",
+    "headline": "What do we offer?",
+    "subHeadline": "Services",
     "card": [
       {
         "id": 4,
         "slug": "/website",
-        "headline": "Hemsidor",
+        "headline": "Website creation",
         "listItems": [
           "Design",
-          "Utveckling",
-          "Email",
-          "Domän, Webbhotell & Drift"
+          "Development",
+          "Email with custom domain",
+          "Photo & video content"
         ],
         "imageSource": "../images/pink.svg",
         "borderColor": "#FCEAE4"
@@ -98,11 +98,11 @@
       {
         "id": 5,
         "slug": "/app",
-        "headline": "Apputveckling",
+        "headline": "Mobile app & Web app",
         "listItems": [
-          "Mobilapp för iOS",
-          "Mobilapp för Android",
-          "App för webben"
+          "iOS mobile & watch",
+          "Android mobile & watch",
+          "Web application"
         ],
         "imageSource": "../images/blue.svg",
         "borderColor": "#6CCFF6"
@@ -112,9 +112,9 @@
         "slug": "/design",
         "headline": "Design",
         "listItems": [
-          "Logotyp & Grafisk Profil",
-          "Grafisk Formgivning",
-          "Bildbehandling"
+          "Logos & brand identity",
+          "Digital design",
+          "Print material"
         ],
         "imageSource": "../images/yellow.svg",
         "borderColor": "#F7E584"
@@ -122,22 +122,23 @@
     ]
   },
   "customerPromise": {
-    "headline": "Vi hjälper er till en digital framgång",
+    "headline": "Success in your digital ventures",
     "textSections": [
-      "Tillsammans skapar vi digitala lösningar som hjälper er att fungera smartare, sälja bättre och kommunicera mer effektivt. Vi tror att lyckade digitala projekt kombinerar verklighetens utmaningar och den digitala teknikens möjligheter.",
-      "Oavsett om det handlar om en hemsida, e-handel, en applikation eller ett renodlat design- och konceptarbete använder vi våra tre hantverk — kommunikation, design och teknik — till att lösa era problem och ge er fler och nöjdare kunder."
+      "Luna can be your trusted partner for your next digital venture or innovation.",
+      "Our vision is all about digital tranformation with the technologies of tomorrow.",
+      "We have all the tools but you have the ideas."
     ],
-    "buttonText": "Kontakta oss"
+    "buttonText": "Contact Luna"
   },
   "team": {
-    "headline": "Team"
+    "headline": "The team"
   },
   "vision": {
-    "headline": "Tanken bakom Luna",
+    "headline": "About Luna",
     "vision": {
       "punchline": "𝘛𝘰 𝘵𝘩𝘦 𝘮𝘰𝘰𝘯 𝘢𝘯𝘥 𝘣𝘦𝘺𝘰𝘯𝘥",
-      "headline": "Visionen hos Luna",
-      "body": "𝘛𝘰 𝘵𝘩𝘦 𝘮𝘰𝘰𝘯 𝘢𝘯𝘥 𝘣𝘦𝘺𝘰𝘯𝘥 - är något som växt fram bland oss på Luna och som även blev vår vision. Vi förbättrar morgondagen genom att just göra de oslagbara för våra kunder."
+      "headline": "The vision",
+      "body": "𝘛𝘰 𝘵𝘩𝘦 𝘮𝘰𝘰𝘯 𝘢𝘯𝘥 𝘣𝘦𝘺𝘰𝘯𝘥 - Aim for the moon but stay busy gazing at the stars. This defines where we are headed towards in our digital ventures."
     },
     "mission": {
       "punchline": {
@@ -145,35 +146,35 @@
         "second": "𝘤𝘳𝘦𝘢𝘵𝘦 𝘤𝘩𝘢𝘯𝘨𝘦 𝘢𝘯𝘥",
         "third": "𝘪𝘯𝘴𝘱𝘪𝘳𝘦 𝘵𝘰𝘮𝘰𝘳𝘳𝘰𝘸."
       },
-      "headline": "Lunas uppdrag",
-      "body": "𝘉𝘳𝘦𝘢𝘬 𝘵𝘩𝘦 𝘳𝘶𝘭𝘦𝘴, 𝘤𝘳𝘦𝘢𝘵𝘦 𝘤𝘩𝘢𝘯𝘨𝘦 𝘢𝘯𝘥 𝘪𝘯𝘴𝘱𝘪𝘳𝘦 𝘵𝘰𝘮𝘰𝘳𝘳𝘰𝘸. - Vi på Luna vill inspirera andra genom att sätta våra egna regler för hur vi hjälper våra kunder övervinna morgondagen. Att skapa skillnad är något som alla på Luna värdesätter. Inte minst bland våra kunder men även i vår vardag tillsammans."
+      "headline": "The mission",
+      "body": "𝘉𝘳𝘦𝘢𝘬 𝘵𝘩𝘦 𝘳𝘶𝘭𝘦𝘴, 𝘤𝘳𝘦𝘢𝘵𝘦 𝘤𝘩𝘢𝘯𝘨𝘦 𝘢𝘯𝘥 𝘪𝘯𝘴𝘱𝘪𝘳𝘦 𝘵𝘰𝘮𝘰𝘳𝘳𝘰𝘸. - Futuristic digital enablement by new tools and technology. Next generation applications to improve workdays, environment and life in general. Calculated risk taking to break into new markets. Colorful and strong characteristics in the culture and company to inspire."
     }
   },
   "skills": {
     "heading": "Vi väljer rätt för dig"
   },
   "contact": {
-    "headline": "Kontakta oss direkt",
-    "text": "Vårt kreativa team tar din idé till nästa nivå och inspirerar andra längs vägen.",
-    "buttonText": "Kontakta oss",
-    "punchline": "To the moon and beyond!",
+    "headline": "15 minute digital meeting?",
+    "text": "Do not be a stranger! Reach out to us if you have questions and follow us on social media.",
+    "buttonText": "Contact info",
+    "punchline": "",
     "imageSource": "../images/arrow-long.svg"
   },
   "popup": {
-    "headline": "Kontakta oss",
-    "text": "Vårt kreativa team tar din idé till nästa nivå och inspirerar andra längs vägen.",
+    "headline": "Contact info",
+    "text": "Welcome to Luna! You are taking the first step to become part of a business of tomorrow.",
     "punchline": "To the moon and beyond!",
     "subHeadline": [
       {
         "id": 7,
-        "headline": "Kontor",
-        "street": "Norra Gubberogatan",
-        "city": "Göteborg, Sverige",
+        "headline": "Office",
+        "street": "Norra Gubberogatan 30",
+        "city": "Gothenburg, Sweden",
         "url": "https://www.google.com/maps/place/LUNA+Creatives/@57.7112605,11.996917,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff36c51447e05:0x99fdbc7a640753b7!8m2!3d57.7112605!4d11.999111"
       },
       {
         "id": 8,
-        "headline": "Kontakt",
+        "headline": "Contact",
         "emailAddress": "erik@lunacreatives.se",
         "phoneNumber": "+46722504672"
       }
@@ -183,12 +184,12 @@
     "headline": [
       {
         "id": 9,
-        "text": "Vi tar gärna ett möte",
-        "subtitle": "Hör gärna av dig till oss om du är intresserad av att jobba tillsammans för att skapa något speciellt!"
+        "text": "\"To the moon and beyond\"",
+        "subtitle": "We inspire the businesses of tomorrow by challenging the standards of today through digital tools and technologies."
       },
       {
         "id": 10,
-        "text": "Sociala Medier",
+        "text": "See what is happening on our Sociala Media",
         "socialLinks": [
           {
             "id": 101,
@@ -209,10 +210,10 @@
       }
     ],
     "subHeadline": {
-      "text": "Kontor",
+      "text": "Office",
       "contactInformation": {
-        "streetName": "Norra Gubberogatan",
-        "city": "Göteborg, Sverige",
+        "streetName": "Norra Gubberogatan 30",
+        "city": "Gothenburg, Sweden",
         "url": "https://www.google.com/maps/place/LUNA+Creatives/@57.7112605,11.996917,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff36c51447e05:0x99fdbc7a640753b7!8m2!3d57.7112605!4d11.999111"
       },
       "email": "erik@lunacreatives.se",
@@ -223,43 +224,43 @@
   "servicePage": [
     {
       "slug": "website",
-      "headline": "hemsida till fast pris – 3 paket att välja på",
+      "headline": "Website at a fixed price",
       "header": {
         "imageSource": "../images/desktop.jpg"
       },
       "information": [
         {
           "id": 11,
-          "subHeadline": "Vad är en hemsida?",
-          "text1": "Beroende på storlek och komplexitet av hemsidan kan prisbilden variera. Vi har möjlighet att erbjuda både fast pris och en löpande månadskostnad för din hemsida beroende på vad som passar er. Kontakta oss för vidare samarbete!"
+          "subHeadline": "What kind of webpage do I need?",
+          "text1": "It depends on what you want to show on your website. A simple landing page can be enough for most of small businesses. But others might need to re-build their website in which we recommend a larger webpage with more sub pages. Read more about our package offeres below. When you work with Luna, you just bring your vision and we will do the rest."
         },
         {
           "id": 111,
-          "subHeadline": "I SAMTLIGA PAKET INGÅR FÖLJANDE?",
+          "subHeadline": "Every packages includes the following",
           "listItems": [
             {
               "id": 1111,
-              "text": "Uppstartsmöte där vi går igenom behov och design."
+              "text": "Kick-off meeting where we go over needs and design."
             },
-            { "id": 1112, "text": "Designskiss." },
+            { "id": 1112, "text": "Design mockup." },
             {
               "id": 1113,
-              "text": "Hjälp med att köpa domän och koppla domän till hemsida."
+              "text": "Help with purchasing domain and connecting domain to website."
             },
             {
               "id": 1114,
-              "text": "Hjälp med uppsättning av konto och server."
+              "text": "Help with account and server setup."
             },
             {
               "id": 1115,
-              "text": "Hjälp med uppsättning av mail med egen domän (e.g. namn@bolagsnamn.se)."
+              "text": "Help with setting up emails with your own domain (e.g. namn@bolagsnamn.se)."
             },
             {
               "id": 1116,
-              "text": "Upplärning så man kan ändra design och administrera sidan självständigt"
+              "text": "Training so that you can change the design and administer the page on your own."
             },
-            { "id": 1117, "text": "Besökstatistik" },
-            { "id": 1118, "text": "Webbsida som även är anpassad för mobil" }
+            { "id": 1117, "text": "Visitor statistics" },
+            { "id": 1118, "text": "Website that is mobile responsive." }
           ]
         }
       ],
@@ -268,8 +269,8 @@
           "id": 12,
           "isActive": false,
           "subHeadline": { "text": "Basic" },
-          "headline": { "price": "19.500kr", "vatText": "/ex moms" },
-          "text1": "Enbart en landningssida med flera sektioner, exempelvis:",
+          "headline": { "price": "19.500 kr", "vatText": "/ex vat" },
+          "text1": "Landing page with sections, e.g.:",
           "listItems": [
             {
               "id": 121,
@@ -277,7 +278,7 @@
             },
             {
               "id": 122,
-              "text": "Produkt/Erbjudande"
+              "text": "Product/Offer"
             },
             {
               "id": 123,
@@ -285,24 +286,24 @@
             },
             {
               "id": 124,
-              "text": "Om oss"
+              "text": "About"
             },
             {
               "id": 125,
-              "text": "Footer med kontaktuppgifter"
+              "text": "Footer with contact info"
             }
           ],
           "disabledTextGroup": {
-            "priceText": "Pris: 19.500kr/ex moms",
-            "logoText": "Egen logo: 4.995kr/ex moms"
+            "priceText": "Price: 19.500 kr/ex vat",
+            "logoText": "New logo: 4.995 kr/ex vat"
           }
         },
         {
           "id": 13,
           "isActive": true,
-          "subHeadline": { "text": "Pro", "activeText": "Populär!" },
-          "headline": { "price": "34.500kr", "vatText": "/ex moms" },
-          "text1": "Upp till fem sidor med sektioner, exempelvis:",
+          "subHeadline": { "text": "Pro", "activeText": "Recommended!" },
+          "headline": { "price": "34.500 kr", "vatText": "/ex vat" },
+          "text1": "Upp till five pages with sections, e.g.:",
           "listItems": [
             {
               "id": 131,
@@ -310,7 +311,7 @@
             },
             {
               "id": 132,
-              "text": "Produkt/Erbjudande"
+              "text": "Product/Offer"
             },
             {
               "id": 133,
@@ -318,30 +319,30 @@
             },
             {
               "id": 134,
-              "text": "Om oss"
+              "text": "About"
             },
             {
               "id": 135,
-              "text": "Footer med kontaktuppgifter"
+              "text": "Contact"
             }
           ],
           "disabledTextGroup": {
-            "priceText": "Pris: 34.500kr/ex moms",
-            "logoText": "Egen logo: 1.995kr/ex moms"
+            "priceText": "Price: 34.500 kr/ex vat",
+            "logoText": "New logo: 1.995 kr/ex vat"
           }
         },
         {
           "id": 14,
           "isActive": false,
           "subHeadline": { "text": "Custom" },
-          "headline": { "text": "Offert" },
-          "text2": "Oftast vill man ha specifika integrationer, funktionalitet och animationer som vi inte kan estimera utan behovsanalys.",
-          "text3": " Kontakta oss för att gå vidare!"
+          "headline": { "text": "Contact for more info" },
+          "text2": "Very often, you want specific integrations, functionality and animations that we cannot estimate without a needs analysis.",
+          "text3": "Contact us below"
         }
       ],
       "portfolio": {
-        "headline": "Tidigare jobb",
-        "subHeadline": "Nedan kan du klicka dig in på hemsidor vi byggt för våra kunder:",
+        "headline": "Previous projects",
+        "subHeadline": "Find more about previous projects we have worked with.",
         "customerCases": [
           {
             "id": 15,
@@ -363,45 +364,45 @@
     },
     {
       "slug": "app",
-      "headline": "Apputveckling",
+      "headline": "Mobile app & Web app",
       "header": {
         "imageSource": "../images/app.jpg"
       },
       "information": [
         {
           "id": 18,
-          "subHeadline": "Vad är en App?",
-          "text1": "En app kan se ut på många olika sätt. Allt från en enklare anteckningsapp till gedigna appar som Instagram och Facebook. Vi sätter oss gärna ner och tar fram en lösning utifrån eran idé och målsättning. Ni kanske behöver hjälp att ta en befintlig app till nästa steg. Kontakta oss isåfall för vidare samarbete!"
+          "subHeadline": "More info about \"app\".",
+          "text1": "An app can look many different ways. Everything from a simpler note-taking app to solid apps like Instagram and Facebook that exists on both mobile and web. We are happy to sit down and develop a solution based on your idea and objectives. You may need help taking an existing app to the next step or starting off with a new venture."
         },
         {
           "id": 19,
-          "subHeadline": "Vad vi erbjuder",
-          "text2": "Nedan ser du vad vi kan erbjuda inom apputveckling",
+          "subHeadline": "Our offer",
+          "text2": "You give us the spark and we will provide with the magic.",
           "listItems": [
             {
               "id": 191,
-              "text": "Projektledning."
+              "text": "Cross platform development for iOS and Android"
             },
-            { "id": 192, "text": "Utveckling av app, system och säkerhet." },
             {
-              "id": 193,
-              "text": "Design"
+              "id": 192,
+              "text": "Web development"
             },
-            { "id": 194, "text": "Support" },
+            { "id": 193, "text": "UX and UI design" },
             {
-              "id": 195,
-              "text": "Användaranays (statistik / användarresa)"
-            }
+              "id": 194,
+              "text": "Full support"
+            },
+            { "id": 195, "text": "Continuous development of existing app" }
           ]
         }
       ],
       "portfolio": {
-        "headline": "Tidigare jobb",
-        "subHeadline": "Nedan kan du klicka dig vidare till appar vi byggt för våra kunder:",
+        "headline": "Previous projects",
+        "subHeadline": "Find more about previous projects we have worked with.",
         "customerCases": [
           {
             "id": 20,
-            "headline": "Mobil Appar:",
+            "headline": "Mobile",
             "customerCases": [
               {
                 "id": 201,
@@ -417,7 +418,7 @@
           },
           {
             "id": 21,
-            "headline": "Webb Appar:",
+            "headline": "Web:",
             "customerCases": [
               {
                 "id": 211,
@@ -426,18 +427,8 @@
               },
               {
                 "id": 212,
-                "customer": "Generation Waste",
-                "customerLink": "https://apps.apple.com/se/app/generation-waste-v2/id1601492651?l=en"
-              },
-              {
-                "id": 213,
-                "customer": "Moneytransferto.com",
-                "customerLink": "https://moneytransferto.com/"
-              },
-              {
-                "id": 214,
-                "customer": "Samla",
-                "customerLink": "https://poc-invoice-front.dev.zenio.digital/"
+                "customer": "Generation Waste Portal",
+                "customerLink": "https://www.generationwaste.com/"
               }
             ]
           }
@@ -453,34 +444,34 @@
       "information": [
         {
           "id": 22,
-          "subHeadline": "Vad är design?",
-          "text1": "Visste du att noga utvald design faktiskt kan vara avgörande för ditt företag?. Idag kan man ta reda på mycket genom att samla data om hur användare faktiskt beteer sig på en hemsida/app. Därav också ta reda på vilken typ av design de föredrar för att t.ex slutföra ett köp."
+          "subHeadline": "What is design?",
+          "text1": "Did you know that carefully selected design can actually be crucial for your business? Today, you can find out a lot by collecting data about how users actually behave on a website/app. Hence, also find out what type of user journey is working to e.g. complete a purchase."
         },
         {
           "id": 23,
-          "subHeadline": "Vad kan ingå i designarbetet?",
-          "text2": "Nedan ser du vad vi kan erbjuda dig och ditt företag.",
+          "subHeadline": "What is included?",
+          "text2": "We make your ideas and thoughts into visual design.",
           "listItems": [
             {
               "id": 231,
-              "text": "Personligt anpassad logga."
+              "text": "Personalized logo."
             },
-            { "id": 232, "text": "Personligt anpassad grafisk profil." },
+            { "id": 232, "text": "Brand identity" },
             {
               "id": 233,
-              "text": "Designsystem"
+              "text": "Custom design system"
             },
-            { "id": 234, "text": "Designstrategi" },
+            { "id": 234, "text": "Design strategy" },
             {
               "id": 235,
-              "text": "Användaranalys"
+              "text": "UX analysis"
             }
           ]
         }
       ],
       "portfolio": {
-        "headline": "Tidigare jobb",
-        "subHeadline": "Nedan kan du klicka dig vidare till kunder vi gjort olika design uppdrag för:",
+        "headline": "Previous projects",
+        "subHeadline": "Find more about previous projects we have worked with.",
         "customerCases": [
           {
             "id": 24,
