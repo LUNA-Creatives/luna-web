@@ -7,9 +7,8 @@ export default makeStyles((theme: Theme) =>
       backgroundColor: theme.palette.primary.dark,
       color: theme.palette.primary.main,
       overflow: 'hidden',
-      [theme.breakpoints.up('sm')]: {
-        paddingTop: 50,
-      },
+      paddingTop: 25,
+      paddingBottom: 25,
     },
     container: {},
     slider: {
@@ -38,7 +37,6 @@ export default makeStyles((theme: Theme) =>
       borderRadius: '27%',
       backgroundColor: '#212121',
       display: 'flex',
-      marginTop: 50,
       margin: '2vw',
       width: '20vw',
       justifyContent: 'center',

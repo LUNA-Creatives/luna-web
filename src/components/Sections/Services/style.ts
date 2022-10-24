@@ -15,11 +15,11 @@ export default makeStyles((theme: Theme) =>
     },
     cardContainer: {
       minHeight: '100%',
-      paddingBottom: 50,
       [theme.breakpoints.up(ipadBreakpoint)]: {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
+        paddingBottom: 50,
       },
     },
     outerBox: {
