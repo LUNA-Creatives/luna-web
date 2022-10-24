@@ -1,12 +1,5 @@
 import { useEffect } from 'react';
-import {
-  Grid,
-  Container,
-  Typography,
-  Button,
-  Box,
-  useMediaQuery,
-} from '@mui/material';
+import { Grid, Container, Typography, Box, useMediaQuery } from '@mui/material';
 import { motion } from 'framer-motion';
 import lottie from 'lottie-web/build/player/lottie_svg';
 import { Icon } from '@iconify/react';
@@ -15,13 +8,13 @@ import useStyles from './style';
 import { IHeader } from './types';
 import rocketAnimation from '../../../assets/animations/rocketAnimation.json';
 import { ipadBreakpoint } from '../../../utils/screenSizeBreakpoints';
-import { useStore } from '../../../state/GlobalState';
+// import { useStore } from '../../../state/GlobalState';
 
 export const Header = ({ data }: IHeader) => {
   const classes = useStyles();
   const animationId = 'rocketAnimation';
   const isDesktop = useMediaQuery(`(min-width:${ipadBreakpoint}px)`);
-  const setShowPopup = useStore((state) => state.setShowPopup);
+  // const setShowPopup = useStore((state) => state.setShowPopup);
 
   useEffect(() => {
     lottie.loadAnimation({
