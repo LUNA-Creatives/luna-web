@@ -9,39 +9,39 @@
   "navbar": [
     {
       "id": 1,
-      "headline": "Meny",
+      "headline": "Menu",
       "routerItems": [
-        { "id": 11, "text1": "Hem", "link": "/" },
+        { "id": 11, "text1": "Home", "link": "/" },
         {
           "id": 12,
           "toggleItem": {
-            "text1": "Tjänster",
+            "text1": "Services",
             "serviceItems": [
-              { "id": 121, "text": "Hemsidor", "link": "/services/website" },
+              { "id": 121, "text": "Website", "link": "/services/website" },
               { "id": 122, "text": "App", "link": "/services/app" },
               { "id": 123, "text": "Design", "link": "/services/design" }
             ]
           }
         },
-        { "id": 13, "text1": "Om oss", "link": "/about-us" },
-        { "id": 24, "text1": "Vårt Team", "link": "/our-team" }
+        { "id": 13, "text1": "About", "link": "/about-us" },
+        { "id": 24, "text1": "The team", "link": "/our-team" }
       ]
     },
     {
       "id": 2,
-      "headline": "Adress",
+      "headline": "Office",
       "linkItems": [
         {
           "id": 21,
           "text1": "Norra Gubberogatan 30",
-          "text2": "416 63 Göteborg",
+          "text2": "416 63 Gothenburg",
           "link": "https://www.google.com/maps/place/LUNA+Creatives/@57.7112605,11.996917,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff36c51447e05:0x99fdbc7a640753b7!8m2!3d57.7112605!4d11.999111"
         }
       ]
     },
     {
       "id": 3,
-      "headline": "Sociala medier",
+      "headline": "Social media",
       "linkItems": [
         {
           "id": 31,

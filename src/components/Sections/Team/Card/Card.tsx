@@ -56,11 +56,11 @@ export const Card = ({ name, role, profileImage, gif }: ICard) => {
     </Box>
   ) : (
     <motion.div
-      onPanStart={async () =>
+      onTapStart={async () =>
         (await controls.start('visible')) &
         (setTimeout(() => {
           controls.start('hidden');
-        }, 2000) as any)
+        }, 5000) as any)
       }
     >
       <Box component={'div'} className={classes.container}>
