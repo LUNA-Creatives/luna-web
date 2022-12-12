@@ -15,5 +15,5 @@ export const logos = [
   { id: 7, alt: 'Bravais Arc' },
   { id: 8, url: Hitachi, alt: 'Hitachi' },
   { id: 9, url: Keyman, alt: 'KeyMan' },
-  { id: 10, alt: 'Alberts Städservice' },
+  { id: 10, alt: 'Volvo CE' },
 ];
