@@ -219,7 +219,7 @@
       "email": "info@lunacreatives.se",
       "phoneNumber": "0722 50 46 72"
     },
-    "copyRights": "© 2022 LUNA Creatives. All Rights Reserved."
+    "copyRights": "© 2023 LUNA Creatives. All Rights Reserved."
   },
   "servicePage": [
     {
@@ -269,7 +269,7 @@
           "id": 12,
           "isActive": false,
           "subHeadline": { "text": "Basic" },
-          "headline": { "price": "19.500 kr", "vatText": "/ex vat" },
+          "headline": { "price": "24.500 kr", "vatText": "/ex vat" },
           "text1": "Landing page with sections, e.g.:",
           "listItems": [
             {
@@ -294,7 +294,7 @@
             }
           ],
           "disabledTextGroup": {
-            "priceText": "Price: 19.500 kr/ex vat",
+            "priceText": "Price: 24.500 kr/ex vat",
             "logoText": "New logo: 4.995 kr/ex vat"
           }
         },
@@ -302,8 +302,8 @@
           "id": 13,
           "isActive": true,
           "subHeadline": { "text": "Pro", "activeText": "Recommended!" },
-          "headline": { "price": "34.500 kr", "vatText": "/ex vat" },
-          "text1": "Upp till five pages with sections, e.g.:",
+          "headline": { "price": "44.500 kr", "vatText": "/ex vat" },
+          "text1": "Company website. Up to five pages with sections, e.g.:",
           "listItems": [
             {
               "id": 131,
@@ -327,8 +327,8 @@
             }
           ],
           "disabledTextGroup": {
-            "priceText": "Price: 34.500 kr/ex vat",
-            "logoText": "New logo: 1.995 kr/ex vat"
+            "priceText": "Price: 44.500 kr/ex vat",
+            "logoText": "New logo: 3.995 kr/ex vat"
           }
         },
         {
@@ -487,6 +487,11 @@
             "id": 26,
             "customer": "Milenko",
             "customerLink": "https://www.milenko.se/"
+          },
+          {
+            "id": 27,
+            "customer": "Founders Loft",
+            "customerLink": "https://www.foundersloft.se/"
           }
         ]
       }
