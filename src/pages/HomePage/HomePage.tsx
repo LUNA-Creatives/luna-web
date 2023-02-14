@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Helmet } from 'react-helmet'
 
 import data from '../../assets/data/data.json';
 import {
@@ -28,6 +29,9 @@ export const HomePage = () => {
   const [icons, setIcons] = useState<Icon[]>([]);
   const showPopup = useStore((state) => state.showPopup);
 
+  const title = "Home of creativity"
+  const description =  "Welcome to LUNA Creatives. Your creative partner for app and web development."
+
   const fetchAndSetTeam = async () => {
     try {
       const { data } = await axios.get<SlsDbItem[]>('/api/team-member');
@@ -55,6 +59,14 @@ export const HomePage = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={"https://lunacreatives.se"} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+      </Helmet>
       {showPopup && <Popup data={data.popup} />}
       <Navbar data={data} />
       <Header data={data.header} />
