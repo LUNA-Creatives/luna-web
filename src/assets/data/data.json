@@ -24,7 +24,7 @@
           }
         },
         { "id": 13, "text1": "About", "link": "/about-us" },
-        { "id": 24, "text1": "The team", "link": "/our-team" }
+        { "id": 24, "text1": "The Team", "link": "/our-team" }
       ]
     },
     {
@@ -71,9 +71,9 @@
         "url": "about-us"
       },
       {
-        "subHeadline": "The team",
+        "subHeadline": "The Team",
         "text": "Find out who's working at Luna.",
-        "button": "Meet the team",
+        "button": "Meet the Team",
         "url": "our-team"
       }
     ]
@@ -122,16 +122,14 @@
     ]
   },
   "customerPromise": {
-    "headline": "Success in your digital ventures",
+    "headline": "We bring your vision to life",
     "textSections": [
-      "Luna can be your trusted partner for your next digital venture or innovation.",
-      "Our vision is all about digital tranformation with the technologies of tomorrow.",
-      "We have all the tools but you have the ideas."
+      "Transform and innovate with confidence - We’re your trusted digital partner! At Luna, our goal is to lead the way by harnessing the power of tomorrow’s technologies."
     ],
     "buttonText": "Contact Luna"
   },
   "team": {
-    "headline": "The team"
+    "headline": "The Team"
   },
   "vision": {
     "headline": "About Luna",
@@ -154,8 +152,8 @@
     "heading": "Vi väljer rätt för dig"
   },
   "contact": {
-    "headline": "15 minute digital meeting?",
-    "text": "Do not be a stranger! Reach out to us if you have questions and follow us on social media.",
+    "headline": "Tell us what’s cooking!",
+    "text": "Let’s collaborate on your next venture",
     "buttonText": "Contact info",
     "punchline": "",
     "imageSource": "../images/arrow-long.svg"
