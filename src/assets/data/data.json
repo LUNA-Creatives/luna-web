@@ -344,18 +344,13 @@
         "customerCases": [
           {
             "id": 15,
-            "customer": "Milenko",
-            "customerLink": "https://www.milenko.se/"
+            "customer": "Sybro Beauty",
+            "customerLink": "https://sybrobeauty.se/"
           },
           {
             "id": 16,
-            "customer": "We are Women",
-            "customerLink": "https://www.wearewomen.io/"
-          },
-          {
-            "id": 17,
-            "customer": "Generation Waste",
-            "customerLink": "https://www.generationwaste.com/"
+            "customer": "Milenko",
+            "customerLink": "https://www.milenko.se/"
           }
         ]
       }
@@ -473,21 +468,16 @@
         "customerCases": [
           {
             "id": 24,
-            "customer": "Generation Waste",
-            "customerLink": "https://www.generationwaste.com/"
+            "customer": "Sybro Beauty",
+            "customerLink": "https://sybrobeauty.se/"
           },
           {
             "id": 25,
-            "customer": "We are Women",
-            "customerLink": "https://www.wearewomen.io/"
-          },
-          {
-            "id": 26,
             "customer": "Milenko",
             "customerLink": "https://www.milenko.se/"
           },
           {
-            "id": 27,
+            "id": 26,
             "customer": "Founders Loft",
             "customerLink": "https://www.foundersloft.se/"
           }
