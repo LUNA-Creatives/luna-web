@@ -57,6 +57,7 @@
     ]
   },
   "dependencies": {
+    "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.10.0",
     "@mui/styles": "^5.9.3",
     "@types/express": "^4.17.13",

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import clsx from 'clsx';
 import { Link as RouterLink } from 'react-router-dom';
+import { ExpandLess, ExpandMore } from '@mui/icons-material';
 
 import useStyles from './style';
 import { IRouterNavItem } from './types';
@@ -49,7 +50,12 @@ export const RouterNavItem = ({ closeOverlay, data }: IRouterNavItem) => {
             onMouseLeave={() => setExtendUnderline(-1)}
             onClick={() => handleToggleItem(data.id)}
           >
-            <Typography variant={'h4'}>{data.toggleItem?.text1}</Typography>
+            <Box component={'div'} className={classes.iconBox}>
+              <Box component={'div'} className={classes.text}>
+                <Typography variant={'h4'}>{data.toggleItem?.text1}</Typography>
+              </Box>
+              {showToggleItems ? <ExpandLess /> : <ExpandMore />}
+            </Box>
             <span
               className={clsx(classes.underline, {
                 [classes.extended]: extendUnderline === data.id,

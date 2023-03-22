@@ -8,6 +8,9 @@ export default makeStyles((theme: Theme) =>
       color: theme.palette.primary.dark,
       cursor: 'pointer',
     },
+    text: {
+      marginRight: 5,
+    },
     underline: {
       height: 2,
       display: 'block',
@@ -29,6 +32,10 @@ export default makeStyles((theme: Theme) =>
     showToggleItems: {
       display: 'block',
       paddingLeft: '15%',
+    },
+    iconBox: {
+      display: 'flex',
+      alignItems: 'center',
     },
   })
 );
