@@ -7,6 +7,8 @@ import {
 } from '@mui/material/styles';
 import { CssBaseline, StyledEngineProvider } from '@mui/material';
 
+import ComponentsOverrides from './overrides';
+
 const FONT_PRIMARY = ['futura-pt', 'sans-serif'].join(',');
 const FONT_SECONDARY = ['minion-pro', 'serif'].join(',');
 
@@ -95,6 +97,8 @@ let theme = createTheme({
 });
 
 theme = responsiveFontSizes(theme);
+
+theme.components = ComponentsOverrides();
 
 type ThemeConfigProps = {
   children: ReactNode;
