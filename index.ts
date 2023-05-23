@@ -1,4 +1,5 @@
-const { api, data, http } = require('@serverless/cloud');
+import { api, data, http } from '@serverless/cloud';
+
 http.on(404, 'index.html');
 
 api.get('/api/team-member', async (req, res) => {

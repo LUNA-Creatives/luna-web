@@ -5,6 +5,7 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@iconify/react": "^3.2.2",
+    "@mui/icons-material": "^5.11.11",
     "@react-three/drei": "9.8.1",
     "@react-three/fiber": "8.0.15",
     "@serverless/cloud": "^2.11.8",
@@ -22,22 +23,21 @@
     "simple-zustand-devtools": "^1.1.0",
     "three": "0.140.2",
     "typescript": "^4.7.4",
-    "web-vitals": "^1.0.1",
-    "@mui/icons-material": "^5.11.11"
+    "web-vitals": "^1.0.1"
   },
   "serverless": {
     "app": "luna-web",
     "org": "lunacreatives"
   },
   "scripts": {
-    "start": "cloud",
-    "build": "cloud build",
+    "start": "ampt",
+    "build": "ampt build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cloud:dev": "react-scripts start",
-    "cloud:build": "BUILD_PATH='./static' react-scripts build",
-    "deploy-dev": "cloud deploy dev",
-    "deploy-prod": "cloud deploy prod"
+    "ampt:dev": "react-scripts start",
+    "ampt:build": "BUILD_PATH='./static' react-scripts build",
+    "deploy-dev": "ampt deploy dev",
+    "deploy-prod": "ampt deploy prod"
   },
   "eslintConfig": {
     "extends": [
@@ -58,6 +58,7 @@
     ]
   },
   "dependencies": {
+    "@ampt/cloud": "^0.0.1-beta.2",
     "@mui/material": "^5.10.0",
     "@mui/styles": "^5.9.3",
     "@types/express": "^4.17.13",
@@ -72,5 +73,9 @@
     "react-resize-detector": "^7.1.2",
     "react-router-dom": "^6.4.1",
     "react-scroll-parallax": "^3.3.1"
+  },
+  "ampt": {
+    "org": "lunacreatives",
+    "app": "luna-web"
   }
 }

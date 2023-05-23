@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet';
 
 import data from '../../assets/data/data.json';
 import {
@@ -27,10 +27,11 @@ import { useStore } from '../../state/GlobalState';
 export const HomePage = () => {
   const [team, setTeam] = useState<TeamMember[]>([]);
   const [icons, setIcons] = useState<Icon[]>([]);
-  const showPopup = useStore((state) => state.showPopup);
+  const showPopup = useStore((state: { showPopup: any }) => state.showPopup);
 
-  const title = "Home of creativity"
-  const description =  "Welcome to LUNA Creatives. Your creative partner for app and web development."
+  const title = 'Home of creativity';
+  const description =
+    'Welcome to LUNA Creatives. Your creative partner for app and web development.';
 
   const fetchAndSetTeam = async () => {
     try {
@@ -63,7 +64,7 @@ export const HomePage = () => {
         <meta charSet="utf-8" />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="canonical" href={"https://lunacreatives.se"} />
+        <link rel="canonical" href={'https://lunacreatives.se'} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
       </Helmet>

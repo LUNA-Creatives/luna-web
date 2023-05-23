@@ -15,11 +15,12 @@ import { IServicePage } from './types';
 
 export const ServicePage = () => {
   const { slug } = useParams();
-  const showPopup = useStore((state) => state.showPopup);
+  const showPopup = useStore((state: { showPopup: any }) => state.showPopup);
   const [serviceData, setServiceData] = useState<IServicePage>();
 
-  const title = "Services"
-  const description =  "We develop mobile applications and web applications. Based in Gothenburg."
+  const title = 'Services';
+  const description =
+    'We develop mobile applications and web applications. Based in Gothenburg.';
 
   const servicePageData: IServicePage[] = data.servicePage.map(
     (serviceObject: IServicePage) => serviceObject
@@ -34,7 +35,7 @@ export const ServicePage = () => {
     });
   }, [serviceData, servicePageData, slug]);
 
-  const url = `https://lunacreatives.se/services/${slug}`
+  const url = `https://lunacreatives.se/services/${slug}`;
 
   return (
     <>

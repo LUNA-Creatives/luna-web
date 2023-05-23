@@ -15,7 +15,7 @@ import { useStore } from '../../../state/GlobalState';
 export const Contact = ({ data }: IContact) => {
   const classes = useStyles();
   const isDesktop = useMediaQuery(`(min-width:${ipadBreakpoint}px)`);
-  const setShowPopup = useStore((state) => state.setShowPopup);
+  const setShowPopup = useStore((state: any) => state.setShowPopup);
 
   return (
     <Grid className={classes.root}>
