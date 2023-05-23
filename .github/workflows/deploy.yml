@@ -12,8 +12,8 @@ jobs:
     env:
       AMPT_API_KEY: ${{ secrets.AMPT_API_KEY }}
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: npm install --legacy-peer-deps
@@ -27,8 +27,8 @@ jobs:
       AMPT_API_KEY: ${{ secrets.AMPT_API_KEY }}
     needs: deploy-dev
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: npm install --legacy-peer-deps
