@@ -16,7 +16,9 @@ import { useStore } from '../../../state/GlobalState';
 export const CustomerPromise = ({ data }: ICustomerPromise) => {
   const classes = useStyles();
   const isDesktop = useMediaQuery(`(min-width:${ipadBreakpoint}px)`);
-  const setShowPopup = useStore((state) => state.setShowPopup);
+  const setShowPopup = useStore(
+    (state: { setShowPopup: any }) => state.setShowPopup
+  );
 
   return (
     <Grid className={classes.root}>

@@ -13,12 +13,14 @@ const PopupWrapper = React.forwardRef((props: any, ref: any) => (
 export const Popup = ({ data }: IPopup) => {
   const classes = useStyles();
   const ref = useRef();
-  const ShowPopup = useStore((state) => state.showPopup);
+  const ShowPopup = useStore((state: { showPopup: any }) => state.showPopup);
   const openInNewTab = (url: string) => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
-  const setShowPopup = useStore((state) => state.setShowPopup);
+  const setShowPopup = useStore(
+    (state: { setShowPopup: any }) => state.setShowPopup
+  );
 
   const useOnClickOutside = (ref: any, handler: any) => {
     useEffect(() => {

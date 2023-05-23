@@ -2,317 +2,307 @@
   {
     "key": "teamMember:1",
     "value": {
-      "role": "Head of Luna & Founder",
-      "profileImage": "https://brilliant-code-hfv1j.cloud.serverless.com/public/images/erik.jpg",
+      "role": "Head of Luna",
+      "profileImage": "https://intelligent-src-ipsmfd.ampt.app/public/images/erik.jpg",
       "id": "1",
       "name": "Erik Nguyen",
-      "gif": "https://brilliant-code-hfv1j.cloud.serverless.com/public/gifs/gif-erik.gif"
+      "gif": "https://intelligent-src-ipsmfd.ampt.app/public/gifs/gif-erik.gif"
     },
-    "created": "2022-09-13T08:34:36.000Z",
-    "modified": "2022-09-13T08:34:36.000Z"
+    "created": "2022-10-26T12:45:51.000Z",
+    "modified": "2023-05-23T05:35:40.000Z"
   },
   {
     "key": "teamMember:2",
     "value": {
-      "role": "Head of Design & Founder",
-      "profileImage": "https://brilliant-code-hfv1j.cloud.serverless.com/public/images/anders.jpg",
+      "role": "Head of Design",
+      "profileImage": "https://intelligent-src-ipsmfd.ampt.app/public/images/anders.jpg",
       "id": "2",
       "name": "Anders Berlander",
-      "gif": "https://brilliant-code-hfv1j.cloud.serverless.com/public/gifs/gif-anders.gif"
+      "gif": "https://intelligent-src-ipsmfd.ampt.app/public/gifs/gif-anders.gif"
     },
-    "created": "2022-09-13T08:34:36.000Z",
-    "modified": "2022-09-13T08:34:36.000Z"
+    "created": "2022-10-26T12:46:34.000Z",
+    "modified": "2023-05-23T05:36:01.000Z"
   },
   {
     "key": "teamMember:3",
     "value": {
-      "role": "Utvecklare",
-      "profileImage": "https://brilliant-code-hfv1j.cloud.serverless.com/public/images/maria.jpg",
-      "id": "4",
-      "name": "Maria Helena Norén",
-      "gif": "https://brilliant-code-hfv1j.cloud.serverless.com/public/gifs/gif-maria.gif"
+      "role": "Head of Commercial",
+      "profileImage": "https://intelligent-src-ipsmfd.ampt.app/public/images/rasa.jpg",
+      "id": "6",
+      "name": "Rasa Golali",
+      "gif": "https://intelligent-src-ipsmfd.ampt.app/public/gifs/gif-rasa.gif"
     },
-    "created": "2022-09-13T08:34:36.000Z",
-    "modified": "2022-09-19T13:02:43.000Z"
+    "created": "2022-10-26T12:46:54.000Z",
+    "modified": "2023-05-23T05:36:16.000Z"
   },
   {
     "key": "teamMember:4",
     "value": {
-      "role": "Utvecklare",
-      "profileImage": "https://brilliant-code-hfv1j.cloud.serverless.com/public/images/josef.jpg",
-      "id": "5",
-      "name": "Josef Wakman",
-      "gif": "https://brilliant-code-hfv1j.cloud.serverless.com/public/gifs/gif-josef.gif"
+      "role": "Fullstack developer",
+      "profileImage": "https://intelligent-src-ipsmfd.ampt.app/public/images/maria.jpg",
+      "id": "3",
+      "name": "Maria Helena Norén",
+      "gif": "https://intelligent-src-ipsmfd.ampt.app/public/gifs/gif-maria.gif"
     },
-    "created": "2022-09-13T08:34:36.000Z",
-    "modified": "2022-09-19T13:02:47.000Z"
+    "created": "2022-10-26T12:47:09.000Z",
+    "modified": "2023-05-23T05:36:30.000Z"
   },
   {
     "key": "teamMember:5",
     "value": {
-      "role": "Utvecklare",
-      "profileImage": "https://brilliant-code-hfv1j.cloud.serverless.com/public/images/fanny.jpeg",
-      "id": "6",
-      "name": "Fanny Mårtensson",
-      "gif": "https://brilliant-code-hfv1j.cloud.serverless.com/public/gifs/gif-fanny.gif"
+      "role": "Fullstack developer",
+      "profileImage": "https://intelligent-src-ipsmfd.ampt.app/public/images/josef.jpg",
+      "id": "1",
+      "name": "Josef Wakman",
+      "gif": "https://intelligent-src-ipsmfd.ampt.app/public/gifs/gif-josef.gif"
     },
-    "created": "2022-09-13T08:34:36.000Z",
-    "modified": "2022-09-19T13:02:52.000Z"
+    "created": "2022-10-26T12:47:47.000Z",
+    "modified": "2023-05-23T05:36:45.000Z"
   },
   {
     "key": "teamMember:6",
     "value": {
-      "role": "Utvecklare",
-      "profileImage": "https://brilliant-code-hfv1j.cloud.serverless.com/public/images/oliver.jpg",
-      "id": "7",
-      "name": "Oliver Nygren",
-      "gif": "https://brilliant-code-hfv1j.cloud.serverless.com/public/gifs/gif-oliver.gif"
+      "role": "Fullstack developer",
+      "profileImage": "https://intelligent-src-ipsmfd.ampt.app/public/images/fanny.jpeg",
+      "id": "5",
+      "name": "Fanny Mårtensson",
+      "gif": "https://intelligent-src-ipsmfd.ampt.app/public/gifs/gif-fanny.gif"
     },
-    "created": "2022-09-13T08:34:36.000Z",
-    "modified": "2022-09-19T13:02:56.000Z"
+    "created": "2022-10-26T12:48:00.000Z",
+    "modified": "2023-05-23T05:36:59.000Z"
   },
   {
     "key": "teamMember:7",
     "value": {
-      "role": "Kommunikatör",
-      "profileImage": "https://brilliant-code-hfv1j.cloud.serverless.com/public/images/sherlie.jpg",
-      "id": "8",
+      "role": "Communicator & Office Manager",
+      "profileImage": "https://intelligent-src-ipsmfd.ampt.app/public/images/sherlie.jpg",
+      "id": "7",
       "name": "Sherlie Huynh",
-      "gif": "https://brilliant-code-hfv1j.cloud.serverless.com/public/gifs/gif-sherlie.gif"
+      "gif": "https://intelligent-src-ipsmfd.ampt.app/public/gifs/gif-sherlie.gif"
     },
-    "created": "2022-09-13T08:34:36.000Z",
-    "modified": "2022-09-19T13:03:00.000Z"
+    "created": "2023-01-25T07:58:38.000Z",
+    "modified": "2023-05-23T05:37:18.000Z"
   },
   {
     "key": "teamMember:8",
     "value": {
-      "role": "Affärsutvecklare och grundare",
-      "profileImage": "https://brilliant-code-hfv1j.cloud.serverless.com/public/images/rasa.jpg",
-      "id": "3",
-      "name": "Rasa Golali",
-      "gif": "https://brilliant-code-hfv1j.cloud.serverless.com/public/gifs/gif-rasa.gif"
+      "role": "UX Designer",
+      "profileImage": "https://intelligent-src-ipsmfd.ampt.app/public/images/edvin.jpg",
+      "id": "8",
+      "name": "Edvin Ottenvall",
+      "gif": "https://intelligent-src-ipsmfd.ampt.app/public/gifs/gif-edvin.gif"
     },
-    "created": "2022-09-13T08:34:36.000Z",
-    "modified": "2022-09-19T13:02:37.000Z"
-  },
-  {
-    "key": "icon",
-    "value": {
-      "techIcons": [],
-      "helperIcons": [],
-      "designIcons": []
-    },
-    "created": "2022-09-13T08:34:36.000Z",
-    "modified": "2022-09-27T05:25:08.000Z"
+    "created": "2023-01-25T07:57:50.000Z",
+    "modified": "2023-05-23T05:37:36.000Z"
   },
   {
     "key": "icon:1",
     "value": {
       "alt": "Javascript",
       "id": 1,
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/javascript.svg"
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/javascript.svg"
     },
-    "created": "2022-09-30T07:11:43.000Z",
-    "modified": "2022-09-30T07:11:43.000Z"
+    "created": "2022-10-26T12:48:45.000Z",
+    "modified": "2023-05-23T05:37:58.000Z"
+  },
+  {
+    "key": "icon:10",
+    "value": {
+      "alt": "NodeJS",
+      "id": 10,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/node.svg"
+    },
+    "created": "2022-10-26T12:49:08.000Z",
+    "modified": "2023-05-23T05:38:22.000Z"
+  },
+  {
+    "key": "icon:11",
+    "value": {
+      "alt": "Expo",
+      "id": 11,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/client.svg"
+    },
+    "created": "2022-10-26T12:49:21.000Z",
+    "modified": "2023-05-23T05:38:31.000Z"
+  },
+  {
+    "key": "icon:12",
+    "value": {
+      "alt": "Adobe",
+      "id": 12,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/adobe.png"
+    },
+    "created": "2022-10-26T12:49:38.000Z",
+    "modified": "2023-05-23T05:38:42.000Z"
+  },
+  {
+    "key": "icon:13",
+    "value": {
+      "alt": "React Native",
+      "id": 13,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/react-native.svg"
+    },
+    "created": "2022-10-26T12:49:51.000Z",
+    "modified": "2023-05-23T05:38:51.000Z"
+  },
+  {
+    "key": "icon:14",
+    "value": {
+      "alt": "yaml",
+      "id": 14,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/yaml.png"
+    },
+    "created": "2022-10-26T12:50:05.000Z",
+    "modified": "2023-05-23T05:39:01.000Z"
+  },
+  {
+    "key": "icon:15",
+    "value": {
+      "alt": "Figma",
+      "id": 15,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/figma.svg"
+    },
+    "created": "2022-10-26T12:50:17.000Z",
+    "modified": "2023-05-23T05:39:10.000Z"
+  },
+  {
+    "key": "icon:16",
+    "value": {
+      "alt": "Cloudflare",
+      "id": 16,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/cloudflare.svg"
+    },
+    "created": "2022-10-26T12:50:28.000Z",
+    "modified": "2023-05-23T05:54:38.000Z"
+  },
+  {
+    "key": "icon:17",
+    "value": {
+      "alt": "GraphQL",
+      "id": 17,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/graphql.svg"
+    },
+    "created": "2022-10-26T12:50:41.000Z",
+    "modified": "2023-05-23T05:54:49.000Z"
+  },
+  {
+    "key": "icon:18",
+    "value": {
+      "alt": "Appstore",
+      "id": 18,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/appstore.png"
+    },
+    "created": "2022-10-26T12:50:55.000Z",
+    "modified": "2023-05-23T05:54:59.000Z"
+  },
+  {
+    "key": "icon:19",
+    "value": {
+      "alt": "Serverless Framework",
+      "id": 19,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/serverless-framework.png"
+    },
+    "created": "2022-10-26T12:51:28.000Z",
+    "modified": "2023-05-23T05:55:11.000Z"
   },
   {
     "key": "icon:2",
     "value": {
       "alt": "Bitbucket",
       "id": 2,
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/bitbucket.png"
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/bitbucket.png"
     },
-    "created": "2022-09-30T07:14:04.000Z",
-    "modified": "2022-09-30T07:14:04.000Z"
+    "created": "2022-10-26T12:51:47.000Z",
+    "modified": "2023-05-23T05:56:23.000Z"
+  },
+  {
+    "key": "icon:20",
+    "value": {
+      "alt": "Android Studio",
+      "id": 20,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/AndroidStudio.png"
+    },
+    "created": "2022-10-26T12:52:00.000Z",
+    "modified": "2023-05-23T05:56:36.000Z"
+  },
+  {
+    "key": "icon:21",
+    "value": {
+      "alt": "Illustrator",
+      "id": 21,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/illustrator.png"
+    },
+    "created": "2022-10-26T12:52:14.000Z",
+    "modified": "2023-05-23T05:56:51.000Z"
   },
   {
     "key": "icon:3",
     "value": {
       "alt": "AWS",
       "id": 3,
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/amazon-web-services.svg"
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/amazon-web-services.svg"
     },
-    "created": "2022-09-30T07:14:31.000Z",
-    "modified": "2022-09-30T07:14:31.000Z"
+    "created": "2022-10-26T12:52:29.000Z",
+    "modified": "2023-05-23T05:58:31.000Z"
   },
   {
     "key": "icon:4",
     "value": {
       "alt": "Typescipt",
       "id": 4,
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/typescript.svg"
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/typescript.svg"
     },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
+    "created": "2022-10-26T12:52:42.000Z",
+    "modified": "2023-05-23T05:58:40.000Z"
   },
   {
     "key": "icon:5",
     "value": {
       "alt": "OpenAI",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/openai.webp",
-      "id": 5
+      "id": 5,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/openai.webp"
     },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
+    "created": "2022-10-26T12:52:54.000Z",
+    "modified": "2023-05-23T05:58:49.000Z"
   },
   {
     "key": "icon:6",
     "value": {
       "alt": "React JS",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/react.svg",
-      "id": 6
+      "id": 6,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/react.svg"
     },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
+    "created": "2022-10-26T12:53:04.000Z",
+    "modified": "2023-05-23T07:20:08.000Z"
   },
   {
     "key": "icon:7",
     "value": {
       "alt": "Photoshop",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/Photoshop.png",
-      "id": 7
+      "id": 7,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/Photoshop.png"
     },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
+    "created": "2022-10-26T12:53:19.000Z",
+    "modified": "2023-05-23T05:59:10.000Z"
   },
   {
     "key": "icon:8",
     "value": {
       "alt": "Serverless",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/serverless.png",
-      "id": 8
+      "id": 8,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/serverless.png"
     },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
+    "created": "2022-10-26T12:53:30.000Z",
+    "modified": "2023-05-23T05:59:19.000Z"
   },
   {
     "key": "icon:9",
     "value": {
       "alt": "Google Playstore",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/googleplaystore.png",
-      "id": 9
+      "id": 9,
+      "url": "https://intelligent-src-ipsmfd.ampt.app/public/icons/googleplaystore.png"
     },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
-  },
-  {
-    "key": "icon:10",
-    "value": {
-      "alt": "NodeJS",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/node.svg",
-      "id": 10
-    },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
-  },
-  {
-    "key": "icon:11",
-    "value": {
-      "alt": "Expo",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/client.svg",
-      "id": 11
-    },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
-  },
-  {
-    "key": "icon:12",
-    "value": {
-      "alt": "Adobe",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/adobe.png",
-      "id": 12
-    },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
-  },
-  {
-    "key": "icon:13",
-    "value": {
-      "alt": "React Native",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/react-native.svg",
-      "id": 13
-    },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
-  },
-  {
-    "key": "icon:14",
-    "value": {
-      "alt": "yaml",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/yaml.png",
-      "id": 14
-    },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
-  },
-  {
-    "key": "icon:15",
-    "value": {
-      "alt": "Figma",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/figma.svg",
-      "id": 15
-    },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
-  },
-  {
-    "key": "icon:16",
-    "value": {
-      "alt": "Cloudflare",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/cloudflare.svg",
-      "id": 16
-    },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
-  },
-  {
-    "key": "icon:17",
-    "value": {
-      "alt": "GraphQL",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/graphql.svg",
-      "id": 17
-    },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
-  },
-  {
-    "key": "icon:18",
-    "value": {
-      "alt": "Appstore",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/appstore.png",
-      "id": 18
-    },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
-  },
-  {
-    "key": "icon:19",
-    "value": {
-      "alt": "Serverless Framework",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/serverless-framework.png",
-      "id": 19
-    },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
-  },
-  {
-    "key": "icon:20",
-    "value": {
-      "alt": "Android Studio",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/AndroidStudio.png",
-      "id": 20
-    },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
-  },
-  {
-    "key": "icon:21",
-    "value": {
-      "alt": "Illustrator",
-      "url": "https://pleasant-api-uqe40.cloud.serverless.com/public/icons/illustrator.png",
-      "id": 21
-    },
-    "created": "2022-09-30T07:14:58.000Z",
-    "modified": "2022-09-30T07:14:58.000Z"
+    "created": "2022-10-26T12:53:44.000Z",
+    "modified": "2023-05-23T05:59:28.000Z"
   }
 ]
