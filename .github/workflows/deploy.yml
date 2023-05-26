@@ -6,7 +6,7 @@ on:
       - master
 jobs:
   deploy-dev:
-    name: Deploy to dev
+    name: Deploying to dev
     runs-on: ubuntu-latest
     environment: development
     env:
@@ -17,8 +17,9 @@ jobs:
         with:
           node-version: 16
       - run: npm install --legacy-peer-deps
-      - run: npm run start deploy dev
-
+      - name: Deploy front to dev
+        run: |
+          npm run start deploy dev
   deploy-production:
     name: Deploy to prod
     runs-on: ubuntu-latest
@@ -32,4 +33,6 @@ jobs:
         with:
           node-version: 16
       - run: npm install --legacy-peer-deps
-      - run: npm run start deploy prod
+      - name: Deploy prod to dev
+        run: |
+          npm run start deploy prod
