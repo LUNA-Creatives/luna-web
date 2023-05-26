@@ -58,7 +58,7 @@
     ]
   },
   "dependencies": {
-    "@ampt/cloud": "^0.0.1-beta.2",
+    "@ampt/cloud": "^0.0.1-beta.4",
     "@mui/material": "^5.10.0",
     "@mui/styles": "^5.9.3",
     "@types/express": "^4.17.13",
